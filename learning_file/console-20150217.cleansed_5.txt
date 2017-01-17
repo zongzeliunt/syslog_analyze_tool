@@ -1,0 +1,21 @@
+2015-02-17T08:08:00.710374-07:00 c0-0c0s3n1 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:08:02.751477-07:00 c0-0c2s4n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:07:58.669308-07:00 c0-0c0s8n0 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:08:02.751679-07:00 c0-0c2s8n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:08:02.751513-07:00 c0-0c1s5n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:08:02.751416-07:00 c0-0c0s11n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:07:58.669210-07:00 c0-0c0s6n0 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:07:59.199415-07:00 c0-0c0s1n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:08:00.735549-07:00 c0-0c2s10n1 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:08:04.822260-07:00 c0-0c2s9n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:08:04.797098-07:00 c0-0c1s9n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:08:04.822282-07:00 c0-0c0s5n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:08:00.710413-07:00 c0-0c0s9n1 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:08:00.710290-07:00 c0-0c2s4n1 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:07:58.153196-07:00 c0-0c0s2n1 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:07:40.163623-07:00 mutrino craylog: message type: console, connected to port: 5150
+2015-02-17T08:07:40.163687-07:00 mutrino craylog: testing connectivity
+2015-02-17T08:07:40.413175-07:00 mutrino starting
+2015-02-17T08:08:00.710434-07:00 c0-0c0s4n1 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:07:59.199445-07:00 c0-0c0s0n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:08:00.735483-07:00 c0-0c2s12n1 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2

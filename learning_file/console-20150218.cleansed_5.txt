@@ -1,0 +1,93 @@
+2015-02-18T10:09:48.208043-07:00 c0-0c1s10n0 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:54.326909-07:00 c0-0c2s12n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:54.326727-07:00 c0-0c0s10n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:54.351967-07:00 c0-0c0s6n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:54.326713-07:00 c0-0c0s3n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:48.182572-07:00 c0-0c1s5n0 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:48.711484-07:00 c0-0c2s0n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:50.244614-07:00 c0-0c0s4n1 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:52.285936-07:00 c0-0c0s10n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:50.269443-07:00 c0-0c2s10n1 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T09:30:39.008646-07:00 c0-0c2s0n1 Wait4Boot: Blade Controller Boot Protocol version - 1
+2015-02-18T09:30:39.008695-07:00 c0-0c2s0n1 Wait4Boot: EXIT ---> PXE Boot
+2015-02-18T09:30:39.008727-07:00 c0-0c2s0n1 CoreLoadedImageInfo: Not an ImageHandle 2f8
+2015-02-18T09:30:39.008755-07:00 c0-0c2s0n1 [2J[1;37;40m[2J[[ CrayHandlerReadyToBoot() Start. ]]
+2015-02-18T09:30:39.008781-07:00 c0-0c2s0n1 [[ CrayHandlerReadyToBoot() Done. ]]
+2015-02-18T09:30:39.008798-07:00 c0-0c2s0n1 [[ IoatInt() Start. ]]
+2015-02-18T09:30:39.033692-07:00 c0-0c2s0n1 [[ IoatInt() Done. ]]
+2015-02-18T09:30:39.073386-07:00 c0-0c2s0n1 IN Collect AML Info: 0
+2015-02-18T09:30:39.073427-07:00 c0-0c2s0n1 IN Collect AML Info after PT: 0
+2015-02-18T09:30:39.073457-07:00 c0-0c2s0n1 Installing ACPI 1.1: EFI_SUCCESS, 7F395000
+2015-02-18T09:31:38.320419-07:00 c0-0c2s0n1 .PXE-E18: Server response timeout.
+2015-02-18T09:31:38.320444-07:00 c0-0c2s0n1 CoreOpenImageFile: Device did not support a known load protocol
+2015-02-18T09:31:38.320464-07:00 c0-0c2s0n1 ERROR: Type:2; Severity:80; Class:3; Subclass:5; Operation: 8003
+2015-02-18T09:31:38.320480-07:00 c0-0c2s0n1 [[ CrayHandlerReadyToBoot() Start. ]]
+2015-02-18T09:31:38.350950-07:00 c0-0c2s0n1 [[ CrayHandlerReadyToBoot() Done. ]]
+2015-02-18T09:31:38.350982-07:00 c0-0c2s0n1 [[ IoatInt() Start. ]]
+2015-02-18T09:31:38.351027-07:00 c0-0c2s0n1 [[ IoatInt() Done. ]]
+2015-02-18T09:31:38.351037-07:00 c0-0c2s0n1 IN Collect AML Info: 0
+2015-02-18T09:31:38.351049-07:00 c0-0c2s0n1 IN Collect AML Info after PT: 0
+2015-02-18T09:31:38.351066-07:00 c0-0c2s0n1 Installing ACPI 1.1: EFI_SUCCESS, 7F395000
+2015-02-18T09:32:37.791315-07:00 c0-0c2s0n1 .PXE-E18: Server response timeout.
+2015-02-18T09:32:37.791351-07:00 c0-0c2s0n1 CoreOpenImageFile: Device did not support a known load protocol
+2015-02-18T09:32:37.818690-07:00 c0-0c2s0n1 ERROR: Type:2; Severity:80; Class:3; Subclass:5; Operation: 8003
+2015-02-18T09:32:37.818708-07:00 c0-0c2s0n1 [[ CrayHandlerReadyToBoot() Start. ]]
+2015-02-18T09:32:37.818734-07:00 c0-0c2s0n1 [[ CrayHandlerReadyToBoot() Done. ]]
+2015-02-18T09:32:37.818750-07:00 c0-0c2s0n1 [[ IoatInt() Start. ]]
+2015-02-18T09:32:37.818773-07:00 c0-0c2s0n1 [[ IoatInt() Done. ]]
+2015-02-18T09:32:37.818796-07:00 c0-0c2s0n1 IN Collect AML Info: 0
+2015-02-18T09:32:37.845535-07:00 c0-0c2s0n1 IN Collect AML Info after PT: 0
+2015-02-18T09:32:37.845549-07:00 c0-0c2s0n1 Installing ACPI 1.1: EFI_SUCCESS, 7F395000
+2015-02-18T09:33:37.390394-07:00 c0-0c2s0n1 .PXE-E18: Server response timeout.
+2015-02-18T09:33:37.430564-07:00 c0-0c2s0n1 CoreOpenImageFile: Device did not support a known load protocol
+2015-02-18T09:33:37.430579-07:00 c0-0c2s0n1 ERROR: Type:2; Severity:80; Class:3; Subclass:5; Operation: 8003
+2015-02-18T09:33:37.430620-07:00 c0-0c2s0n1 [[ CrayHandlerReadyToBoot() Start. ]]
+2015-02-18T09:33:37.430632-07:00 c0-0c2s0n1 [[ CrayHandlerReadyToBoot() Done. ]]
+2015-02-18T09:33:37.430641-07:00 c0-0c2s0n1 [[ IoatInt() Start. ]]
+2015-02-18T09:33:37.430649-07:00 c0-0c2s0n1 [[ IoatInt() Done. ]]
+2015-02-18T09:33:37.430657-07:00 c0-0c2s0n1 IN Collect AML Info: 0
+2015-02-18T09:33:37.430683-07:00 c0-0c2s0n1 IN Collect AML Info after PT: 0
+2015-02-18T09:33:37.430695-07:00 c0-0c2s0n1 Installing ACPI 1.1: EFI_SUCCESS, 7F395000
+2015-02-18T09:34:36.801200-07:00 c0-0c2s0n1 .PXE-E18: Server response timeout.
+2015-02-18T09:34:36.827725-07:00 c0-0c2s0n1 CoreOpenImageFile: Device did not support a known load protocol
+2015-02-18T09:34:36.827739-07:00 c0-0c2s0n1 ERROR: Type:2; Severity:80; Class:3; Subclass:5; Operation: 8003
+2015-02-18T09:34:36.827753-07:00 c0-0c2s0n1 [[ CrayHandlerReadyToBoot() Start. ]]
+2015-02-18T09:34:36.852929-07:00 c0-0c2s0n1 [[ CrayHandlerReadyToBoot() Done. ]]
+2015-02-18T09:34:36.889348-07:00 c0-0c2s0n1 [[ IoatInt() Start. ]]
+2015-02-18T09:34:36.889362-07:00 c0-0c2s0n1 [[ IoatInt() Done. ]]
+2015-02-18T09:34:36.889371-07:00 c0-0c2s0n1 IN Collect AML Info: 0
+2015-02-18T09:34:36.889381-07:00 c0-0c2s0n1 IN Collect AML Info after PT: 0
+2015-02-18T09:34:36.889394-07:00 c0-0c2s0n1 Installing ACPI 1.1: EFI_SUCCESS, 7F395000
+2015-02-18T09:34:36.889412-07:00 c0-0c2s0n1 CoreOpenImageFile: Device did not support a known load protocol
+2015-02-18T09:34:36.889430-07:00 c0-0c2s0n1 [[ CrayHandlerReadyToBoot() Start. ]]
+2015-02-18T09:34:36.929344-07:00 c0-0c2s0n1 [[ CrayHandlerReadyToBoot() Done. ]]
+2015-02-18T09:34:36.929371-07:00 c0-0c2s0n1 [[ IoatInt() Start. ]]
+2015-02-18T09:34:36.929404-07:00 c0-0c2s0n1 [[ IoatInt() Done. ]]
+2015-02-18T09:34:36.929432-07:00 c0-0c2s0n1 IN Collect AML Info: 0
+2015-02-18T09:34:36.929467-07:00 c0-0c2s0n1 IN Collect AML Info after PT: 0
+2015-02-18T09:34:36.929481-07:00 c0-0c2s0n1 Installing ACPI 1.1: EFI_SUCCESS, 7F395000
+2015-02-18T09:34:36.954547-07:00 c0-0c2s0n1 [[ CrayBdsHook() Start. ]]
+2015-02-18T09:34:36.954573-07:00 c0-0c2s0n1 HWINV: CPU stepping (socket 0) = C2
+2015-02-18T09:34:36.954583-07:00 c0-0c2s0n1       Raw CPU stepping (socket 0) = 0x07
+2015-02-18T09:34:36.979813-07:00 c0-0c2s0n1 Error counter: 0
+2015-02-18T09:34:36.979826-07:00 c0-0c2s0n1 [[ CrayBdsHook() Done. ]]
+2015-02-18T09:34:36.979835-07:00 c0-0c2s0n1 Code 0x3058100: PATH330564  16:34:32
+2015-02-18T09:34:37.004997-07:00 c0-0c2s0n1 Loading driver [C57AD6B7-0515-40A8-9D21-551652854E37] at 0x0C139000
+2015-02-18T09:34:37.005029-07:00 c0-0c2s0n1 [C57AD6B7-0515-40A8-9D21-551652854E37].Entry(C13A4A0)
+2015-02-18T09:34:37.118563-07:00 c0-0c2s0n1 [2J[0;37;40m[1;33;40mEFI Shell version 2.10 [4.641]
+2015-02-18T09:34:37.143778-07:00 c0-0c2s0n1 [0;37;40mCurrent running mode [1;37;40m1.1.2[0;37;40m
+2015-02-18T09:34:37.143801-07:00 c0-0c2s0n1 [1;37;40mmap[0;37;40m: Cannot find required map name.
+2015-02-18T09:34:42.246108-07:00 c0-0c2s0n1 Press [1;37;40mESC[0;37;40m in 5 seconds to skip [1;33;40mstartup.nsh[0;37;40m, any other key to continue. 
+2015-02-18T09:34:42.246127-07:00 c0-0c2s0n1 Press [1;37;40mESC[0;37;40m in 4 seconds to skip [1;33;40mstartup.nsh[0;37;40m, any other key to continue. 
+2015-02-18T09:34:42.246133-07:00 c0-0c2s0n1 Press [1;37;40mESC[0;37;40m in 3 seconds to skip [1;33;40mstartup.nsh[0;37;40m, any other key to continue. 
+2015-02-18T09:34:42.246139-07:00 c0-0c2s0n1 Press [1;37;40mESC[0;37;40m in 2 seconds to skip [1;33;40mstartup.nsh[0;37;40m, any other key to continue. 
+2015-02-18T09:34:42.246145-07:00 c0-0c2s0n1 Press [1;37;40mESC[0;37;40m in 1 seconds to skip [1;33;40mstartup.nsh[0;37;40m, any other key to continue. 
+2015-02-18T10:09:47.690836-07:00 c0-0c2s0n1 [6;1H[1;33;40mShell> ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:50.244359-07:00 c0-0c1s10n1 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:54.326537-07:00 c0-0c1s3n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:52.286130-07:00 c0-0c2s12n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:54.326606-07:00 c0-0c0s8n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:48.182261-07:00 c0-0c0s8n0 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:48.711428-07:00 c0-0c1s0n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:48.182437-07:00 c0-0c2s8n0 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-18T10:09:54.326640-07:00 c0-0c1s7n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
