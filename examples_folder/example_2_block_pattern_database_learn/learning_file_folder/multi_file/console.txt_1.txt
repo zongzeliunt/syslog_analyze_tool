@@ -1,0 +1,411 @@
+[2008-07-07 22:31:03][c1-0c1s4n0]nid 176: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:03][c1-0c1s4n0]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:03][c1-0c1s4n0]        Lustre Version: 1.6.3
+[2008-07-07 22:31:03][c1-0c1s4n0]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:03][c1-0c1s4n0]Lustre: Added LNI 176@ptl [8/1024]
+[2008-07-07 22:31:03][c1-0c1s4n0]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:04][c1-0c1s4n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:04][c1-0c1s4n0]Lustre: gar4ost-clilov-ffff8103f1c01c00.lov: set parameter stripecount=2
+[2008-07-07 22:31:04][c1-0c1s4n0]Lustre: gar4ost-clilov-ffff8103f1c01c00.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:04][c1-0c1s4n0]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:04][c1-0c1s4n0]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:04][c1-0c1s4n0]USS: dvsklib module loaded
+[2008-07-07 22:31:04][c1-0c1s4n0]USS: dvsproc module loaded
+[2008-07-07 22:31:04][c1-0c1s4n0]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:04][c1-0c1s4n0]USS: dvsutil module loaded
+[2008-07-07 22:31:04][c1-0c1s4n0]USS: dvsof module loaded
+[2008-07-07 22:31:04][c1-0c1s4n0]USS: dvspn module loaded
+[2008-07-07 23:45:22][c1-0c1s4n0]fsx-linux-aio[2794]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffae58 error 5
+[2008-07-08 02:14:03][c1-0c1s4n0]beer: cpu_id 4: nid 174, cpu 0 has been unresponsive for 240 seconds
+[2008-07-08 02:14:03][c1-0c1s4n0]beer: cpu_id 4: nid 174, cpu 4 has been unresponsive for 240 seconds
+[2008-07-07 22:31:02][c3-0c1s1n1]nid 421: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:02][c3-0c1s1n1]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:02][c3-0c1s1n1]        Lustre Version: 1.6.3
+[2008-07-07 22:31:02][c3-0c1s1n1]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:02][c3-0c1s1n1]Lustre: Added LNI 421@ptl [8/1024]
+[2008-07-07 22:31:02][c3-0c1s1n1]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:02][c3-0c1s1n1]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:02][c3-0c1s1n1]Lustre: gar4ost-clilov-ffff810403ad2000.lov: set parameter stripecount=2
+[2008-07-07 22:31:02][c3-0c1s1n1]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:02][c3-0c1s1n1]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:02][c3-0c1s1n1]USS: dvsklib module loaded
+[2008-07-07 22:31:02][c3-0c1s1n1]USS: dvsproc module loaded
+[2008-07-07 22:31:02][c3-0c1s1n1]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c3-0c1s1n1]USS: dvsutil module loaded
+[2008-07-07 22:31:03][c3-0c1s1n1]USS: dvsof module loaded
+[2008-07-07 22:31:03][c3-0c1s1n1]USS: dvspn module loaded
+[2008-07-08 00:59:46][c3-0c1s1n1]beer: cpu_id 4: nid 50, cpu 4 has been unresponsive for 240 seconds
+[2008-07-07 22:31:02][c3-0c1s5n3]nid 439: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:02][c3-0c1s5n3]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:02][c3-0c1s5n3]        Lustre Version: 1.6.3
+[2008-07-07 22:31:02][c3-0c1s5n3]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:02][c3-0c1s5n3]Lustre: Added LNI 439@ptl [8/1024]
+[2008-07-07 22:31:02][c3-0c1s5n3]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:02][c3-0c1s5n3]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:02][c3-0c1s5n3]Lustre: gar4ost-clilov-ffff8103ec8ae000.lov: set parameter stripecount=2
+[2008-07-07 22:31:02][c3-0c1s5n3]Lustre: gar4ost-clilov-ffff8103ec8ae000.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:02][c3-0c1s5n3]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:03][c3-0c1s5n3]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:03][c3-0c1s5n3]USS: dvsklib module loaded
+[2008-07-07 22:31:03][c3-0c1s5n3]USS: dvsproc module loaded
+[2008-07-07 22:31:03][c3-0c1s5n3]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c3-0c1s5n3]USS: dvsutil module loaded
+[2008-07-07 22:31:03][c3-0c1s5n3]USS: dvsof module loaded
+[2008-07-07 22:31:03][c3-0c1s5n3]USS: dvspn module loaded
+[2008-07-08 00:59:47][c3-0c1s5n3]beer: cpu_id 0: nid 57, cpu 4 has been unresponsive for 240 seconds
+[2008-07-08 00:59:47][c3-0c1s5n3]beer: cpu_id 4: nid 57, cpu 4 has been unresponsive for 240 seconds
+[2008-07-08 01:49:56][c3-0c1s5n3]sigoretst01[3842]: segfault at 00000000064e5c1f rip 0000000000400640 rsp 00007fffff7ff160 error 4
+[2008-07-07 22:31:03][c1-0c1s4n1]nid 177: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:03][c1-0c1s4n1]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:03][c1-0c1s4n1]        Lustre Version: 1.6.3
+[2008-07-07 22:31:03][c1-0c1s4n1]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:03][c1-0c1s4n1]Lustre: Added LNI 177@ptl [8/1024]
+[2008-07-07 22:31:03][c1-0c1s4n1]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:03][c1-0c1s4n1]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:03][c1-0c1s4n1]Lustre: gar4ost-clilov-ffff8107eca04400.lov: set parameter stripecount=2
+[2008-07-07 22:31:03][c1-0c1s4n1]Lustre: gar4ost-clilov-ffff8107eca04400.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:04][c1-0c1s4n1]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:04][c1-0c1s4n1]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:04][c1-0c1s4n1]USS: dvsklib module loaded
+[2008-07-07 22:31:04][c1-0c1s4n1]USS: dvsproc module loaded
+[2008-07-07 22:31:04][c1-0c1s4n1]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:04][c1-0c1s4n1]USS: dvsutil module loaded
+[2008-07-07 22:31:04][c1-0c1s4n1]USS: dvsof module loaded
+[2008-07-07 22:31:04][c1-0c1s4n1]USS: dvspn module loaded
+[2008-07-07 23:55:59][c1-0c1s4n1]fsx-linux-aio[2832]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffae98 error 5
+[2008-07-07 22:31:01][c3-0c2s1n0]nid 452: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:01][c3-0c2s1n0]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:01][c3-0c2s1n0]        Lustre Version: 1.6.3
+[2008-07-07 22:31:01][c3-0c2s1n0]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:01][c3-0c2s1n0]Lustre: Added LNI 452@ptl [8/1024]
+[2008-07-07 22:31:01][c3-0c2s1n0]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:01][c3-0c2s1n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:01][c3-0c2s1n0]Lustre: gar4ost-clilov-ffff810403c3e400.lov: set parameter stripecount=2
+[2008-07-07 22:31:01][c3-0c2s1n0]Lustre: gar4ost-clilov-ffff810403c3e400.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:02][c3-0c2s1n0]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:02][c3-0c2s1n0]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:02][c3-0c2s1n0]USS: dvsklib module loaded
+[2008-07-07 22:31:02][c3-0c2s1n0]USS: dvsproc module loaded
+[2008-07-07 22:31:02][c3-0c2s1n0]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:02][c3-0c2s1n0]USS: dvsutil module loaded
+[2008-07-07 22:31:02][c3-0c2s1n0]USS: dvsof module loaded
+[2008-07-07 22:31:02][c3-0c2s1n0]USS: dvspn module loaded
+[2008-07-08 02:18:37][c3-0c2s1n0]Out of Memory: Kill process 4265 (apinit) score 0 and children.
+[2008-07-08 02:18:37][c3-0c2s1n0]No available memory in cpuset: Killed process 4268 (stream_d_171_no).  apid: 304608
+[2008-07-07 22:31:03][c2-0c1s6n0]nid 312: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:03][c2-0c1s6n0]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:03][c2-0c1s6n0]        Lustre Version: 1.6.3
+[2008-07-07 22:31:03][c2-0c1s6n0]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:03][c2-0c1s6n0]Lustre: Added LNI 312@ptl [8/1024]
+[2008-07-07 22:31:03][c2-0c1s6n0]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:04][c2-0c1s6n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:04][c2-0c1s6n0]Lustre: gar4ost-clilov-ffff8107ecdd2c00.lov: set parameter stripecount=2
+[2008-07-07 22:31:04][c2-0c1s6n0]Lustre: gar4ost-clilov-ffff8107ecdd2c00.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:04][c2-0c1s6n0]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:04][c2-0c1s6n0]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:04][c2-0c1s6n0]USS: dvsklib module loaded
+[2008-07-07 22:31:04][c2-0c1s6n0]USS: dvsproc module loaded
+[2008-07-07 22:31:04][c2-0c1s6n0]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:04][c2-0c1s6n0]USS: dvsutil module loaded
+[2008-07-07 22:31:04][c2-0c1s6n0]USS: dvsof module loaded
+[2008-07-07 22:31:04][c2-0c1s6n0]USS: dvspn module loaded
+[2008-07-08 00:53:05][c2-0c1s6n0]fsx-linux-aio[3356]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffae18 error 5
+[2008-07-07 22:31:00][c1-0c2s5n1]nid 213: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:00][c1-0c2s5n1]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:00][c1-0c2s5n1]        Lustre Version: 1.6.3
+[2008-07-07 22:31:00][c1-0c2s5n1]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:00][c1-0c2s5n1]Lustre: Added LNI 213@ptl [8/1024]
+[2008-07-07 22:31:00][c1-0c2s5n1]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:00][c1-0c2s5n1]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:00][c1-0c2s5n1]Lustre: gar4ost-clilov-ffff8103ec3ecc00.lov: set parameter stripecount=2
+[2008-07-07 22:31:00][c1-0c2s5n1]Lustre: gar4ost-clilov-ffff8103ec3ecc00.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:00][c1-0c2s5n1]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:01][c1-0c2s5n1]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:01][c1-0c2s5n1]USS: dvsklib module loaded
+[2008-07-07 22:31:01][c1-0c2s5n1]USS: dvsproc module loaded
+[2008-07-07 22:31:01][c1-0c2s5n1]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:01][c1-0c2s5n1]USS: dvsutil module loaded
+[2008-07-07 22:31:01][c1-0c2s5n1]USS: dvsof module loaded
+[2008-07-07 22:31:01][c1-0c2s5n1]USS: dvspn module loaded
+[2008-07-07 23:22:48][c1-0c2s5n1]lkrelease[2783] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:48][c1-0c2s5n1]lkrelease[2788] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:48][c1-0c2s5n1]lkrelease[2793] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:48][c1-0c2s5n1]lkrelease[2798] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:48][c1-0c2s5n1]lkrelease[2803] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:48][c1-0c2s5n1]lkrelease[2808] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:48][c1-0c2s5n1]lkrelease[2813] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:48][c1-0c2s5n1]lkrelease[2818] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:48][c1-0c2s5n1]lkrelease[2823] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:48][c1-0c2s5n1]lkrelease[2828] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:48][c1-0c2s5n1]lkrelease[2833] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:48][c1-0c2s5n1]lkrelease[2838] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:48][c1-0c2s5n1]lkrelease[2843] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2848] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2853] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2858] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2863] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2868] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2873] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2878] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2883] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2888] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2893] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2898] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2903] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2908] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2913] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2918] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2923] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2928] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2933] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2938] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2943] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2948] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2953] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2958] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2963] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2968] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2973] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2978] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2983] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2988] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2993] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[2998] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 23:22:49][c1-0c2s5n1]lkrelease[3003] trap divide error rip:40097b rsp:7fffffffbe40 error:0
+[2008-07-07 22:31:03][c0-0c0s6n1]nid 25: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:03][c0-0c0s6n1]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:03][c0-0c0s6n1]        Lustre Version: 1.6.3
+[2008-07-07 22:31:03][c0-0c0s6n1]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:03][c0-0c0s6n1]Lustre: Added LNI 25@ptl [8/1024]
+[2008-07-07 22:31:03][c0-0c0s6n1]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:03][c0-0c0s6n1]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:03][c0-0c0s6n1]Lustre: gar4ost-clilov-ffff8101f8e18c00.lov: set parameter stripecount=2
+[2008-07-07 22:31:03][c0-0c0s6n1]Lustre: gar4ost-clilov-ffff8101f8e18c00.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:03][c0-0c0s6n1]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:03][c0-0c0s6n1]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:03][c0-0c0s6n1]USS: dvsklib module loaded
+[2008-07-07 22:31:03][c0-0c0s6n1]USS: dvsproc module loaded
+[2008-07-07 22:31:03][c0-0c0s6n1]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c0-0c0s6n1]USS: dvsutil module loaded
+[2008-07-07 22:31:04][c0-0c0s6n1]USS: dvsof module loaded
+[2008-07-07 22:31:04][c0-0c0s6n1]USS: dvspn module loaded
+[2008-07-07 23:00:15][c0-0c0s6n1]cancer[2623]: segfault at ffffffffb3b00b30 rip 0000000000488572 rsp 00002aaab3ac8df8 error 6
+[2008-07-07 23:45:59][c0-0c0s6n1]cancer[21962]: segfault at ffffffffadf01400 rip 0000000000488572 rsp 00002aaaad639df8 error 6
+[2008-07-07 23:46:31][c0-0c0s6n1]fsx-linux-aio[22158]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffae08 error 5
+[2008-07-07 22:31:01][c3-0c2s1n3]nid 455: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:01][c3-0c2s1n3]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:01][c3-0c2s1n3]        Lustre Version: 1.6.3
+[2008-07-07 22:31:01][c3-0c2s1n3]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:01][c3-0c2s1n3]Lustre: Added LNI 455@ptl [8/1024]
+[2008-07-07 22:31:01][c3-0c2s1n3]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:01][c3-0c2s1n3]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:01][c3-0c2s1n3]Lustre: gar4ost-clilov-ffff8103ebbc3400.lov: set parameter stripecount=2
+[2008-07-07 22:31:01][c3-0c2s1n3]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:02][c3-0c2s1n3]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:02][c3-0c2s1n3]USS: dvsklib module loaded
+[2008-07-07 22:31:02][c3-0c2s1n3]USS: dvsproc module loaded
+[2008-07-07 22:31:02][c3-0c2s1n3]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:02][c3-0c2s1n3]USS: dvsutil module loaded
+[2008-07-07 22:31:02][c3-0c2s1n3]USS: dvsof module loaded
+[2008-07-07 22:31:02][c3-0c2s1n3]USS: dvspn module loaded
+[2008-07-07 22:31:03][c2-0c1s2n1]nid 297: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:03][c2-0c1s2n1]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:03][c2-0c1s2n1]        Lustre Version: 1.6.3
+[2008-07-07 22:31:03][c2-0c1s2n1]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:03][c2-0c1s2n1]Lustre: Added LNI 297@ptl [8/1024]
+[2008-07-07 22:31:03][c2-0c1s2n1]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:03][c2-0c1s2n1]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:03][c2-0c1s2n1]Lustre: gar4ost-clilov-ffff810403ada400.lov: set parameter stripecount=2
+[2008-07-07 22:31:03][c2-0c1s2n1]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:05][c2-0c1s2n1]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:05][c2-0c1s2n1]USS: dvsklib module loaded
+[2008-07-07 22:31:05][c2-0c1s2n1]USS: dvsproc module loaded
+[2008-07-07 22:31:05][c2-0c1s2n1]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:05][c2-0c1s2n1]USS: dvsutil module loaded
+[2008-07-07 22:31:05][c2-0c1s2n1]USS: dvsof module loaded
+[2008-07-07 22:31:05][c2-0c1s2n1]USS: dvspn module loaded
+[2008-07-08 00:59:46][c2-0c1s2n1]beer: cpu_id 0: nid 157, cpu 4 has been unresponsive for 240 seconds
+[2008-07-07 22:31:01][c0-0c2s4n3]nid 83: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:01][c0-0c2s4n3]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:01][c0-0c2s4n3]        Lustre Version: 1.6.3
+[2008-07-07 22:31:01][c0-0c2s4n3]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:01][c0-0c2s4n3]Lustre: Added LNI 83@ptl [8/1024]
+[2008-07-07 22:31:01][c0-0c2s4n3]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:01][c0-0c2s4n3]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:01][c0-0c2s4n3]Lustre: gar4ost-clilov-ffff8103f4a02800.lov: set parameter stripecount=2
+[2008-07-07 22:31:01][c0-0c2s4n3]Lustre: gar4ost-clilov-ffff8103f4a02800.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:01][c0-0c2s4n3]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:01][c0-0c2s4n3]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:01][c0-0c2s4n3]USS: dvsklib module loaded
+[2008-07-07 22:31:01][c0-0c2s4n3]USS: dvsproc module loaded
+[2008-07-07 22:31:01][c0-0c2s4n3]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:01][c0-0c2s4n3]USS: dvsutil module loaded
+[2008-07-07 22:31:01][c0-0c2s4n3]USS: dvsof module loaded
+[2008-07-07 22:31:02][c0-0c2s4n3]USS: dvspn module loaded
+[2008-07-08 00:32:33][c0-0c2s4n3]Out of Memory: Kill process 3147 (cancer) score 2185363 and children.
+[2008-07-08 00:32:33][c0-0c2s4n3]Out of memory: Killed process 3155 (cancer).  apid: 298139
+[2008-07-07 22:31:03][c3-0c2s4n2]nid 466: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:03][c3-0c2s4n2]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:03][c3-0c2s4n2]        Lustre Version: 1.6.3
+[2008-07-07 22:31:03][c3-0c2s4n2]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:03][c3-0c2s4n2]Lustre: Added LNI 466@ptl [8/1024]
+[2008-07-07 22:31:03][c3-0c2s4n2]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:03][c3-0c2s4n2]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:03][c3-0c2s4n2]Lustre: gar4ost-clilov-ffff8103f188b000.lov: set parameter stripecount=2
+[2008-07-07 22:31:03][c3-0c2s4n2]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:03][c3-0c2s4n2]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:03][c3-0c2s4n2]USS: dvsklib module loaded
+[2008-07-07 22:31:03][c3-0c2s4n2]USS: dvsproc module loaded
+[2008-07-07 22:31:03][c3-0c2s4n2]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c3-0c2s4n2]USS: dvsutil module loaded
+[2008-07-07 22:31:03][c3-0c2s4n2]USS: dvsof module loaded
+[2008-07-07 22:31:03][c3-0c2s4n2]USS: dvspn module loaded
+[2008-07-07 22:31:03][c1-0c2s1n1]nid 197: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:03][c1-0c2s1n1]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:03][c1-0c2s1n1]        Lustre Version: 1.6.3
+[2008-07-07 22:31:03][c1-0c2s1n1]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:03][c1-0c2s1n1]Lustre: Added LNI 197@ptl [8/1024]
+[2008-07-07 22:31:04][c1-0c2s1n1]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:04][c1-0c2s1n1]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:04][c1-0c2s1n1]Lustre: gar4ost-clilov-ffff8107ec6fbc00.lov: set parameter stripecount=2
+[2008-07-07 22:31:04][c1-0c2s1n1]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:04][c1-0c2s1n1]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:04][c1-0c2s1n1]USS: dvsklib module loaded
+[2008-07-07 22:31:04][c1-0c2s1n1]USS: dvsproc module loaded
+[2008-07-07 22:31:04][c1-0c2s1n1]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:04][c1-0c2s1n1]USS: dvsutil module loaded
+[2008-07-07 22:31:04][c1-0c2s1n1]USS: dvsof module loaded
+[2008-07-07 22:31:04][c1-0c2s1n1]USS: dvspn module loaded
+[2008-07-07 22:31:00][c2-0c1s5n0]nid 308: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:00][c2-0c1s5n0]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:00][c2-0c1s5n0]        Lustre Version: 1.6.3
+[2008-07-07 22:31:00][c2-0c1s5n0]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:00][c2-0c1s5n0]Lustre: Added LNI 308@ptl [8/1024]
+[2008-07-07 22:31:00][c2-0c1s5n0]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:00][c2-0c1s5n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:00][c2-0c1s5n0]Lustre: gar4ost-clilov-ffff8107ed1ce400.lov: set parameter stripecount=2
+[2008-07-07 22:31:00][c2-0c1s5n0]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:01][c2-0c1s5n0]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:01][c2-0c1s5n0]USS: dvsklib module loaded
+[2008-07-07 22:31:01][c2-0c1s5n0]USS: dvsproc module loaded
+[2008-07-07 22:31:01][c2-0c1s5n0]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:01][c2-0c1s5n0]USS: dvsutil module loaded
+[2008-07-07 22:31:01][c2-0c1s5n0]USS: dvsof module loaded
+[2008-07-07 22:31:01][c2-0c1s5n0]USS: dvspn module loaded
+[2008-07-07 22:31:00][c1-0c2s3n0]nid 204: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:00][c1-0c2s3n0]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:00][c1-0c2s3n0]        Lustre Version: 1.6.3
+[2008-07-07 22:31:00][c1-0c2s3n0]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:02][c1-0c2s3n0]Lustre: Added LNI 204@ptl [8/1024]
+[2008-07-07 22:31:02][c1-0c2s3n0]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:02][c1-0c2s3n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:02][c1-0c2s3n0]Lustre: gar4ost-clilov-ffff8107f1e43800.lov: set parameter stripecount=2
+[2008-07-07 22:31:02][c1-0c2s3n0]Lustre: gar4ost-clilov-ffff8107f1e43800.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:02][c1-0c2s3n0]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:02][c1-0c2s3n0]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:02][c1-0c2s3n0]USS: dvsklib module loaded
+[2008-07-07 22:31:02][c1-0c2s3n0]USS: dvsproc module loaded
+[2008-07-07 22:31:02][c1-0c2s3n0]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:02][c1-0c2s3n0]USS: dvsutil module loaded
+[2008-07-07 22:31:02][c1-0c2s3n0]USS: dvsof module loaded
+[2008-07-07 22:31:02][c1-0c2s3n0]USS: dvspn module loaded
+[2008-07-07 22:31:03][c1-0c0s7n2]nid 158: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:03][c1-0c0s7n2]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:03][c1-0c0s7n2]        Lustre Version: 1.6.3
+[2008-07-07 22:31:03][c1-0c0s7n2]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:03][c1-0c0s7n2]Lustre: Added LNI 158@ptl [8/1024]
+[2008-07-07 22:31:03][c1-0c0s7n2]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:03][c1-0c0s7n2]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:03][c1-0c0s7n2]Lustre: gar4ost-clilov-ffff8107ed2c2400.lov: set parameter stripecount=2
+[2008-07-07 22:31:03][c1-0c0s7n2]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:04][c1-0c0s7n2]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:04][c1-0c0s7n2]USS: dvsklib module loaded
+[2008-07-07 22:31:04][c1-0c0s7n2]USS: dvsproc module loaded
+[2008-07-07 22:31:04][c1-0c0s7n2]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:04][c1-0c0s7n2]USS: dvsutil module loaded
+[2008-07-07 22:31:04][c1-0c0s7n2]USS: dvsof module loaded
+[2008-07-07 22:31:04][c1-0c0s7n2]USS: dvspn module loaded
+[2008-07-07 23:43:06][c1-0c0s7n2]id:[2701] 
+[2008-07-07 23:43:06][c1-0c0s7n2]ACK to inactive md, dropping
+[2008-07-07 23:43:06][c1-0c0s7n2]id:[2701] 
+[2008-07-07 23:43:06][c1-0c0s7n2]/notbackedup/users/rsrel/SLES10PL1.REL_2_1_21HD.20080703.1247.Thu/ipc_hd/portals_fw/baselib/lib-msg.c::197: LASSERT!!! (rc == 0)
+[2008-07-07 23:43:12][c1-0c0s7n2]id:[2701] 
+[2008-07-07 23:43:12][c1-0c0s7n2]ACK to inactive md, dropping
+[2008-07-07 23:43:12][c1-0c0s7n2]id:[2701] 
+[2008-07-07 23:43:13][c1-0c0s7n2]/notbackedup/users/rsrel/SLES10PL1.REL_2_1_21HD.20080703.1247.Thu/ipc_hd/portals_fw/baselib/lib-msg.c::197: LASSERT!!! (rc == 0)
+[2008-07-07 23:43:32][c1-0c0s7n2]fsx-linux[2745] general protection rip:421720 rsp:7fffffffae08 error:0
+[2008-07-07 23:43:32][c1-0c0s7n2]fsx-linux[2744] general protection rip:421720 rsp:7fffffffae08 error:0
+[2008-07-07 23:43:33][c1-0c0s7n2]fsx-linux[2747] general protection rip:421720 rsp:7fffffffae08 error:0
+[2008-07-07 23:43:33][c1-0c0s7n2]fsx-linux[2749] general protection rip:421720 rsp:7fffffffae08 error:0
+[2008-07-07 23:43:33][c1-0c0s7n2]fsx-linux[2750] general protection rip:421720 rsp:7fffffffae08 error:0
+[2008-07-07 23:43:33][c1-0c0s7n2]fsx-linux[2751] general protection rip:421720 rsp:7fffffffae08 error:0
+[2008-07-07 23:43:33][c1-0c0s7n2]fsx-linux[2748] general protection rip:421720 rsp:7fffffffae08 error:0
+[2008-07-08 00:59:46][c1-0c0s7n2]beer: cpu_id 4: nid 88, cpu 4 has been unresponsive for 240 seconds
+[2008-07-07 22:31:02][c1-0c0s0n2]nid 130: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:02][c1-0c0s0n2]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:02][c1-0c0s0n2]        Lustre Version: 1.6.3
+[2008-07-07 22:31:02][c1-0c0s0n2]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:02][c1-0c0s0n2]Lustre: Added LNI 130@ptl [8/1024]
+[2008-07-07 22:31:02][c1-0c0s0n2]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:02][c1-0c0s0n2]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:02][c1-0c0s0n2]Lustre: gar4ost-clilov-ffff8103ecc6f000.lov: set parameter stripecount=2
+[2008-07-07 22:31:02][c1-0c0s0n2]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:02][c1-0c0s0n2]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:02][c1-0c0s0n2]USS: dvsklib module loaded
+[2008-07-07 22:31:02][c1-0c0s0n2]USS: dvsproc module loaded
+[2008-07-07 22:31:02][c1-0c0s0n2]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:02][c1-0c0s0n2]USS: dvsutil module loaded
+[2008-07-07 22:31:02][c1-0c0s0n2]USS: dvsof module loaded
+[2008-07-07 22:31:02][c1-0c0s0n2]USS: dvspn module loaded
+[2008-07-07 22:31:00][c2-0c1s1n3]nid 295: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:00][c2-0c1s1n3]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:00][c2-0c1s1n3]        Lustre Version: 1.6.3
+[2008-07-07 22:31:00][c2-0c1s1n3]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:00][c2-0c1s1n3]Lustre: Added LNI 295@ptl [8/1024]
+[2008-07-07 22:31:00][c2-0c1s1n3]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:00][c2-0c1s1n3]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:00][c2-0c1s1n3]Lustre: gar4ost-clilov-ffff8107ec5fdc00.lov: set parameter stripecount=2
+[2008-07-07 22:31:00][c2-0c1s1n3]Lustre: gar4ost-clilov-ffff8107ec5fdc00.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:00][c2-0c1s1n3]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:02][c2-0c1s1n3]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:02][c2-0c1s1n3]USS: dvsklib module loaded
+[2008-07-07 22:31:02][c2-0c1s1n3]USS: dvsproc module loaded
+[2008-07-07 22:31:02][c2-0c1s1n3]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:02][c2-0c1s1n3]USS: dvsutil module loaded
+[2008-07-07 22:31:02][c2-0c1s1n3]USS: dvsof module loaded
+[2008-07-07 22:31:02][c2-0c1s1n3]USS: dvspn module loaded
+[2008-07-08 00:51:48][c2-0c1s1n3]fsx-linux-aio[3509]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffae18 error 5
+[2008-07-07 22:31:02][c1-0c1s7n0]nid 188: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:02][c1-0c1s7n0]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:02][c1-0c1s7n0]        Lustre Version: 1.6.3
+[2008-07-07 22:31:02][c1-0c1s7n0]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:02][c1-0c1s7n0]Lustre: Added LNI 188@ptl [8/1024]
+[2008-07-07 22:31:02][c1-0c1s7n0]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:02][c1-0c1s7n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:02][c1-0c1s7n0]Lustre: gar4ost-clilov-ffff8107edf4e000.lov: set parameter stripecount=2
+[2008-07-07 22:31:02][c1-0c1s7n0]Lustre: gar4ost-clilov-ffff8107edf4e000.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:02][c1-0c1s7n0]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:03][c1-0c1s7n0]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:03][c1-0c1s7n0]USS: dvsklib module loaded
+[2008-07-07 22:31:03][c1-0c1s7n0]USS: dvsproc module loaded
+[2008-07-07 22:31:03][c1-0c1s7n0]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c1-0c1s7n0]USS: dvsutil module loaded
+[2008-07-07 22:31:03][c1-0c1s7n0]USS: dvsof module loaded
+[2008-07-07 22:31:03][c1-0c1s7n0]USS: dvspn module loaded
+[2008-07-07 22:31:02][c3-0c1s5n2]nid 438: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:02][c3-0c1s5n2]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:02][c3-0c1s5n2]        Lustre Version: 1.6.3
+[2008-07-07 22:31:02][c3-0c1s5n2]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:02][c3-0c1s5n2]Lustre: Added LNI 438@ptl [8/1024]
+[2008-07-07 22:31:02][c3-0c1s5n2]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:02][c3-0c1s5n2]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:02][c3-0c1s5n2]Lustre: gar4ost-clilov-ffff8103ec51ec00.lov: set parameter stripecount=2
+[2008-07-07 22:31:02][c3-0c1s5n2]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:03][c3-0c1s5n2]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:03][c3-0c1s5n2]USS: dvsklib module loaded
+[2008-07-07 22:31:03][c3-0c1s5n2]USS: dvsproc module loaded
+[2008-07-07 22:31:03][c3-0c1s5n2]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c3-0c1s5n2]USS: dvsutil module loaded
+[2008-07-07 22:31:03][c3-0c1s5n2]USS: dvsof module loaded
+[2008-07-07 22:31:03][c3-0c1s5n2]USS: dvspn module loaded
+[2008-07-08 00:59:47][c3-0c1s5n2]beer: cpu_id 0: nid 157, cpu 4 has been unresponsive for 240 seconds

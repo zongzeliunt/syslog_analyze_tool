@@ -1,0 +1,1020 @@
+[2008-07-07 22:31:02][c1-0c2s6n0]nid 216: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:02][c1-0c2s6n0]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:02][c1-0c2s6n0]        Lustre Version: 1.6.3
+[2008-07-07 22:31:02][c1-0c2s6n0]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:02][c1-0c2s6n0]Lustre: Added LNI 216@ptl [8/1024]
+[2008-07-07 22:31:02][c1-0c2s6n0]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:02][c1-0c2s6n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:03][c1-0c2s6n0]Lustre: gar4ost-clilov-ffff8107f1e6f800.lov: set parameter stripecount=2
+[2008-07-07 22:31:03][c1-0c2s6n0]Lustre: gar4ost-clilov-ffff8107f1e6f800.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:03][c1-0c2s6n0]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:03][c1-0c2s6n0]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:03][c1-0c2s6n0]USS: dvsklib module loaded
+[2008-07-07 22:31:03][c1-0c2s6n0]USS: dvsproc module loaded
+[2008-07-07 22:31:03][c1-0c2s6n0]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c1-0c2s6n0]USS: dvsutil module loaded
+[2008-07-07 22:31:03][c1-0c2s6n0]USS: dvsof module loaded
+[2008-07-07 22:31:03][c1-0c2s6n0]USS: dvspn module loaded
+[2008-07-07 22:31:03][c2-0c0s0n0]nid 256: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:03][c2-0c0s0n0]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:03][c2-0c0s0n0]        Lustre Version: 1.6.3
+[2008-07-07 22:31:03][c2-0c0s0n0]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:04][c2-0c0s0n0]Lustre: Added LNI 256@ptl [8/1024]
+[2008-07-07 22:31:04][c2-0c0s0n0]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:04][c2-0c0s0n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:04][c2-0c0s0n0]Lustre: gar4ost-clilov-ffff8103ec103c00.lov: set parameter stripecount=2
+[2008-07-07 22:31:04][c2-0c0s0n0]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:04][c2-0c0s0n0]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:04][c2-0c0s0n0]USS: dvsklib module loaded
+[2008-07-07 22:31:04][c2-0c0s0n0]USS: dvsproc module loaded
+[2008-07-07 22:31:04][c2-0c0s0n0]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:04][c2-0c0s0n0]USS: dvsutil module loaded
+[2008-07-07 22:31:04][c2-0c0s0n0]USS: dvsof module loaded
+[2008-07-07 22:31:04][c2-0c0s0n0]USS: dvspn module loaded
+[2008-07-08 02:14:02][c2-0c0s0n0]beer: cpu_id 4: nid 174, cpu 4 has been unresponsive for 240 seconds
+[2008-07-07 22:31:00][c2-0c0s3n3]nid 271: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:00][c2-0c0s3n3]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:00][c2-0c0s3n3]        Lustre Version: 1.6.3
+[2008-07-07 22:31:00][c2-0c0s3n3]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:00][c2-0c0s3n3]Lustre: Added LNI 271@ptl [8/1024]
+[2008-07-07 22:31:00][c2-0c0s3n3]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:00][c2-0c0s3n3]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:00][c2-0c0s3n3]Lustre: gar4ost-clilov-ffff8103f1c04800.lov: set parameter stripecount=2
+[2008-07-07 22:31:00][c2-0c0s3n3]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:01][c2-0c0s3n3]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:01][c2-0c0s3n3]USS: dvsklib module loaded
+[2008-07-07 22:31:01][c2-0c0s3n3]USS: dvsproc module loaded
+[2008-07-07 22:31:01][c2-0c0s3n3]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:01][c2-0c0s3n3]USS: dvsutil module loaded
+[2008-07-07 22:31:01][c2-0c0s3n3]USS: dvsof module loaded
+[2008-07-07 22:31:01][c2-0c0s3n3]USS: dvspn module loaded
+[2008-07-08 00:35:11][c2-0c0s3n3]cancer[3350] trap divide error rip:40533b rsp:2aaab34b88f0 error:0
+[2008-07-08 03:06:36][c2-0c0s3n3]fsx-linux[4985] general protection rip:421720 rsp:7fffffffae08 error:0
+[2008-07-08 03:06:36][c2-0c0s3n3]fsx-linux[4984] general protection rip:421720 rsp:7fffffffae08 error:0
+[2008-07-07 22:31:03][c2-0c2s7n0]nid 348: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:03][c2-0c2s7n0]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:04][c2-0c2s7n0]        Lustre Version: 1.6.3
+[2008-07-07 22:31:04][c2-0c2s7n0]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:04][c2-0c2s7n0]Lustre: Added LNI 348@ptl [8/1024]
+[2008-07-07 22:31:04][c2-0c2s7n0]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:04][c2-0c2s7n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:04][c2-0c2s7n0]Lustre: gar4ost-clilov-ffff8103f1d1dc00.lov: set parameter stripecount=2
+[2008-07-07 22:31:04][c2-0c2s7n0]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:04][c2-0c2s7n0]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:04][c2-0c2s7n0]USS: dvsklib module loaded
+[2008-07-07 22:31:04][c2-0c2s7n0]USS: dvsproc module loaded
+[2008-07-07 22:31:04][c2-0c2s7n0]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:04][c2-0c2s7n0]USS: dvsutil module loaded
+[2008-07-07 22:31:04][c2-0c2s7n0]USS: dvsof module loaded
+[2008-07-07 22:31:04][c2-0c2s7n0]USS: dvspn module loaded
+[2008-07-08 00:59:46][c2-0c2s7n0]beer: cpu_id 0: nid 56, cpu 0 has been unresponsive for 240 seconds
+[2008-07-08 00:59:46][c2-0c2s7n0]beer: cpu_id 4: nid 56, cpu 0 has been unresponsive for 240 seconds
+[2008-07-08 00:59:46][c2-0c2s7n0]beer: cpu_id 4: nid 128, cpu 4 has been unresponsive for 240 seconds
+[2008-07-08 00:59:46][c2-0c2s7n0]beer: cpu_id 4: nid 158, cpu 0 has been unresponsive for 240 seconds
+[2008-07-07 22:31:02][c0-0c2s2n2]nid 74: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:03][c0-0c2s2n2]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:03][c0-0c2s2n2]        Lustre Version: 1.6.3
+[2008-07-07 22:31:03][c0-0c2s2n2]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:03][c0-0c2s2n2]Lustre: Added LNI 74@ptl [8/1024]
+[2008-07-07 22:31:03][c0-0c2s2n2]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:03][c0-0c2s2n2]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:03][c0-0c2s2n2]Lustre: gar4ost-clilov-ffff8101f75e9800.lov: set parameter stripecount=2
+[2008-07-07 22:31:03][c0-0c2s2n2]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:03][c0-0c2s2n2]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:03][c0-0c2s2n2]USS: dvsklib module loaded
+[2008-07-07 22:31:03][c0-0c2s2n2]USS: dvsproc module loaded
+[2008-07-07 22:31:03][c0-0c2s2n2]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c0-0c2s2n2]USS: dvsutil module loaded
+[2008-07-07 22:31:03][c0-0c2s2n2]USS: dvsof module loaded
+[2008-07-07 22:31:03][c0-0c2s2n2]USS: dvspn module loaded
+[2008-07-08 00:59:47][c0-0c2s2n2]beer: cpu_id 4: nid 56, cpu 0 has been unresponsive for 240 seconds
+[2008-07-08 00:59:47][c0-0c2s2n2]beer: cpu_id 4: nid 155, cpu 4 has been unresponsive for 240 seconds
+[2008-07-07 22:31:00][c2-0c0s7n2]nid 286: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:00][c2-0c0s7n2]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:00][c2-0c0s7n2]        Lustre Version: 1.6.3
+[2008-07-07 22:31:00][c2-0c0s7n2]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:00][c2-0c0s7n2]Lustre: Added LNI 286@ptl [8/1024]
+[2008-07-07 22:31:00][c2-0c0s7n2]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:00][c2-0c0s7n2]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:00][c2-0c0s7n2]Lustre: gar4ost-clilov-ffff810403c5f000.lov: set parameter stripecount=2
+[2008-07-07 22:31:00][c2-0c0s7n2]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:00][c2-0c0s7n2]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:00][c2-0c0s7n2]USS: dvsklib module loaded
+[2008-07-07 22:31:00][c2-0c0s7n2]USS: dvsproc module loaded
+[2008-07-07 22:31:00][c2-0c0s7n2]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:00][c2-0c0s7n2]USS: dvsutil module loaded
+[2008-07-07 22:31:00][c2-0c0s7n2]USS: dvsof module loaded
+[2008-07-07 22:31:00][c2-0c0s7n2]USS: dvspn module loaded
+[2008-07-07 23:50:31][c2-0c0s7n2]Lustre: 3401:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:50:32][c2-0c0s7n2]Lustre: 3399:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:50:32][c2-0c0s7n2]Lustre: 3399:0:(llite_mmap.c:398:ll_nopage()) Skipped 4 previous similar messages
+[2008-07-07 23:50:37][c2-0c0s7n2]Lustre: 3398:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:50:47][c2-0c0s7n2]Lustre: 3399:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:50:53][c2-0c0s7n2]Lustre: 3402:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:50:56][c2-0c0s7n2]Lustre: 3401:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:50:59][c2-0c0s7n2]Lustre: 3397:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:51:07][c2-0c0s7n2]Lustre: 3398:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:51:09][c2-0c0s7n2]Lustre: 3400:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:51:11][c2-0c0s7n2]Lustre: 3401:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:51:11][c2-0c0s7n2]Lustre: 3401:0:(llite_mmap.c:398:ll_nopage()) Skipped 1 previous similar message
+[2008-07-07 23:51:15][c2-0c0s7n2]Lustre: 3399:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:51:15][c2-0c0s7n2]Lustre: 3399:0:(llite_mmap.c:398:ll_nopage()) Skipped 1 previous similar message
+[2008-07-07 23:51:18][c2-0c0s7n2]Lustre: 3401:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:51:36][c2-0c0s7n2]Lustre: 3397:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:51:47][c2-0c0s7n2]Lustre: 3401:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:51:47][c2-0c0s7n2]Lustre: 3401:0:(llite_mmap.c:398:ll_nopage()) Skipped 1 previous similar message
+[2008-07-07 23:52:07][c2-0c0s7n2]Lustre: 3401:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:52:07][c2-0c0s7n2]Lustre: 3401:0:(llite_mmap.c:398:ll_nopage()) Skipped 4 previous similar messages
+[2008-07-07 23:52:41][c2-0c0s7n2]Lustre: 3401:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:52:41][c2-0c0s7n2]Lustre: 3401:0:(llite_mmap.c:398:ll_nopage()) Skipped 3 previous similar messages
+[2008-07-07 23:53:54][c2-0c0s7n2]Lustre: 3399:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:53:54][c2-0c0s7n2]Lustre: 3399:0:(llite_mmap.c:398:ll_nopage()) Skipped 11 previous similar messages
+[2008-07-07 23:56:12][c2-0c0s7n2]Lustre: 3399:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-07 23:56:12][c2-0c0s7n2]Lustre: 3399:0:(llite_mmap.c:398:ll_nopage()) Skipped 34 previous similar messages
+[2008-07-08 00:00:34][c2-0c0s7n2]Lustre: 3397:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39247263
+[2008-07-08 00:00:34][c2-0c0s7n2]Lustre: 3397:0:(llite_mmap.c:398:ll_nopage()) Skipped 78 previous similar messages
+[2008-07-07 22:31:02][c0-0c0s6n2]nid 26: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:02][c0-0c0s6n2]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:02][c0-0c0s6n2]        Lustre Version: 1.6.3
+[2008-07-07 22:31:02][c0-0c0s6n2]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:02][c0-0c0s6n2]Lustre: Added LNI 26@ptl [8/1024]
+[2008-07-07 22:31:02][c0-0c0s6n2]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:02][c0-0c0s6n2]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:02][c0-0c0s6n2]Lustre: gar4ost-clilov-ffff8103f2021000.lov: set parameter stripecount=2
+[2008-07-07 22:31:02][c0-0c0s6n2]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:02][c0-0c0s6n2]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:02][c0-0c0s6n2]USS: dvsklib module loaded
+[2008-07-07 22:31:03][c0-0c0s6n2]USS: dvsproc module loaded
+[2008-07-07 22:31:03][c0-0c0s6n2]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c0-0c0s6n2]USS: dvsutil module loaded
+[2008-07-07 22:31:03][c0-0c0s6n2]USS: dvsof module loaded
+[2008-07-07 22:31:03][c0-0c0s6n2]USS: dvspn module loaded
+[2008-07-07 23:40:03][c0-0c0s6n2]aries: page allocation failure. order:12, mode:0x40d0
+[2008-07-08 00:00:00][c0-0c0s6n2]fsx-linux-aio[5351]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffae18 error 5
+[2008-07-08 00:27:18][c0-0c0s6n2]fsx-linux-aio[6097]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffae18 error 5
+[2008-07-08 01:00:12][c0-0c0s6n2]fsx-linux-aio[7308]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffae08 error 5
+[2008-07-08 02:07:46][c0-0c0s6n2]mpi_bounce.larg[8357]: segfault at 000000000167b000 rip 0000000000400548 rsp 00007fffffffbe70 error 6
+[2008-07-08 02:07:46][c0-0c0s6n2]mpi_bounce.larg[8356]: segfault at 000000000167b000 rip 0000000000400548 rsp 00007fffffffbe70 error 6
+[2008-07-07 22:31:03][c2-0c0s6n1]nid 281: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:03][c2-0c0s6n1]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:03][c2-0c0s6n1]        Lustre Version: 1.6.3
+[2008-07-07 22:31:03][c2-0c0s6n1]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:03][c2-0c0s6n1]Lustre: Added LNI 281@ptl [8/1024]
+[2008-07-07 22:31:04][c2-0c0s6n1]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:04][c2-0c0s6n1]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:04][c2-0c0s6n1]Lustre: gar4ost-clilov-ffff8107f1e5a400.lov: set parameter stripecount=2
+[2008-07-07 22:31:04][c2-0c0s6n1]Lustre: gar4ost-clilov-ffff8107f1e5a400.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:04][c2-0c0s6n1]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:04][c2-0c0s6n1]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:04][c2-0c0s6n1]USS: dvsklib module loaded
+[2008-07-07 22:31:04][c2-0c0s6n1]USS: dvsproc module loaded
+[2008-07-07 22:31:04][c2-0c0s6n1]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:04][c2-0c0s6n1]USS: dvsutil module loaded
+[2008-07-07 22:31:04][c2-0c0s6n1]USS: dvsof module loaded
+[2008-07-07 22:31:04][c2-0c0s6n1]USS: dvspn module loaded
+[2008-07-07 22:31:01][c1-0c1s3n2]nid 174: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:01][c1-0c1s3n2]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:01][c1-0c1s3n2]        Lustre Version: 1.6.3
+[2008-07-07 22:31:01][c1-0c1s3n2]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:01][c1-0c1s3n2]Lustre: Added LNI 174@ptl [8/1024]
+[2008-07-07 22:31:01][c1-0c1s3n2]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:01][c1-0c1s3n2]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:01][c1-0c1s3n2]Lustre: gar4ost-clilov-ffff8103f1f15800.lov: set parameter stripecount=2
+[2008-07-07 22:31:01][c1-0c1s3n2]Lustre: gar4ost-clilov-ffff8103f1f15800.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:01][c1-0c1s3n2]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:02][c1-0c1s3n2]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:02][c1-0c1s3n2]USS: dvsklib module loaded
+[2008-07-07 22:31:02][c1-0c1s3n2]USS: dvsproc module loaded
+[2008-07-07 22:31:02][c1-0c1s3n2]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:02][c1-0c1s3n2]USS: dvsutil module loaded
+[2008-07-07 22:31:02][c1-0c1s3n2]USS: dvsof module loaded
+[2008-07-07 22:31:02][c1-0c1s3n2]USS: dvspn module loaded
+[2008-07-08 00:56:18][c1-0c1s3n2]beer: cpu_id 4: nid 203, cpu 0 has been unresponsive for 240 seconds
+[2008-07-08 02:14:02][c1-0c1s3n2]beer: cpu_id 0: nid 176, cpu 4 has been unresponsive for 240 seconds
+[2008-07-07 22:31:00][c3-0c0s4n2]nid 402: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:00][c3-0c0s4n2]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:00][c3-0c0s4n2]        Lustre Version: 1.6.3
+[2008-07-07 22:31:00][c3-0c0s4n2]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:00][c3-0c0s4n2]Lustre: Added LNI 402@ptl [8/1024]
+[2008-07-07 22:31:00][c3-0c0s4n2]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:00][c3-0c0s4n2]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:00][c3-0c0s4n2]Lustre: gar4ost-clilov-ffff8103f1fd9c00.lov: set parameter stripecount=2
+[2008-07-07 22:31:00][c3-0c0s4n2]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:01][c3-0c0s4n2]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:01][c3-0c0s4n2]USS: dvsklib module loaded
+[2008-07-07 22:31:01][c3-0c0s4n2]USS: dvsproc module loaded
+[2008-07-07 22:31:01][c3-0c0s4n2]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:01][c3-0c0s4n2]USS: dvsutil module loaded
+[2008-07-07 22:31:01][c3-0c0s4n2]USS: dvsof module loaded
+[2008-07-07 22:31:01][c3-0c0s4n2]USS: dvspn module loaded
+[2008-07-07 22:31:02][c1-0c0s5n0]nid 148: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:02][c1-0c0s5n0]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:02][c1-0c0s5n0]        Lustre Version: 1.6.3
+[2008-07-07 22:31:02][c1-0c0s5n0]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:02][c1-0c0s5n0]Lustre: Added LNI 148@ptl [8/1024]
+[2008-07-07 22:31:02][c1-0c0s5n0]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:02][c1-0c0s5n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:02][c1-0c0s5n0]Lustre: gar4ost-clilov-ffff8107f1e77800.lov: set parameter stripecount=2
+[2008-07-07 22:31:02][c1-0c0s5n0]Lustre: gar4ost-clilov-ffff8107f1e77800.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:02][c1-0c0s5n0]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:03][c1-0c0s5n0]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:03][c1-0c0s5n0]USS: dvsklib module loaded
+[2008-07-07 22:31:03][c1-0c0s5n0]USS: dvsproc module loaded
+[2008-07-07 22:31:03][c1-0c0s5n0]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c1-0c0s5n0]USS: dvsutil module loaded
+[2008-07-07 22:31:03][c1-0c0s5n0]USS: dvsof module loaded
+[2008-07-07 22:31:03][c1-0c0s5n0]USS: dvspn module loaded
+[2008-07-07 23:40:12][c1-0c0s5n0]vasp[2622]: segfault at fffffffff0615040 rip 000000000254871b rsp 00007fffffff81a8 error 6
+[2008-07-07 23:40:12][c1-0c0s5n0]vasp[2623]: segfault at fffffffff0614f80 rip 000000000254871b rsp 00007fffffff81a8 error 6
+[2008-07-07 23:40:12][c1-0c0s5n0]vasp[2621]: segfault at fffffffff0614610 rip 000000000254871b rsp 00007fffffff81a8 error 6
+[2008-07-07 23:40:12][c1-0c0s5n0]vasp[2624]: segfault at fffffffff0614dc0 rip 000000000254871b rsp 00007fffffff81a8 error 6
+[2008-07-07 23:40:12][c1-0c0s5n0]vasp[2625]: segfault at fffffffff06147c0 rip 000000000254871b rsp 00007fffffff81a8 error 6
+[2008-07-07 23:40:12][c1-0c0s5n0]vasp[2626]: segfault at fffffffff0614930 rip 000000000254871b rsp 00007fffffff81a8 error 6
+[2008-07-07 23:40:12][c1-0c0s5n0]vasp[2627]: segfault at fffffffff0614aa0 rip 000000000254871b rsp 00007fffffff81a8 error 6
+[2008-07-07 23:40:12][c1-0c0s5n0]vasp[2628]: segfault at fffffffff0614b00 rip 000000000254871b rsp 00007fffffff81a8 error 6
+[2008-07-07 22:31:03][c2-0c2s5n0]nid 340: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:03][c2-0c2s5n0]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:03][c2-0c2s5n0]        Lustre Version: 1.6.3
+[2008-07-07 22:31:04][c2-0c2s5n0]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:04][c2-0c2s5n0]Lustre: Added LNI 340@ptl [8/1024]
+[2008-07-07 22:31:04][c2-0c2s5n0]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:04][c2-0c2s5n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:04][c2-0c2s5n0]Lustre: gar4ost-clilov-ffff8103f1ccc000.lov: set parameter stripecount=2
+[2008-07-07 22:31:04][c2-0c2s5n0]Lustre: gar4ost-clilov-ffff8103f1ccc000.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:04][c2-0c2s5n0]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:04][c2-0c2s5n0]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:04][c2-0c2s5n0]USS: dvsklib module loaded
+[2008-07-07 22:31:04][c2-0c2s5n0]USS: dvsproc module loaded
+[2008-07-07 22:31:04][c2-0c2s5n0]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:04][c2-0c2s5n0]USS: dvsutil module loaded
+[2008-07-07 22:31:04][c2-0c2s5n0]USS: dvsof module loaded
+[2008-07-07 22:31:04][c2-0c2s5n0]USS: dvspn module loaded
+[2008-07-08 00:59:46][c2-0c2s5n0]beer: cpu_id 4: nid 158, cpu 0 has been unresponsive for 240 seconds
+[2008-07-08 00:59:46][c2-0c2s5n0]beer: cpu_id 4: nid 158, cpu 4 has been unresponsive for 240 seconds
+[2008-07-07 22:31:02][c0-0c1s1n2]nid 38: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:02][c0-0c1s1n2]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:02][c0-0c1s1n2]        Lustre Version: 1.6.3
+[2008-07-07 22:31:02][c0-0c1s1n2]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:02][c0-0c1s1n2]Lustre: Added LNI 38@ptl [8/1024]
+[2008-07-07 22:31:02][c0-0c1s1n2]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:02][c0-0c1s1n2]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:02][c0-0c1s1n2]Lustre: gar4ost-clilov-ffff8103f49e8800.lov: set parameter stripecount=2
+[2008-07-07 22:31:02][c0-0c1s1n2]Lustre: gar4ost-clilov-ffff8103f49e8800.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:02][c0-0c1s1n2]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:03][c0-0c1s1n2]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:03][c0-0c1s1n2]USS: dvsklib module loaded
+[2008-07-07 22:31:03][c0-0c1s1n2]USS: dvsproc module loaded
+[2008-07-07 22:31:03][c0-0c1s1n2]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c0-0c1s1n2]USS: dvsutil module loaded
+[2008-07-07 22:31:03][c0-0c1s1n2]USS: dvsof module loaded
+[2008-07-07 22:31:03][c0-0c1s1n2]USS: dvspn module loaded
+[2008-07-08 00:45:10][c0-0c1s1n2]fsx-linux-aio[24015] general protection rip:421b60 rsp:7fffffffad48 error:0
+[2008-07-08 00:56:12][c0-0c1s1n2]cancer[24356]: segfault at ffffffffadf01d90 rip 0000000000488572 rsp 00002aaaace3adf8 error 6
+[2008-07-08 00:56:31][c0-0c1s1n2]cancer[24430]: segfault at ffffffffb1100b80 rip 0000000000488572 rsp 00002aaaade39df8 error 6
+[2008-07-08 01:12:38][c0-0c1s1n2]fsx-linux-aio[24896] general protection rip:421b60 rsp:7fffffffad48 error:0
+[2008-07-08 01:32:51][c0-0c1s1n2]stack_verify[29698]: segfault at 00002aaaaaefb9b0 rip 0000000000400c90 rsp 00007fffffffa9e8 error 4
+[2008-07-08 01:32:51][c0-0c1s1n2]stack_verify[29701]: segfault at 00002aaaaaefb9b0 rip 0000000000400c90 rsp 00007fffffffa9e8 error 4
+[2008-07-08 01:32:51][c0-0c1s1n2]stack_verify[29699]: segfault at 00002aaaaaefb9b0 rip 0000000000400c90 rsp 00007fffffffa9e8 error 4
+[2008-07-08 01:32:51][c0-0c1s1n2]stack_verify[29700]: segfault at 00002aaaaaefb9b0 rip 0000000000400c90 rsp 00007fffffffa9e8 error 4
+[2008-07-08 01:32:51][c0-0c1s1n2]stack_verify[29702]: segfault at 00002aaaaaefb9b0 rip 0000000000400c90 rsp 00007fffffffa9e8 error 4
+[2008-07-08 01:32:51][c0-0c1s1n2]stack_verify[29703]: segfault at 00002aaaaaefb9b0 rip 0000000000400c90 rsp 00007fffffffa9e8 error 4
+[2008-07-08 01:33:40][c0-0c1s1n2]mpi_bounce.larg[29772]: segfault at 000000000167b000 rip 0000000000400548 rsp 00007fffffffbe30 error 6
+[2008-07-08 01:33:40][c0-0c1s1n2]mpi_bounce.larg[29771]: segfault at 000000000167b000 rip 0000000000400548 rsp 00007fffffffbe30 error 6
+[2008-07-08 01:56:06][c0-0c1s1n2]fsx-linux-aio[30329]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffae08 error 5
+[2008-07-08 02:44:50][c0-0c1s1n2]fsx-linux-aio[31581]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffadf8 error 5
+[2008-07-07 22:31:00][c1-0c0s4n0]nid 144: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:00][c1-0c0s4n0]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:00][c1-0c0s4n0]        Lustre Version: 1.6.3
+[2008-07-07 22:31:00][c1-0c0s4n0]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:00][c1-0c0s4n0]Lustre: Added LNI 144@ptl [8/1024]
+[2008-07-07 22:31:00][c1-0c0s4n0]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:00][c1-0c0s4n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:00][c1-0c0s4n0]Lustre: gar4ost-clilov-ffff8107edeecc00.lov: set parameter stripecount=2
+[2008-07-07 22:31:00][c1-0c0s4n0]Lustre: gar4ost-clilov-ffff8107edeecc00.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:00][c1-0c0s4n0]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:00][c1-0c0s4n0]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:00][c1-0c0s4n0]USS: dvsklib module loaded
+[2008-07-07 22:31:00][c1-0c0s4n0]USS: dvsproc module loaded
+[2008-07-07 22:31:00][c1-0c0s4n0]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:00][c1-0c0s4n0]USS: dvsutil module loaded
+[2008-07-07 22:31:00][c1-0c0s4n0]USS: dvsof module loaded
+[2008-07-07 22:31:00][c1-0c0s4n0]USS: dvspn module loaded
+[2008-07-07 23:42:41][c1-0c0s4n0]fsx-linux-aio[2728]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffae18 error 5
+[2008-07-07 22:28:12][c0-0c0s1n0]Bootdata ok (command line is earlyprintk=rcal0 load_ramdisk=1 ramdisk_size=80000 console=ttyL0 bootnodeip=192.168.0.1 bootproto=ssip bootpath=/rr/current rootfs=nfs-shared root=/dev/sda1 pci=lastbus=3 oops=panic elevator=noop xtrel=2.1.21HD)
+[2008-07-07 22:28:12][c0-0c0s1n0]booting XT3 x86_64 kernel... 
+[2008-07-07 22:28:12][c0-0c0s1n0]Linux version 2.6.16.54-0.2.5_1.0000.3296.0-ss (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:19:03 PDT 2008
+[2008-07-07 22:28:12][c0-0c0s1n0]Current console loglevel 7 Setting to 15
+[2008-07-07 22:28:12][c0-0c0s1n0]These are the boot parameters provided to Linux:
+[2008-07-07 22:28:12][c0-0c0s1n0]EXT_MEM_K 64512 0xfc00
+[2008-07-07 22:28:12][c0-0c0s1n0]ALT_MEM_K 2094528 0x1ff5c0
+[2008-07-07 22:28:12][c0-0c0s1n0]MOUNT_ROOT_RDONLY 0x1
+[2008-07-07 22:28:12][c0-0c0s1n0]RAMDISK_FLAGS 0x0
+[2008-07-07 22:28:12][c0-0c0s1n0]ORIG_ROOT_DEV 133 0x85
+[2008-07-07 22:28:12][c0-0c0s1n0]AUX_DEVICE_INFO 0x0
+[2008-07-07 22:28:12][c0-0c0s1n0]LOADER_TYPE 0x32
+[2008-07-07 22:28:12][c0-0c0s1n0]KERNEL_START 1048576 0x100000
+[2008-07-07 22:28:12][c0-0c0s1n0]INITRD_START 262144000 0xfa00000
+[2008-07-07 22:28:12][c0-0c0s1n0]INITRD_SIZE 2954508 0x2d150c
+[2008-07-07 22:28:12][c0-0c0s1n0]CMD LINE [earlyprintk=rcal0 load_ramdisk=1 ramdisk_size=80000 console=ttyL0 bootnodeip=192.168.0.1 bootproto=ssip bootpath=/rr/current rootfs=nfs-shared root=/dev/sda1 pci=lastbus=3 oops=panic elevator=noop xtrel=2.1.21HD]
+[2008-07-07 22:28:12][c0-0c0s1n0]Number of E820 maps 3
+[2008-07-07 22:28:12][c0-0c0s1n0]Address 0 for 0
+[2008-07-07 22:28:12][c0-0c0s1n0]Size 655360 for 0
+[2008-07-07 22:28:12][c0-0c0s1n0]Type 1 for 0
+[2008-07-07 22:28:12][c0-0c0s1n0]Address 1048576 for 1
+[2008-07-07 22:28:12][c0-0c0s1n0]Size 4226809856 for 1
+[2008-07-07 22:28:12][c0-0c0s1n0]Type 1 for 1
+[2008-07-07 22:28:12][c0-0c0s1n0]Address 4294967296 for 2
+[2008-07-07 22:28:12][c0-0c0s1n0]Size 4294967296 for 2
+[2008-07-07 22:28:12][c0-0c0s1n0]Type 1 for 2
+[2008-07-07 22:28:12][c0-0c0s1n0]BIOS-provided physical RAM map:
+[2008-07-07 22:28:12][c0-0c0s1n0] BIOS-e820: 0000000000000000 - 00000000000a0000 
+[2008-07-07 22:28:12][c0-0c0s1n0](usable)
+[2008-07-07 22:28:12][c0-0c0s1n0] BIOS-e820: 0000000000100000 - 00000000fc000000 
+[2008-07-07 22:28:12][c0-0c0s1n0](usable)
+[2008-07-07 22:28:12][c0-0c0s1n0] BIOS-e820: 0000000100000000 - 0000000200000000 
+[2008-07-07 22:28:12][c0-0c0s1n0](usable)
+[2008-07-07 22:28:12][c0-0c0s1n0]kernel direct mapping tables up to 200000000 @ 15000-15000
+[2008-07-07 22:28:12][c0-0c0s1n0]DMI not present or invalid.
+[2008-07-07 22:28:12][c0-0c0s1n0]Scanning NUMA topology in Northbridge 24
+[2008-07-07 22:28:12][c0-0c0s1n0]CPU has 2 num_cores
+[2008-07-07 22:28:12][c0-0c0s1n0]No NUMA configuration found
+[2008-07-07 22:28:12][c0-0c0s1n0]Faking a node at 0000000000000000-0000000200000000
+[2008-07-07 22:28:12][c0-0c0s1n0]Bootmem setup node 0 0000000000000000-0000000200000000
+[2008-07-07 22:28:12][c0-0c0s1n0]INITRD_START 0xfa00000 INITRD_SIZE 0x2d150c pfn 0x8589934592
+[2008-07-07 22:28:12][c0-0c0s1n0]On node 0 totalpages: 2050768
+[2008-07-07 22:28:12][c0-0c0s1n0]  DMA zone: 2712 pages, LIFO batch:0
+[2008-07-07 22:28:12][c0-0c0s1n0]  DMA32 zone: 1013816 pages, LIFO batch:31
+[2008-07-07 22:28:12][c0-0c0s1n0]  Normal zone: 1034240 pages, LIFO batch:31
+[2008-07-07 22:28:12][c0-0c0s1n0]  HighMem zone: 0 pages, LIFO batch:0
+[2008-07-07 22:28:12][c0-0c0s1n0]Intel MultiProcessor Specification Dump
+[2008-07-07 22:28:12][c0-0c0s1n0]mpf_sig bytes _MP_
+[2008-07-07 22:28:12][c0-0c0s1n0]mpf_phy addrs 0x20 ffff810000000020
+[2008-07-07 22:28:12][c0-0c0s1n0]mpf_len 1
+[2008-07-07 22:28:12][c0-0c0s1n0]mpf_spec 4
+[2008-07-07 22:28:12][c0-0c0s1n0]mpf_cksum 128
+[2008-07-07 22:28:12][c0-0c0s1n0]mpf_feature1 0
+[2008-07-07 22:28:12][c0-0c0s1n0]mpf_feature2 0
+[2008-07-07 22:28:12][c0-0c0s1n0]mpf_feature3 0
+[2008-07-07 22:28:12][c0-0c0s1n0]mpf_feature4 0
+[2008-07-07 22:28:12][c0-0c0s1n0]mpf_feature5 0
+[2008-07-07 22:28:12][c0-0c0s1n0]Intel MultiProcessor Specification v1.4
+[2008-07-07 22:28:12][c0-0c0s1n0]    Virtual Wire compatibility mode.
+[2008-07-07 22:28:12][c0-0c0s1n0]Intel MultiProcessor Config table Dump
+[2008-07-07 22:28:12][c0-0c0s1n0]mpc_sig bytes PCMP
+[2008-07-07 22:28:12][c0-0c0s1n0]mpc_len 84
+[2008-07-07 22:28:12][c0-0c0s1n0]mpc_spec 4
+[2008-07-07 22:28:12][c0-0c0s1n0]mpc_checksum 0xffffffec
+[2008-07-07 22:28:12][c0-0c0s1n0]OEM bytes are:
+[2008-07-07 22:28:12][c0-0c0s1n0]C
+[2008-07-07 22:28:12][c0-0c0s1n0]R
+[2008-07-07 22:28:12][c0-0c0s1n0]A
+[2008-07-07 22:28:12][c0-0c0s1n0]Y
+[2008-07-07 22:28:13][c0-0c0s1n0] 
+[2008-07-07 22:28:13][c0-0c0s1n0]I
+[2008-07-07 22:28:13][c0-0c0s1n0]N
+[2008-07-07 22:28:13][c0-0c0s1n0]C
+[2008-07-07 22:28:13][c0-0c0s1n0]Product Id bytes are:
+[2008-07-07 22:28:13][c0-0c0s1n0]X
+[2008-07-07 22:28:13][c0-0c0s1n0]T
+[2008-07-07 22:28:13][c0-0c0s1n0]3
+[2008-07-07 22:28:13][c0-0c0s1n0] 
+[2008-07-07 22:28:13][c0-0c0s1n0] 
+[2008-07-07 22:28:13][c0-0c0s1n0] 
+[2008-07-07 22:28:13][c0-0c0s1n0] 
+[2008-07-07 22:28:13][c0-0c0s1n0] 
+[2008-07-07 22:28:13][c0-0c0s1n0] 
+[2008-07-07 22:28:13][c0-0c0s1n0] 
+[2008-07-07 22:28:13][c0-0c0s1n0] 
+[2008-07-07 22:28:13][c0-0c0s1n0] 
+[2008-07-07 22:28:13][c0-0c0s1n0]OEM ptr is 0x0 oemsize 0 oem_count 23
+[2008-07-07 22:28:13][c0-0c0s1n0]APIC address is 0xfee00000 -18874368
+[2008-07-07 22:28:13][c0-0c0s1n0]OEM ID: CRAY INC 
+[2008-07-07 22:28:13][c0-0c0s1n0]Product ID: XT3          
+[2008-07-07 22:28:13][c0-0c0s1n0]APIC at: 0xFEE00000
+[2008-07-07 22:28:13][c0-0c0s1n0]Dumping mpc Proc table
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc TYpe 0
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc local apicid 0
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc local apicver 16
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc cpuflag 0x3
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc cpufeature/signature 0xf12
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc featureflag 0x381
+[2008-07-07 22:28:13][c0-0c0s1n0]Processor #0 15:1 APIC version 16
+[2008-07-07 22:28:13][c0-0c0s1n0]Dumping mpc Proc table
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc TYpe 0
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc local apicid 1
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc local apicver 16
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc cpuflag 0x1
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc cpufeature/signature 0xf12
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc featureflag 0x381
+[2008-07-07 22:28:13][c0-0c0s1n0]Processor #1 15:1 APIC version 16
+[2008-07-07 22:28:13][c0-0c0s1n0]Setting APIC routing to flat
+[2008-07-07 22:28:13][c0-0c0s1n0]BIOS bug, no explicit IRQ entries, using default mptable. (tell your hw vendor)
+[2008-07-07 22:28:13][c0-0c0s1n0]Processors: 2
+[2008-07-07 22:28:13][c0-0c0s1n0]Allocating PCI resources starting at fc400000 (gap: fc000000:4000000)
+[2008-07-07 22:28:13][c0-0c0s1n0]Built 1 zonelists
+[2008-07-07 22:28:13][c0-0c0s1n0]Kernel command line: earlyprintk=rcal0 load_ramdisk=1 ramdisk_size=80000 console=ttyL0 bootnodeip=192.168.0.1 bootproto=ssip bootpath=/rr/current rootfs=nfs-shared root=/dev/sda1 pci=lastbus=3 oops=panic elevator=noop xtrel=2.1.21HD
+[2008-07-07 22:28:13][c0-0c0s1n0]Initializing CPU#0
+[2008-07-07 22:28:13][c0-0c0s1n0]PID hash table entries: 4096 (order: 12, 131072 bytes)
+[2008-07-07 22:28:13][c0-0c0s1n0]CPU MHz = 2600
+[2008-07-07 22:28:13][c0-0c0s1n0]time.c: Using 1.193182 MHz WALL MSR_CR GTOD PIT/TSC timer.
+[2008-07-07 22:28:13][c0-0c0s1n0]time.c: Detected 2600.000 MHz processor.
+[2008-07-07 22:28:13][c0-0c0s1n0]disabling early console
+[2008-07-07 22:28:13][c0-0c0s1n0]Bootdata ok (command line is earlyprintk=rcal0 load_ramdisk=1 ramdisk_size=80000 console=ttyL0 bootnodeip=192.168.0.1 bootproto=ssip bootpath=/rr/current rootfs=nfs-shared root=/dev/sda1 pci=lastbus=3 oops=panic elevator=noop xtrel=2.1.21HD)
+[2008-07-07 22:28:13][c0-0c0s1n0]Linux version 2.6.16.54-0.2.5_1.0000.3296.0-ss (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:19:03 PDT 2008
+[2008-07-07 22:28:13][c0-0c0s1n0]Current console loglevel 7 Setting to 15
+[2008-07-07 22:28:13][c0-0c0s1n0]These are the boot parameters provided to Linux:
+[2008-07-07 22:28:13][c0-0c0s1n0]EXT_MEM_K 64512 0xfc00
+[2008-07-07 22:28:13][c0-0c0s1n0]ALT_MEM_K 2094528 0x1ff5c0
+[2008-07-07 22:28:13][c0-0c0s1n0]MOUNT_ROOT_RDONLY 0x1
+[2008-07-07 22:28:13][c0-0c0s1n0]RAMDISK_FLAGS 0x0
+[2008-07-07 22:28:13][c0-0c0s1n0]ORIG_ROOT_DEV 133 0x85
+[2008-07-07 22:28:13][c0-0c0s1n0]AUX_DEVICE_INFO 0x0
+[2008-07-07 22:28:13][c0-0c0s1n0]LOADER_TYPE 0x32
+[2008-07-07 22:28:13][c0-0c0s1n0]KERNEL_START 1048576 0x100000
+[2008-07-07 22:28:13][c0-0c0s1n0]INITRD_START 262144000 0xfa00000
+[2008-07-07 22:28:13][c0-0c0s1n0]INITRD_SIZE 2954508 0x2d150c
+[2008-07-07 22:28:13][c0-0c0s1n0]CMD LINE [earlyprintk=rcal0 load_ramdisk=1 ramdisk_size=80000 console=ttyL0 bootnodeip=192.168.0.1 bootproto=ssip bootpath=/rr/current rootfs=nfs-shared root=/dev/sda1 pci=lastbus=3 oops=panic elevator=noop xtrel=2.1.21HD]
+[2008-07-07 22:28:13][c0-0c0s1n0]Number of E820 maps 3
+[2008-07-07 22:28:13][c0-0c0s1n0]Address 0 for 0
+[2008-07-07 22:28:13][c0-0c0s1n0]Size 655360 for 0
+[2008-07-07 22:28:13][c0-0c0s1n0]Type 1 for 0
+[2008-07-07 22:28:13][c0-0c0s1n0]Address 1048576 for 1
+[2008-07-07 22:28:13][c0-0c0s1n0]Size 4226809856 for 1
+[2008-07-07 22:28:13][c0-0c0s1n0]Type 1 for 1
+[2008-07-07 22:28:13][c0-0c0s1n0]Address 4294967296 for 2
+[2008-07-07 22:28:13][c0-0c0s1n0]Size 4294967296 for 2
+[2008-07-07 22:28:13][c0-0c0s1n0]Type 1 for 2
+[2008-07-07 22:28:13][c0-0c0s1n0]BIOS-provided physical RAM map:
+[2008-07-07 22:28:13][c0-0c0s1n0] BIOS-e820: 0000000000000000 - 00000000000a0000 (usable)
+[2008-07-07 22:28:13][c0-0c0s1n0] BIOS-e820: 0000000000100000 - 00000000fc000000 (usable)
+[2008-07-07 22:28:13][c0-0c0s1n0] BIOS-e820: 0000000100000000 - 0000000200000000 (usable)
+[2008-07-07 22:28:13][c0-0c0s1n0]DMI not present or invalid.
+[2008-07-07 22:28:13][c0-0c0s1n0]Scanning NUMA topology in Northbridge 24
+[2008-07-07 22:28:13][c0-0c0s1n0]CPU has 2 num_cores
+[2008-07-07 22:28:13][c0-0c0s1n0]No NUMA configuration found
+[2008-07-07 22:28:13][c0-0c0s1n0]Faking a node at 0000000000000000-0000000200000000
+[2008-07-07 22:28:13][c0-0c0s1n0]Bootmem setup node 0 0000000000000000-0000000200000000
+[2008-07-07 22:28:13][c0-0c0s1n0]INITRD_START 0xfa00000 INITRD_SIZE 0x2d150c pfn 0x8589934592
+[2008-07-07 22:28:13][c0-0c0s1n0]On node 0 totalpages: 2050768
+[2008-07-07 22:28:13][c0-0c0s1n0]  DMA zone: 2712 pages, LIFO batch:0
+[2008-07-07 22:28:13][c0-0c0s1n0]  DMA32 zone: 1013816 pages, LIFO batch:31
+[2008-07-07 22:28:13][c0-0c0s1n0]  Normal zone: 1034240 pages, LIFO batch:31
+[2008-07-07 22:28:13][c0-0c0s1n0]  HighMem zone: 0 pages, LIFO batch:0
+[2008-07-07 22:28:13][c0-0c0s1n0]Intel MultiProcessor Specification Dump
+[2008-07-07 22:28:13][c0-0c0s1n0]mpf_sig bytes _MP_
+[2008-07-07 22:28:13][c0-0c0s1n0]mpf_phy addrs 0x20 ffff810000000020
+[2008-07-07 22:28:13][c0-0c0s1n0]mpf_len 1
+[2008-07-07 22:28:13][c0-0c0s1n0]mpf_spec 4
+[2008-07-07 22:28:13][c0-0c0s1n0]mpf_cksum 128
+[2008-07-07 22:28:13][c0-0c0s1n0]mpf_feature1 0
+[2008-07-07 22:28:13][c0-0c0s1n0]mpf_feature2 0
+[2008-07-07 22:28:13][c0-0c0s1n0]mpf_feature3 0
+[2008-07-07 22:28:13][c0-0c0s1n0]mpf_feature4 0
+[2008-07-07 22:28:13][c0-0c0s1n0]mpf_feature5 0
+[2008-07-07 22:28:13][c0-0c0s1n0]Intel MultiProcessor Specification v1.4
+[2008-07-07 22:28:13][c0-0c0s1n0]    Virtual Wire compatibility mode.
+[2008-07-07 22:28:13][c0-0c0s1n0]Intel MultiProcessor Config table Dump
+[2008-07-07 22:28:13][c0-0c0s1n0]mpc_sig bytes PCMP
+[2008-07-07 22:28:13][c0-0c0s1n0]mpc_len 84
+[2008-07-07 22:28:13][c0-0c0s1n0]mpc_spec 4
+[2008-07-07 22:28:13][c0-0c0s1n0]mpc_checksum 0xffffffec
+[2008-07-07 22:28:13][c0-0c0s1n0]OEM bytes are:
+[2008-07-07 22:28:13][c0-0c0s1n0]CRAY INC
+[2008-07-07 22:28:13][c0-0c0s1n0]Product Id bytes are:
+[2008-07-07 22:28:13][c0-0c0s1n0]XT3         
+[2008-07-07 22:28:13][c0-0c0s1n0]OEM ptr is 0x0 oemsize 0 oem_count 23
+[2008-07-07 22:28:13][c0-0c0s1n0]APIC address is 0xfee00000 -18874368
+[2008-07-07 22:28:13][c0-0c0s1n0]OEM ID: CRAY INC Product ID: XT3          APIC at: 0xFEE00000
+[2008-07-07 22:28:13][c0-0c0s1n0]Dumping mpc Proc table
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc TYpe 0
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc local apicid 0
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc local apicver 16
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc cpuflag 0x3
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc cpufeature/signature 0xf12
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc featureflag 0x381
+[2008-07-07 22:28:13][c0-0c0s1n0]Processor #0 15:1 APIC version 16
+[2008-07-07 22:28:13][c0-0c0s1n0]Dumping mpc Proc table
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc TYpe 0
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc local apicid 1
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc local apicver 16
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc cpuflag 0x1
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc cpufeature/signature 0xf12
+[2008-07-07 22:28:13][c0-0c0s1n0]Proc featureflag 0x381
+[2008-07-07 22:28:13][c0-0c0s1n0]Processor #1 15:1 APIC version 16
+[2008-07-07 22:28:13][c0-0c0s1n0]Setting APIC routing to flat
+[2008-07-07 22:28:13][c0-0c0s1n0]BIOS bug, no explicit IRQ entries, using default mptable. (tell your hw vendor)
+[2008-07-07 22:28:13][c0-0c0s1n0]Processors: 2
+[2008-07-07 22:28:13][c0-0c0s1n0]Allocating PCI resources starting at fc400000 (gap: fc000000:4000000)
+[2008-07-07 22:28:13][c0-0c0s1n0]Built 1 zonelists
+[2008-07-07 22:28:13][c0-0c0s1n0]Kernel command line: earlyprintk=rcal0 load_ramdisk=1 ramdisk_size=80000 console=ttyL0 bootnodeip=192.168.0.1 bootproto=ssip bootpath=/rr/current rootfs=nfs-shared root=/dev/sda1 pci=lastbus=3 oops=panic elevator=noop xtrel=2.1.21HD
+[2008-07-07 22:28:13][c0-0c0s1n0]Initializing CPU#0
+[2008-07-07 22:28:13][c0-0c0s1n0]PID hash table entries: 4096 (order: 12, 131072 bytes)
+[2008-07-07 22:28:13][c0-0c0s1n0]CPU MHz = 2600
+[2008-07-07 22:28:13][c0-0c0s1n0]time.c: Using 1.193182 MHz WALL MSR_CR GTOD PIT/TSC timer.
+[2008-07-07 22:28:13][c0-0c0s1n0]time.c: Detected 2600.000 MHz processor.
+[2008-07-07 22:28:14][c0-0c0s1n0]disabling early console
+[2008-07-07 22:28:14][c0-0c0s1n0]unregister_ch_up returns 0
+[2008-07-07 22:28:14][c0-0c0s1n0]L0 Console is registered and Ready
+[2008-07-07 22:28:14][c0-0c0s1n0]Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+[2008-07-07 22:28:14][c0-0c0s1n0]Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[2008-07-07 22:28:14][c0-0c0s1n0]PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[2008-07-07 22:28:14][c0-0c0s1n0]Placing software IO TLB between 0x2c6a000 - 0x6c6a000
+[2008-07-07 22:28:14][c0-0c0s1n0]Nosave address range: 00000000000a0000 - 0000000000100000
+[2008-07-07 22:28:14][c0-0c0s1n0]Nosave address range: 00000000fc000000 - 0000000100000000
+[2008-07-07 22:28:14][c0-0c0s1n0]Memory: 8105116k/8388608k available (2761k kernel code, 217572k reserved, 1046k data, 208k init)
+[2008-07-07 22:28:14][c0-0c0s1n0]Using local APIC timer interrupts.
+[2008-07-07 22:28:14][c0-0c0s1n0]result 12499994
+[2008-07-07 22:28:14][c0-0c0s1n0]Detected 12.499 MHz APIC timer.
+[2008-07-07 22:28:14][c0-0c0s1n0]Calibrating delay using timer specific routine.. 
+[2008-07-07 22:28:14][c0-0c0s1n0]5200.27 BogoMIPS (lpj=10400545)
+[2008-07-07 22:28:14][c0-0c0s1n0]Mount-cache hash table entries: 256
+[2008-07-07 22:28:14][c0-0c0s1n0]CPU: L1 I Cache: 64K (64 bytes/line), D cache 64K (64 bytes/line)
+[2008-07-07 22:28:14][c0-0c0s1n0]CPU: L2 Cache: 1024K (64 bytes/line)
+[2008-07-07 22:28:14][c0-0c0s1n0]CPU 0(2) -> Node 0 -> Core 0
+[2008-07-07 22:28:14][c0-0c0s1n0]checking if image is initramfs...
+[2008-07-07 22:28:14][c0-0c0s1n0] it is
+[2008-07-07 22:28:14][c0-0c0s1n0]Freeing initrd memory: 2885k freed
+[2008-07-07 22:28:14][c0-0c0s1n0]Using local APIC timer interrupts.
+[2008-07-07 22:28:14][c0-0c0s1n0]result 12500018
+[2008-07-07 22:28:14][c0-0c0s1n0]Detected 12.500 MHz APIC timer.
+[2008-07-07 22:28:14][c0-0c0s1n0]Booting processor 1/2 APIC 0x1
+[2008-07-07 22:28:14][c0-0c0s1n0]Initializing CPU#1
+[2008-07-07 22:28:14][c0-0c0s1n0]Calibrating delay using timer specific routine.. 5200.07 BogoMIPS (lpj=10400145)
+[2008-07-07 22:28:14][c0-0c0s1n0]CPU: L1 I Cache: 64K (64 bytes/line), D cache 64K (64 bytes/line)
+[2008-07-07 22:28:14][c0-0c0s1n0]CPU: L2 Cache: 1024K (64 bytes/line)
+[2008-07-07 22:28:14][c0-0c0s1n0]CPU 1(2) -> Node 0 -> Core 1
+[2008-07-07 22:28:14][c0-0c0s1n0]Dual Core AMD Opteron(tm) Processor 285  stepping 02
+[2008-07-07 22:28:14][c0-0c0s1n0]CPU 1: Syncing TSC to CPU 0.
+[2008-07-07 22:28:14][c0-0c0s1n0]CPU 1: synchronized TSC with CPU 0 (last diff 0 cycles, maxerr 590 cycles)
+[2008-07-07 22:28:14][c0-0c0s1n0]Brought up 2 CPUs
+[2008-07-07 22:28:15][c0-0c0s1n0]migration_cost=
+[2008-07-07 22:28:15][c0-0c0s1n0]319
+[2008-07-07 22:28:15][c0-0c0s1n0]NET: Registered protocol family 16
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Using configuration type 1
+[2008-07-07 22:28:15][c0-0c0s1n0]perfmon: version 2.3
+[2008-07-07 22:28:15][c0-0c0s1n0]SCSI subsystem initialized
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Probing PCI hardware
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Probing PCI hardware (bus 00)
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Discovered peer bus 01
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Transparent bridge - 0000:01:0f.0
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Bridge: 0000:01:0f.0
+[2008-07-07 22:28:15][c0-0c0s1n0]  IO window: 3000-3fff
+[2008-07-07 22:28:15][c0-0c0s1n0]  MEM window: disabled.
+[2008-07-07 22:28:15][c0-0c0s1n0]  PREFETCH window: disabled.
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Bridge: 0000:01:10.0
+[2008-07-07 22:28:15][c0-0c0s1n0]  IO window: disabled.
+[2008-07-07 22:28:15][c0-0c0s1n0]  MEM window: disabled.
+[2008-07-07 22:28:15][c0-0c0s1n0]  PREFETCH window: disabled.
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Bridge: 0000:01:11.0
+[2008-07-07 22:28:15][c0-0c0s1n0]  IO window: disabled.
+[2008-07-07 22:28:15][c0-0c0s1n0]  MEM window: disabled.
+[2008-07-07 22:28:15][c0-0c0s1n0]  PREFETCH window: disabled.
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Bridge: 0000:01:12.0
+[2008-07-07 22:28:15][c0-0c0s1n0]  IO window: 2000-2fff
+[2008-07-07 22:28:15][c0-0c0s1n0]  MEM window: fed00000-fedfffff
+[2008-07-07 22:28:15][c0-0c0s1n0]  PREFETCH window: fc400000-fc4fffff
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Bridge: 0000:01:13.0
+[2008-07-07 22:28:15][c0-0c0s1n0]  IO window: disabled.
+[2008-07-07 22:28:15][c0-0c0s1n0]  MEM window: disabled.
+[2008-07-07 22:28:15][c0-0c0s1n0]  PREFETCH window: disabled.
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: No IRQ known for interrupt pin A of device 0000:01:0f.0. Please try using pci=biosirq.
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Setting latency timer of device 0000:01:0f.0 to 64
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: No IRQ known for interrupt pin A of device 0000:01:10.0. Please try using pci=biosirq.
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Setting latency timer of device 0000:01:10.0 to 64
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: No IRQ known for interrupt pin A of device 0000:01:11.0. Please try using pci=biosirq.
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Setting latency timer of device 0000:01:11.0 to 64
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: No IRQ known for interrupt pin A of device 0000:01:12.0. Please try using pci=biosirq.
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Setting latency timer of device 0000:01:12.0 to 64
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: No IRQ known for interrupt pin A of device 0000:01:13.0. Please try using pci=biosirq.
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Setting latency timer of device 0000:01:13.0 to 64
+[2008-07-07 22:28:15][c0-0c0s1n0]IA32 emulation $Id: sys_ia32.c,v 1.32 2002/03/24 13:02:28 ak Exp $
+[2008-07-07 22:28:15][c0-0c0s1n0]Registering pnotify support for (name=job)
+[2008-07-07 22:28:15][c0-0c0s1n0]CSA: initialized
+[2008-07-07 22:28:15][c0-0c0s1n0]audit: initializing netlink socket (disabled)
+[2008-07-07 22:28:15][c0-0c0s1n0]audit(1095211202.380:1): initialized
+[2008-07-07 22:28:15][c0-0c0s1n0]Total HugeTLB memory allocated, 0
+[2008-07-07 22:28:15][c0-0c0s1n0]VFS: Disk quotas dquot_6.5.1
+[2008-07-07 22:28:15][c0-0c0s1n0]Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[2008-07-07 22:28:15][c0-0c0s1n0]Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[2008-07-07 22:28:15][c0-0c0s1n0]Initializing Cryptographic API
+[2008-07-07 22:28:15][c0-0c0s1n0]io scheduler noop registered
+[2008-07-07 22:28:15][c0-0c0s1n0] (default)
+[2008-07-07 22:28:15][c0-0c0s1n0]io scheduler anticipatory registered
+[2008-07-07 22:28:15][c0-0c0s1n0]io scheduler deadline registered
+[2008-07-07 22:28:15][c0-0c0s1n0]io scheduler cfq registered
+[2008-07-07 22:28:15][c0-0c0s1n0]perfmon: added sampling format default
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: No IRQ known for interrupt pin A of device 0000:01:10.0. Please try using pci=biosirq.
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Setting latency timer of device 0000:01:10.0 to 64
+[2008-07-07 22:28:15][c0-0c0s1n0]pcie_portdrv_probe->Dev[0142:1166] has invalid IRQ. Check vendor BIOS
+[2008-07-07 22:28:15][c0-0c0s1n0]assign_interrupt_mode Found MSI capability
+[2008-07-07 22:28:15][c0-0c0s1n0]Allocate Port Service[0000:01:10.0:pcie00]
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: No IRQ known for interrupt pin A of device 0000:01:11.0. Please try using pci=biosirq.
+[2008-07-07 22:28:15][c0-0c0s1n0]PCI: Setting latency timer of device 0000:01:11.0 to 64
+[2008-07-07 22:28:15][c0-0c0s1n0]pcie_portdrv_probe->Dev[0144:1166] has invalid IRQ. Check vendor BIOS
+[2008-07-07 22:28:15][c0-0c0s1n0]assign_interrupt_mode Found MSI capability
+[2008-07-07 22:28:15][c0-0c0s1n0]Allocate Port Service[0000:01:11.0:pcie00]
+[2008-07-07 22:28:16][c0-0c0s1n0]PCI: No IRQ known for interrupt pin A of device 0000:01:12.0. Please try using pci=biosirq.
+[2008-07-07 22:28:16][c0-0c0s1n0]PCI: Setting latency timer of device 0000:01:12.0 to 64
+[2008-07-07 22:28:16][c0-0c0s1n0]pcie_portdrv_probe->Dev[0142:1166] has invalid IRQ. Check vendor BIOS
+[2008-07-07 22:28:16][c0-0c0s1n0]assign_interrupt_mode Found MSI capability
+[2008-07-07 22:28:16][c0-0c0s1n0]Allocate Port Service[0000:01:12.0:pcie00]
+[2008-07-07 22:28:16][c0-0c0s1n0]PCI: No IRQ known for interrupt pin A of device 0000:01:13.0. Please try using pci=biosirq.
+[2008-07-07 22:28:16][c0-0c0s1n0]PCI: Setting latency timer of device 0000:01:13.0 to 64
+[2008-07-07 22:28:16][c0-0c0s1n0]pcie_portdrv_probe->Dev[0144:1166] has invalid IRQ. Check vendor BIOS
+[2008-07-07 22:28:16][c0-0c0s1n0]assign_interrupt_mode Found MSI capability
+[2008-07-07 22:28:16][c0-0c0s1n0]Allocate Port Service[0000:01:13.0:pcie00]
+[2008-07-07 22:28:16][c0-0c0s1n0]RCA L0 Software Console version 1.0 (2005-01-04), Cray, Inc.
+[2008-07-07 22:28:16][c0-0c0s1n0]Linux agpgart interface v0.101 (c) Dave Jones
+[2008-07-07 22:28:16][c0-0c0s1n0]RAMDISK driver initialized: 16 RAM disks of 80000K size 1024 blocksize
+[2008-07-07 22:28:16][c0-0c0s1n0]loop: loaded (max 8 devices)
+[2008-07-07 22:28:16][c0-0c0s1n0]netconsole: not configured, aborting
+[2008-07-07 22:28:16][c0-0c0s1n0]Seastar rev: 0x22
+[2008-07-07 22:28:16][c0-0c0s1n0]Found family 0xf processor
+[2008-07-07 22:28:16][c0-0c0s1n0]perfmon: AMD K8 PMU detected, 4 PMCs, 4 PMDs, 4 counters (47 bits)
+[2008-07-07 22:28:16][c0-0c0s1n0]perfmon: PMU has 4 enable PMCs (0xf)
+[2008-07-07 22:28:16][c0-0c0s1n0]perfmon: intr_type=2
+[2008-07-07 22:28:16][c0-0c0s1n0]perfmon: AMD K8 PMU installed
+[2008-07-07 22:28:16][c0-0c0s1n0]perfmon: CPU0 APIC mask=0xed
+[2008-07-07 22:28:16][c0-0c0s1n0]perfmon: CPU1 APIC mask=0xed
+[2008-07-07 22:28:16][c0-0c0s1n0]oprofile: using NMI interrupt.
+[2008-07-07 22:28:16][c0-0c0s1n0]NET: Registered protocol family 2
+[2008-07-07 22:28:16][c0-0c0s1n0]IP route cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[2008-07-07 22:28:16][c0-0c0s1n0]TCP established hash table entries: 524288 (order: 11, 8388608 bytes)
+[2008-07-07 22:28:16][c0-0c0s1n0]TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+[2008-07-07 22:28:16][c0-0c0s1n0]TCP: Hash tables configured (established 524288 bind 65536)
+[2008-07-07 22:28:16][c0-0c0s1n0]TCP reno registered
+[2008-07-07 22:28:16][c0-0c0s1n0]ip_conntrack version 2.4 (8192 buckets, 65536 max) - 288 bytes per conntrack
+[2008-07-07 22:28:16][c0-0c0s1n0]ip_tables: (C) 2000-2006 Netfilter Core Team
+[2008-07-07 22:28:16][c0-0c0s1n0]TCP bic registered
+[2008-07-07 22:28:16][c0-0c0s1n0]NET: Registered protocol family 1
+[2008-07-07 22:28:16][c0-0c0s1n0]NET: Registered protocol family 10
+[2008-07-07 22:28:16][c0-0c0s1n0]IPv6 over IPv4 tunneling driver
+[2008-07-07 22:28:16][c0-0c0s1n0]ip6_tables: (C) 2000-2006 Netfilter Core Team
+[2008-07-07 22:28:16][c0-0c0s1n0]NET: Registered protocol family 17
+[2008-07-07 22:28:16][c0-0c0s1n0]Freeing unused kernel memory: 208k freed
+[2008-07-07 22:28:16][c0-0c0s1n0]rca: module license 'unspecified' taints kernel.
+[2008-07-07 22:28:17][c0-0c0s1n0]Portals module build time: Jul  3 2008 15:09:48
+[2008-07-07 22:28:18][c0-0c0s1n0](cpu 0: node 0) allocating 8388608 bytes for portals heap
+[2008-07-07 22:28:18][c0-0c0s1n0]heap start: 0x1f6800000, end: 0x1f7000000
+[2008-07-07 22:28:19][c0-0c0s1n0]portals message trace interface initialized (1e1e entries)
+[2008-07-07 22:28:19][c0-0c0s1n0]init_ssnal_hardware: SeaStar phys fffa0000 mapped to kernel virt ffffc20000500000
+[2008-07-07 22:28:19][c0-0c0s1n0]init_ssnal_hardware: DMA     phys ffe00000 mapped to kernel virt ffffc200004c0000
+[2008-07-07 22:28:19][c0-0c0s1n0]Running with SeaStar firmware version 03.0c.002d
+[2008-07-07 22:28:19][c0-0c0s1n0]Running with Portals baselib version 03.02.0001
+[2008-07-07 22:28:19][c0-0c0s1n0]Firmware built at 20:32:05 (486d3745)
+[2008-07-07 22:28:19][c0-0c0s1n0]tx pending reserve 656/1040. nic: pending=0xfffb5000, eqcb=0xfffbd200
+[2008-07-07 22:28:19][c0-0c0s1n0]Basic End-to-End Reliability version 1.4 enabled.
+[2008-07-07 22:28:19][c0-0c0s1n0]ssnal_ip_init: dev=ffffffff88088e40 skb_table=ffffc20000504000 priv=ffffc200004aa000 max_skb=64
+[2008-07-07 22:28:19][c0-0c0s1n0]User Kernel bridge module inserted and registered
+[2008-07-07 22:28:19][c0-0c0s1n0]    system configured for 16384 nodes
+[2008-07-07 22:28:19][c0-0c0s1n0]insmod /lib/modules/2.6.16.54-0.2.5_1.0000.3296.0-ss/extra/e1000.ko 
+[2008-07-07 22:28:19][c0-0c0s1n0]Intel(R) PRO/1000 Network Driver - version 7.6.12
+[2008-07-07 22:28:19][c0-0c0s1n0]Copyright (c) 1999-2007 Intel Corporation.
+[2008-07-07 22:28:19][c0-0c0s1n0]PCI: No IRQ known for interrupt pin A of device 0000:06:00.0. Please try using pci=biosirq.
+[2008-07-07 22:28:19][c0-0c0s1n0]PCI: Setting latency timer of device 0000:06:00.0 to 64
+[2008-07-07 22:28:19][c0-0c0s1n0]e1000: 0000:06:00.0: e1000_probe: (PCI Express:2.5Gb/s:Width x4) 
+[2008-07-07 22:28:19][c0-0c0s1n0]00:
+[2008-07-07 22:28:19][c0-0c0s1n0]15:
+[2008-07-07 22:28:19][c0-0c0s1n0]17:
+[2008-07-07 22:28:19][c0-0c0s1n0]67:
+[2008-07-07 22:28:19][c0-0c0s1n0]6b:
+[2008-07-07 22:28:19][c0-0c0s1n0]48
+[2008-07-07 22:28:19][c0-0c0s1n0]e1000: eth0: e1000_probe: Intel(R) PRO/1000 Network Connection
+[2008-07-07 22:28:19][c0-0c0s1n0]PCI: No IRQ known for interrupt pin B of device 0000:06:00.1. Please try using pci=biosirq.
+[2008-07-07 22:28:19][c0-0c0s1n0]PCI: Setting latency timer of device 0000:06:00.1 to 64
+[2008-07-07 22:28:19][c0-0c0s1n0]e1000: 0000:06:00.1: e1000_probe: (PCI Express:2.5Gb/s:Width x4) 
+[2008-07-07 22:28:19][c0-0c0s1n0]00:
+[2008-07-07 22:28:19][c0-0c0s1n0]15:
+[2008-07-07 22:28:19][c0-0c0s1n0]17:
+[2008-07-07 22:28:19][c0-0c0s1n0]67:
+[2008-07-07 22:28:19][c0-0c0s1n0]6b:
+[2008-07-07 22:28:19][c0-0c0s1n0]49
+[2008-07-07 22:28:19][c0-0c0s1n0]e1000: eth1: e1000_probe: Intel(R) PRO/1000 Network Connection
+[2008-07-07 22:28:20][c0-0c0s1n0]ip started
+[2008-07-07 22:28:21][c0-0c0s1n0]Using rootfs config: nfs-shared...
+[2008-07-07 22:28:21][c0-0c0s1n0]rootfs mount succeeded.
+[2008-07-07 22:28:21][c0-0c0s1n0]**********************************************************
+[2008-07-07 22:28:21][c0-0c0s1n0]    HOSTNAME: nid00004
+[2008-07-07 22:28:21][c0-0c0s1n0]**********************************************************
+[2008-07-07 22:28:21][c0-0c0s1n0]lo        Link encap:Local Loopback  
+[2008-07-07 22:28:21][c0-0c0s1n0]          inet addr:127.0.0.1  Mask:255.0.0.0
+[2008-07-07 22:28:21][c0-0c0s1n0]          inet6 addr: ::1/128 Scope:Host
+[2008-07-07 22:28:21][c0-0c0s1n0]          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+[2008-07-07 22:28:21][c0-0c0s1n0]          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+[2008-07-07 22:28:21][c0-0c0s1n0]          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+[2008-07-07 22:28:21][c0-0c0s1n0]          collisions:0 txqueuelen:0 
+[2008-07-07 22:28:21][c0-0c0s1n0]          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+[2008-07-07 22:28:21][c0-0c0s1n0]ss        Link encap:Ethernet  HWaddr 00:00:00:04:00:00  
+[2008-07-07 22:28:21][c0-0c0s1n0]          inet addr:192.168.0.5  Mask:255.0.0.0
+[2008-07-07 22:28:21][c0-0c0s1n0]          inet6 addr: fe80::200:ff:fe04:0/64 Scope:Link
+[2008-07-07 22:28:21][c0-0c0s1n0]          UP RUNNING NOARP  MTU:16000  Metric:1
+[2008-07-07 22:28:22][c0-0c0s1n0]          RX packets:18 errors:0 dropped:1 overruns:0 frame:0
+[2008-07-07 22:28:22][c0-0c0s1n0]          TX packets:26 errors:0 dropped:0 overruns:0 carrier:0
+[2008-07-07 22:28:22][c0-0c0s1n0]          collisions:0 txqueuelen:1000 
+[2008-07-07 22:28:22][c0-0c0s1n0]          RX bytes:1856 (1.8 KiB)  TX bytes:1916 (1.8 KiB)
+[2008-07-07 22:28:22][c0-0c0s1n0]Mounting NID specific /etc...
+[2008-07-07 22:28:22][c0-0c0s1n0]done.
+[2008-07-07 22:28:22][c0-0c0s1n0]INIT: 
+[2008-07-07 22:28:22][c0-0c0s1n0]version 2.86 booting
+[2008-07-07 22:28:22][c0-0c0s1n0]System Boot Control: 
+[2008-07-07 22:28:22][c0-0c0s1n0]Running /etc/init.d/boot
+[2008-07-07 22:28:22][c0-0c0s1n0]Mounting procfs at /proc
+[2008-07-07 22:28:22][c0-0c0s1n0]mount: proc already mounted
+[2008-07-07 22:28:22][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:22][c0-0c0s1n0][80C[10D[1;31mfailed[m8[?25h
+[2008-07-07 22:28:22][c0-0c0s1n0]Mounting sysfs at /sys
+[2008-07-07 22:28:22][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:22][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:22][c0-0c0s1n0]Initializing /dev
+[2008-07-07 22:28:22][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:22][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:22][c0-0c0s1n0]Mounting devpts at /dev/pts
+[2008-07-07 22:28:22][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:22][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:22][c0-0c0s1n0]Boot logging started on /dev/ttyL0(/dev/console (deleted)) at Mon Jul  7 22:28:19 2008
+[2008-07-07 22:28:22][c0-0c0s1n0]Activating swap-devices in /etc/fstab...
+[2008-07-07 22:28:22][c0-0c0s1n0]7[?25l[1A
+[2008-07-07 22:28:22][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:22][c0-0c0s1n0]root file system (/) is NOT being checked.
+[2008-07-07 22:28:22][c0-0c0s1n0]rm: 
+[2008-07-07 22:28:22][c0-0c0s1n0]cannot remove `/etc/mtab'
+[2008-07-07 22:28:22][c0-0c0s1n0]: Read-only file system
+[2008-07-07 22:28:22][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:22][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:22][c0-0c0s1n0]Starting udevd 
+[2008-07-07 22:28:24][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:24][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:24][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:25][c0-0c0s1n0]Mounting /var from 192.168.0.1. Checking for nid=4 existance.
+[2008-07-07 22:28:25][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:25][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:25][c0-0c0s1n0]Mounting tmpfs on /tmp
+[2008-07-07 22:28:25][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:25][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:25][c0-0c0s1n0]Running sysctl using values from /etc/sysctl.conf
+[2008-07-07 22:28:25][c0-0c0s1n0]net.ipv4.icmp_echo_ignore_broadcasts = 1
+[2008-07-07 22:28:25][c0-0c0s1n0]net.ipv4.conf.all.rp_filter = 1
+[2008-07-07 22:28:25][c0-0c0s1n0]vm.min_free_kbytes = 102400
+[2008-07-07 22:28:25][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:25][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:25][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:25][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:25][c0-0c0s1n0]Checking file systems...
+[2008-07-07 22:28:25][c0-0c0s1n0]fsck 1.40.7.sun3 (28-Feb-2008)
+[2008-07-07 22:28:25][c0-0c0s1n0]Checking all file systems.
+[2008-07-07 22:28:25][c0-0c0s1n0]7[?25l[1A
+[2008-07-07 22:28:25][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:25][c0-0c0s1n0]rm: 
+[2008-07-07 22:28:25][c0-0c0s1n0]cannot remove `/etc/nologin': Read-only file system
+[2008-07-07 22:28:25][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:25][c0-0c0s1n0][80C[10D[1;31mfailed[m8[?25h
+[2008-07-07 22:28:25][c0-0c0s1n0]Mounting local file systems...
+[2008-07-07 22:28:25][c0-0c0s1n0]proc on /proc type proc (rw)
+[2008-07-07 22:28:25][c0-0c0s1n0]sysfs on /sys type sysfs (rw)
+[2008-07-07 22:28:25][c0-0c0s1n0]udev on /dev type tmpfs (rw)
+[2008-07-07 22:28:25][c0-0c0s1n0]devpts on /dev/pts type devpts (rw,mode=0620,gid=5)
+[2008-07-07 22:28:25][c0-0c0s1n0]nothing was mounted
+[2008-07-07 22:28:25][c0-0c0s1n0]7[?25l[1A
+[2008-07-07 22:28:25][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:25][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:25][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:25][c0-0c0s1n0]Setting up hostname 'gar'
+[2008-07-07 22:28:25][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:25][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:25][c0-0c0s1n0]Setting up loopback interface 
+[2008-07-07 22:28:25][c0-0c0s1n0]    lo        
+[2008-07-07 22:28:25][c0-0c0s1n0]    lo        
+[2008-07-07 22:28:25][c0-0c0s1n0]IP address: 127.0.0.1/8  
+[2008-07-07 22:28:25][c0-0c0s1n0] 
+[2008-07-07 22:28:26][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:26][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:26][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:26][c0-0c0s1n0]System Boot Control: 
+[2008-07-07 22:28:26][c0-0c0s1n0]The system has been 
+[2008-07-07 22:28:26][c0-0c0s1n0][80C[10D[1mset up[m
+[2008-07-07 22:28:26][c0-0c0s1n0]System Boot Control: Running /etc/init.d/boot.local
+[2008-07-07 22:28:26][c0-0c0s1n0]7[?25l[1A
+[2008-07-07 22:28:26][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:26][c0-0c0s1n0]blogd: no message logging because /var file system is not accessible
+[2008-07-07 22:28:26][c0-0c0s1n0]INIT: 
+[2008-07-07 22:28:26][c0-0c0s1n0]Entering runlevel: 3
+[2008-07-07 22:28:26][c0-0c0s1n0]Boot logging started on /dev/ttyL0(/dev/console) at Mon Jul  7 22:28:24 2008
+[2008-07-07 22:28:26][c0-0c0s1n0]Master Resource Control: 
+[2008-07-07 22:28:26][c0-0c0s1n0]previous runlevel: N, 
+[2008-07-07 22:28:26][c0-0c0s1n0]switching to runlevel: 
+[2008-07-07 22:28:26][c0-0c0s1n0][80C[10D[1m3[m
+[2008-07-07 22:28:26][c0-0c0s1n0]Setting up network interfaces:
+[2008-07-07 22:28:27][c0-0c0s1n0]    lo        
+[2008-07-07 22:28:27][c0-0c0s1n0]    lo        
+[2008-07-07 22:28:27][c0-0c0s1n0]IP address: 127.0.0.1/8  
+[2008-07-07 22:28:27][c0-0c0s1n0] 
+[2008-07-07 22:28:27][c0-0c0s1n0]7[?25l[1A
+[2008-07-07 22:28:27][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:27][c0-0c0s1n0]    eth0      device: Intel Corporation 82571EB Gigabit Ethernet Controller (rev 06)
+[2008-07-07 22:28:27][c0-0c0s1n0]ADDRCONF(NETDEV_UP): eth0: link is not ready
+[2008-07-07 22:28:27][c0-0c0s1n0]    eth0      
+[2008-07-07 22:28:27][c0-0c0s1n0]IP address: 172.30.50.60/22  
+[2008-07-07 22:28:27][c0-0c0s1n0] 
+[2008-07-07 22:28:27][c0-0c0s1n0]7[?25l[1A
+[2008-07-07 22:28:27][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:27][c0-0c0s1n0]    eth1      device: Intel Corporation 82571EB Gigabit Ethernet Controller (rev 06)
+[2008-07-07 22:28:27][c0-0c0s1n0]              No configuration found for eth1
+[2008-07-07 22:28:27][c0-0c0s1n0]7[?25l[1A
+[2008-07-07 22:28:27][c0-0c0s1n0][80C[10D[1munused[m8[?25h
+[2008-07-07 22:28:27][c0-0c0s1n0]    ss        
+[2008-07-07 22:28:27][c0-0c0s1n0]              No configuration found for ss
+[2008-07-07 22:28:27][c0-0c0s1n0]7[?25l[1A
+[2008-07-07 22:28:27][c0-0c0s1n0][80C[10D[1munused[m8[?25h
+[2008-07-07 22:28:27][c0-0c0s1n0]Setting up service network  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+[2008-07-07 22:28:28][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:28][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:28][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:28][c0-0c0s1n0]bootnodes are: 0 0 
+[2008-07-07 22:28:28][c0-0c0s1n0]mynid=4
+[2008-07-07 22:28:28][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:28][c0-0c0s1n0]Starting syslog services
+[2008-07-07 22:28:28][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:28][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:28][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:28][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:28][c0-0c0s1n0]Starting RPC portmap daemon
+[2008-07-07 22:28:28][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:28][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:28][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:28][c0-0c0s1n0]Importing Net File System (NFS)
+[2008-07-07 22:28:28][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:28][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:28][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:29][c0-0c0s1n0]bootnodes are: 0 0 
+[2008-07-07 22:28:29][c0-0c0s1n0]mynid=4
+[2008-07-07 22:28:29][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:29][c0-0c0s1n0]sdbnodes are: 3 3 
+[2008-07-07 22:28:29][c0-0c0s1n0]mynid=4
+[2008-07-07 22:28:29][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:29][c0-0c0s1n0]Starting SSH daemon
+[2008-07-07 22:28:29][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:29][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:29][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:29][c0-0c0s1n0]Starting lbcd
+[2008-07-07 22:28:29][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:29][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:29][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:29][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:29][c0-0c0s1n0]Cannot arp IP address 192.168.254.2 for service 'SDB' -- processor id is NULL
+[2008-07-07 22:28:29][c0-0c0s1n0]Try to get initial date and time via NTP from  boot001
+[2008-07-07 22:28:29][c0-0c0s1n0][80C[10D[1;31mfailed[m
+[2008-07-07 22:28:29][c0-0c0s1n0]Starting network time protocol daemon (NTPD)
+[2008-07-07 22:28:29][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:29][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:29][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:29][c0-0c0s1n0]Starting PBS
+[2008-07-07 22:28:30][c0-0c0s1n0]e1000: eth0: e1000_watchdog_task: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[2008-07-07 22:28:30][c0-0c0s1n0]ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[2008-07-07 22:28:31][c0-0c0s1n0]PBS mom
+[2008-07-07 22:28:31][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:31][c0-0c0s1n0]Starting service automounter
+[2008-07-07 22:28:31][c0-0c0s1n0]7[?25l
+[2008-07-07 22:28:31][c0-0c0s1n0][80C[10D[1;32mdone[m8[?25h
+[2008-07-07 22:28:31][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:31][c0-0c0s1n0]Enabling Linux Jobs\n
+[2008-07-07 22:28:31][c0-0c0s1n0][m[?25h
+[2008-07-07 22:28:31][c0-0c0s1n0]Master Resource Control: 
+[2008-07-07 22:28:31][c0-0c0s1n0]runlevel 3 has been 
+[2008-07-07 22:28:31][c0-0c0s1n0][80C[10D[1mreached[m
+[2008-07-07 22:28:31][c0-0c0s1n0]blogd: no message logging because /var file system is not accessible
+[2008-07-07 22:28:31][c0-0c0s1n0]INIT: 
+[2008-07-07 22:28:31][c0-0c0s1n0]no more processes left in this runlevel
+[2008-07-07 22:30:51][c0-0c0s1n0]portals_ld: exports duplicate symbol ukbridge_debug_add (owned by portals)
+[2008-07-07 22:30:51][c0-0c0s1n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:30:51][c0-0c0s1n0]Lustre: Client gar4ost-client has started
+[2008-07-07 23:45:56][c0-0c0s1n0]LustreError: 4398:0:(ldlm_lockd.c:1270:ldlm_handle_cp_callback()) change resource!
+[2008-07-07 22:31:01][c2-0c2s6n0]nid 344: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:01][c2-0c2s6n0]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:01][c2-0c2s6n0]        Lustre Version: 1.6.3
+[2008-07-07 22:31:01][c2-0c2s6n0]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:01][c2-0c2s6n0]Lustre: Added LNI 344@ptl [8/1024]
+[2008-07-07 22:31:01][c2-0c2s6n0]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:01][c2-0c2s6n0]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:01][c2-0c2s6n0]Lustre: gar4ost-clilov-ffff8107ed286400.lov: set parameter stripecount=2
+[2008-07-07 22:31:01][c2-0c2s6n0]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:02][c2-0c2s6n0]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:02][c2-0c2s6n0]USS: dvsklib module loaded
+[2008-07-07 22:31:02][c2-0c2s6n0]USS: dvsproc module loaded
+[2008-07-07 22:31:02][c2-0c2s6n0]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:02][c2-0c2s6n0]USS: dvsutil module loaded
+[2008-07-07 22:31:02][c2-0c2s6n0]USS: dvsof module loaded
+[2008-07-07 22:31:02][c2-0c2s6n0]USS: dvspn module loaded
+[2008-07-08 01:34:41][c2-0c2s6n0]beer: cpu_id 0: nid 88, cpu 0 has been unresponsive for 240 seconds
+[2008-07-07 22:31:03][c2-0c1s4n2]nid 306: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:04][c2-0c1s4n2]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:04][c2-0c1s4n2]        Lustre Version: 1.6.3
+[2008-07-07 22:31:04][c2-0c1s4n2]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:04][c2-0c1s4n2]Lustre: Added LNI 306@ptl [8/1024]
+[2008-07-07 22:31:04][c2-0c1s4n2]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:04][c2-0c1s4n2]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:04][c2-0c1s4n2]Lustre: gar4ost-clilov-ffff8107f07b3c00.lov: set parameter stripecount=2
+[2008-07-07 22:31:04][c2-0c1s4n2]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:04][c2-0c1s4n2]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:04][c2-0c1s4n2]USS: dvsklib module loaded
+[2008-07-07 22:31:04][c2-0c1s4n2]USS: dvsproc module loaded
+[2008-07-07 22:31:04][c2-0c1s4n2]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:04][c2-0c1s4n2]USS: dvsutil module loaded
+[2008-07-07 22:31:04][c2-0c1s4n2]USS: dvsof module loaded
+[2008-07-07 22:31:04][c2-0c1s4n2]USS: dvspn module loaded
+[2008-07-07 22:31:02][c0-0c1s2n3]nid 43: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:02][c0-0c1s2n3]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:02][c0-0c1s2n3]        Lustre Version: 1.6.3
+[2008-07-07 22:31:02][c0-0c1s2n3]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:02][c0-0c1s2n3]Lustre: Added LNI 43@ptl [8/1024]
+[2008-07-07 22:31:02][c0-0c1s2n3]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:02][c0-0c1s2n3]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:02][c0-0c1s2n3]Lustre: gar4ost-clilov-ffff8101f3a8cc00.lov: set parameter stripecount=2
+[2008-07-07 22:31:03][c0-0c1s2n3]Lustre: gar4ost-clilov-ffff8101f3a8cc00.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:03][c0-0c1s2n3]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:03][c0-0c1s2n3]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:03][c0-0c1s2n3]USS: dvsklib module loaded
+[2008-07-07 22:31:03][c0-0c1s2n3]USS: dvsproc module loaded
+[2008-07-07 22:31:03][c0-0c1s2n3]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c0-0c1s2n3]USS: dvsutil module loaded
+[2008-07-07 22:31:03][c0-0c1s2n3]USS: dvsof module loaded
+[2008-07-07 22:31:03][c0-0c1s2n3]USS: dvspn module loaded
+[2008-07-08 00:26:02][c0-0c1s2n3]fsx-linux-aio[11537]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffae58 error 5
+[2008-07-08 00:26:02][c0-0c1s2n3]fsx-linux-aio[11535]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffae58 error 5
+[2008-07-08 01:50:44][c0-0c1s2n3]fsx-linux-aio[11898]: segfault at fffffffffffffffb rip 0000000000421b60 rsp 00007fffffffae98 error 5
+[2008-07-08 01:53:11][c0-0c1s2n3]Lustre: 12223:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316442
+[2008-07-08 01:53:12][c0-0c1s2n3]Lustre: 12243:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316442
+[2008-07-08 01:53:12][c0-0c1s2n3]Lustre: 12240:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316443
+[2008-07-08 01:53:12][c0-0c1s2n3]Lustre: 12240:0:(llite_mmap.c:398:ll_nopage()) Skipped 6 previous similar messages
+[2008-07-08 01:53:13][c0-0c1s2n3]Lustre: 12216:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316443
+[2008-07-08 01:53:14][c0-0c1s2n3]Lustre: 12221:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316443
+[2008-07-08 01:53:14][c0-0c1s2n3]Lustre: 12221:0:(llite_mmap.c:398:ll_nopage()) Skipped 1 previous similar message
+[2008-07-08 01:53:18][c0-0c1s2n3]Lustre: 12221:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316443
+[2008-07-08 01:53:23][c0-0c1s2n3]Lustre: 12222:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316442
+[2008-07-08 01:53:23][c0-0c1s2n3]Lustre: 12214:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316442
+[2008-07-08 01:53:23][c0-0c1s2n3]Lustre: 12214:0:(llite_mmap.c:398:ll_nopage()) Skipped 2 previous similar messages
+[2008-07-08 01:53:24][c0-0c1s2n3]Lustre: 12243:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316442
+[2008-07-08 01:53:25][c0-0c1s2n3]Lustre: 12216:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316443
+[2008-07-08 01:53:29][c0-0c1s2n3]Lustre: 12222:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316443
+[2008-07-08 01:53:29][c0-0c1s2n3]Lustre: 12222:0:(llite_mmap.c:398:ll_nopage()) Skipped 5 previous similar messages
+[2008-07-08 01:53:36][c0-0c1s2n3]Lustre: 12240:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316442
+[2008-07-08 01:53:36][c0-0c1s2n3]Lustre: 12240:0:(llite_mmap.c:398:ll_nopage()) Skipped 1 previous similar message
+[2008-07-08 01:53:45][c0-0c1s2n3]Lustre: 12221:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316443
+[2008-07-08 01:53:45][c0-0c1s2n3]Lustre: 12221:0:(llite_mmap.c:398:ll_nopage()) Skipped 1 previous similar message
+[2008-07-08 01:53:55][c0-0c1s2n3]Lustre: 12223:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316443
+[2008-07-08 01:53:55][c0-0c1s2n3]Lustre: 12223:0:(llite_mmap.c:398:ll_nopage()) Skipped 1 previous similar message
+[2008-07-08 01:54:42][c0-0c1s2n3]Lustre: 12217:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316443
+[2008-07-08 01:55:37][c0-0c1s2n3]Lustre: 12240:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316443
+[2008-07-08 01:55:37][c0-0c1s2n3]Lustre: 12240:0:(llite_mmap.c:398:ll_nopage()) Skipped 10 previous similar messages
+[2008-07-08 01:57:02][c0-0c1s2n3]Lustre: 12214:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316443
+[2008-07-08 01:57:02][c0-0c1s2n3]Lustre: 12214:0:(llite_mmap.c:398:ll_nopage()) Skipped 6 previous similar messages
+[2008-07-08 01:59:14][c0-0c1s2n3]Lustre: 12242:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316443
+[2008-07-08 01:59:14][c0-0c1s2n3]Lustre: 12242:0:(llite_mmap.c:398:ll_nopage()) Skipped 25 previous similar messages
+[2008-07-08 02:03:37][c0-0c1s2n3]Lustre: 12223:0:(llite_mmap.c:398:ll_nopage()) binary changed. inode 39316443
+[2008-07-08 02:03:37][c0-0c1s2n3]Lustre: 12223:0:(llite_mmap.c:398:ll_nopage()) Skipped 118 previous similar messages
+[2008-07-07 22:31:02][c0-0c1s2n1]nid 41: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:02][c0-0c1s2n1]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:02][c0-0c1s2n1]        Lustre Version: 1.6.3
+[2008-07-07 22:31:02][c0-0c1s2n1]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:02][c0-0c1s2n1]Lustre: Added LNI 41@ptl [8/1024]
+[2008-07-07 22:31:02][c0-0c1s2n1]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:03][c0-0c1s2n1]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:03][c0-0c1s2n1]Lustre: gar4ost-clilov-ffff8103f8359800.lov: set parameter stripecount=2
+[2008-07-07 22:31:03][c0-0c1s2n1]Lustre: gar4ost-clilov-ffff8103f8359800.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:03][c0-0c1s2n1]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:03][c0-0c1s2n1]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:03][c0-0c1s2n1]USS: dvsklib module loaded
+[2008-07-07 22:31:03][c0-0c1s2n1]USS: dvsproc module loaded
+[2008-07-07 22:31:03][c0-0c1s2n1]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c0-0c1s2n1]USS: dvsutil module loaded
+[2008-07-07 22:31:03][c0-0c1s2n1]USS: dvsof module loaded
+[2008-07-07 22:31:03][c0-0c1s2n1]USS: dvspn module loaded
+[2008-07-07 22:31:02][c2-0c0s2n2]nid 266: Linux version 2.6.16.54-0.2.5_1.0000.3296.0-cnl (rsrel@rsbuild64) (gcc version 3.3.3) #1 SMP Thu Jul 3 13:09:04 PDT 2008
+[2008-07-07 22:31:02][c2-0c0s2n2]Lustre: OBD class driver, info@clusterfs.com
+[2008-07-07 22:31:02][c2-0c0s2n2]        Lustre Version: 1.6.3
+[2008-07-07 22:31:02][c2-0c0s2n2]        Build Version: 1.6.3-2.1.21HD-rsrel-RB-2.1-12321-2008-07-03-15:35
+[2008-07-07 22:31:02][c2-0c0s2n2]Lustre: Added LNI 266@ptl [8/1024]
+[2008-07-07 22:31:03][c2-0c0s2n2]Lustre: Lustre Client File System; info@clusterfs.com
+[2008-07-07 22:31:03][c2-0c0s2n2]Lustre: MGC7@ptl: Reactivating import
+[2008-07-07 22:31:03][c2-0c0s2n2]Lustre: gar4ost-clilov-ffff8107edce0400.lov: set parameter stripecount=2
+[2008-07-07 22:31:03][c2-0c0s2n2]Lustre: gar4ost-clilov-ffff8107edce0400.lov: set parameter stripesize=1048576
+[2008-07-07 22:31:03][c2-0c0s2n2]Lustre: Client gar4ost-client has started
+[2008-07-07 22:31:03][c2-0c0s2n2]USS: DVS revision 174 - Built: Jul  3 2008 @ 15:34:23
+[2008-07-07 22:31:03][c2-0c0s2n2]USS: dvsklib module loaded
+[2008-07-07 22:31:03][c2-0c0s2n2]USS: dvsproc module loaded
+[2008-07-07 22:31:03][c2-0c0s2n2]USS: dvsipc (ss) module loaded
+[2008-07-07 22:31:03][c2-0c0s2n2]USS: dvsutil module loaded
+[2008-07-07 22:31:03][c2-0c0s2n2]USS: dvsof module loaded
+[2008-07-07 22:31:03][c2-0c0s2n2]USS: dvspn module loaded
+[2008-07-07 23:54:25][c2-0c0s2n2]vasp[3354]: segfault at fffffffff063b6c8 rip 000000000254871b rsp 00007fffffff8138 error 6
+[2008-07-07 23:54:25][c2-0c0s2n2]vasp[3355]: segfault at fffffffff063bf68 rip 000000000254871b rsp 00007fffffff8138 error 6
+[2008-07-07 23:54:25][c2-0c0s2n2]vasp[3356]: segfault at fffffffff063c1d8 rip 000000000254871b rsp 00007fffffff8138 error 6
+[2008-07-07 23:54:25][c2-0c0s2n2]vasp[3357]: segfault at fffffffff063c1d8 rip 000000000254871b rsp 00007fffffff8138 error 6
+[2008-07-07 23:54:25][c2-0c0s2n2]vasp[3358]: segfault at fffffffff063bfc8 rip 000000000254871b rsp 00007fffffff8138 error 6
+[2008-07-07 23:54:25][c2-0c0s2n2]vasp[3360]: segfault at fffffffff0639fd8 rip 000000000254871b rsp 00007fffffff8138 error 6
+[2008-07-07 23:54:25][c2-0c0s2n2]vasp[3361]: segfault at fffffffff0639fd8 rip 000000000254871b rsp 00007fffffff8138 error 6
+[2008-07-07 23:54:25][c2-0c0s2n2]vasp[3359]: segfault at fffffffff063c118 rip 000000000254871b rsp 00007fffffff8138 error 6
+[2008-07-08 00:40:57][c2-0c0s2n2]HARDWARE ERROR
+[2008-07-08 00:40:57][c2-0c0s2n2]CPU 4: Machine Check Exception:                0 Bank 4: dc3141003d080a13
+[2008-07-08 00:40:57][c2-0c0s2n2]TSC 114bccdb00a2 
+[2008-07-08 00:40:57][c2-0c0s2n2]ADDR 577f5b960 
+[2008-07-08 00:40:57][c2-0c0s2n2]MISC c008001a01000000 
