@@ -107,11 +107,14 @@ def general_run_process (input_file, dump_error_file = 0 ):
 
 
 def dump_uncovered_valid_line (block_list, input_file):
+	if len(block_list) == 0:
+		return
 	report_file = "block_report/uncovered_valid_line.txt"
 	fl = open (input_file, "r")
 	report_fl = open (report_file, "w")
 	line_counter = 0
 	block_list_count = 0
+		
 	while True:
 		line = fl.readline()
 		line_counter = line_counter + 1

@@ -3,6 +3,7 @@
 
 import os
 import sys
+import re 
 import shutil
 import global_APIs
 import report_APIs
@@ -180,14 +181,20 @@ def folder_learning (folder_name):
 			
 			block_list = input_file_block_analyzer.block_analyze(total_file, block_database, global_multi_list, 1)
 			error_report = global_APIs.analyze_error_list_file("error_report.txt")
-
+			single_error_report = error_report[0]
+			multi_error_report = error_report[1]
 			#delete conflict DB
-			for error in error_report:
-				print "delete " + error
+			for error in single_error_report:
+				print "delete single block " + error
 				if error in block_database:
 					del (block_database[error])
 				if error in global_multi_list:
 					del (global_multi_list[error])
+			for error in multi_error_report:
+				print "delete multi block " + error
+				if error in global_multi_list:
+					del (global_multi_list[error])
+
 			block_database_opt.block_database_store(block_database, file_mode)
 			block_database_opt.block_multi_store(global_multi_list, file_mode)
 			
@@ -282,7 +289,112 @@ def summary_block_length (block_list, total_block_length_summary_list ):
 #frontend APIs:
 #log_file_split
 #splited_folder_merge
+#sub_path_list_detector
+#find_sub_path_console_log
 #{{{
+def generate_single_node_log_file(folder_name):
+	sub_path_list = sub_path_list_detector(folder_name)
+	log_list = find_sub_path_console_log (sub_path_list)
+
+	node_id = "c0-0c0s2n2"
+	single_node_log_file = node_id
+	single_node_log_file += "_single_file.txt"
+	node_file_fl = open(single_node_log_file, "w")	
+
+	for file_name in log_list:
+		result = log_file_split(file_name)
+		tmp_file_name = result
+		tmp_file_name += "/"
+		tmp_file_name += global_APIs.get_real_file_name(file_name) 
+		tmp_file_name += "_"
+		tmp_file_name += node_id
+		tmp_file_name += ".txt" 
+		if os.path.isfile (tmp_file_name):
+			print tmp_file_name
+			tmp_file_fl = open(tmp_file_name, "r")
+			node_file_fl.write(tmp_file_fl.read())
+			tmp_file_fl.close()
+		shutil.rmtree (result)
+	node_file_fl.close()
+
+
+
+def sub_path_list_detector (folder_name):
+	folder_list = [] 
+	folder_list_1 = [] 
+	
+	pattern = r'p0-([0-9]+)t([0-9]+)$'		
+	for filename in os.listdir (folder_name):
+		#p0-20150218t105253
+
+		matchobj = re.match (pattern, filename)
+		if matchobj:
+			folder_list.append (filename)		
+	
+	while not len (folder_list) == 0: 
+		min_pos = 0
+		min_date = 20209999
+		min_time = 999999
+		min_folder_name = ""
+		for i in range (0, len(folder_list)):
+			sub_folder_name = folder_list[i]
+			matchobj = re.match (pattern, sub_folder_name)
+			date = matchobj.group(1)
+			time = matchobj.group(2)
+			if int(date) < min_date:
+				min_pos = i
+				min_date = int(date)
+				min_time = int(time)
+				min_folder_name = sub_folder_name
+			if int(date) == min_date and int(time) < min_time :
+				min_pos = i
+				min_time = int(time)
+				min_folder_name = sub_folder_name
+		tmp = folder_name
+		tmp += "/"
+		tmp += min_folder_name
+		folder_list_1.append (tmp)
+		del(folder_list[min_pos])	
+
+	return folder_list_1
+
+def find_sub_path_console_log (sub_folder_list):
+	pattern = r'console-([0-9]+).cleansed$'
+	max_file_count = 10
+	file_count = 0
+	total_needed_file_list = []	
+	for sub_folder_name in sub_folder_list:
+		#console-20150211.cleansed
+		console_file_list = []	
+		for filename in os.listdir (sub_folder_name):
+			matchobj = re.match (pattern, filename)
+			if matchobj:
+				console_file_list.append (filename)
+		while not len (console_file_list) == 0: 
+			min_pos = 0
+			min_date = 99999999
+			min_console_name = ""
+			for i in range (0, len(console_file_list)):
+				console_file_name = console_file_list[i]
+				matchobj = re.match (pattern, console_file_name)
+				date = matchobj.group(1)
+				if int(date) < min_date:
+					min_pos = i
+					min_date = int(date)
+					min_console_name = console_file_name
+			tmp = sub_folder_name
+			tmp += "/"
+			tmp += min_console_name
+			total_needed_file_list.append (tmp)
+			del(console_file_list[min_pos])
+			file_count += 1 
+			if file_count >= max_file_count:
+				break	
+				
+		if file_count >= max_file_count:
+			break	
+	return total_needed_file_list
+
 def splited_folder_merge (folder_name):
 	folder_name = global_APIs.get_real_folder_name (folder_name)
 	file_list = global_APIs.get_folder_file_list(folder_name)

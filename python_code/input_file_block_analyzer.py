@@ -6,6 +6,7 @@ import block_database_opt
 import sys
 import os
 
+multi_block_max_search_round = 5
 #this is analyzing blocks from input file
 
 #
@@ -58,7 +59,7 @@ def block_analyze (input_file, block_database, global_multi_list, dump_error_fil
 	block_list = block_nest_eliminate (block_list)	
 
 	if not global_multi_list == {}:
-		block_list = remove_multi_block (block_list , global_multi_list )
+		block_list = remove_multi_block (block_list , global_multi_list, dump_error_file )
 	
 	return block_list
 
@@ -180,7 +181,8 @@ def database_analyze_block(input_file, block_database, dump_error_file):
 
 	fl.close()
 	if dump_error_file == 1:
-		error_fl = open ("error_report.txt", "w")	
+		error_fl = open ("error_report.txt", "w")
+		error_fl.write("single_error:\n")	
 		for tmp in error_list:
 			error_fl.write(tmp)
 			error_fl.write("\n")
@@ -188,79 +190,92 @@ def database_analyze_block(input_file, block_database, dump_error_file):
 		error_fl.close()
 	return block_list
 
-def remove_multi_block (block_list , global_multi_list ):
+def remove_multi_block (block_list , global_multi_list , dump_error_file ):
 	new_block_list = []
 	recording = 0
-	finish = ""
 	global_multi_name = ""
 	global_multi_start_line = ""
+	multi_block_error_list = []
+
 	if len(block_list) == 0:
 		return []
 
+	block_list_index = 0
 
-	for i in range (0, len(block_list) - 1):
-		block = block_list[i]
+	while block_list_index < len(block_list):
+		block = block_list[block_list_index]
 		block_name = block[0]
 		block_start_line = block[1]
 		block_finish_line = block[2]
-		if recording == 0:
-			for multi_block_name in global_multi_list:
-				multi_block = global_multi_list[multi_block_name]
-				multi_start = multi_block[0]
-				multi_finish = multi_block[1]
-				if block_name == multi_start:
-					recording = 1
-					finish = multi_finish
-					global_multi_name = multi_block_name
-					global_multi_start_line = block_start_line
-					break
-			if finish == "":
-				new_block_list.append(block)
-					
-		else:
-			if block_name == finish:
-				next_block = block_list[i+1]
+
+		finish = ""
+		for multi_block_name in global_multi_list:
+			multi_block = global_multi_list[multi_block_name]
+			multi_start = multi_block[0]
+			multi_finish = multi_block[1]
+			if block_name == multi_start:
+				finish = multi_finish
+				global_multi_name = multi_block_name
+				global_multi_start_line = block_start_line
+				break
+		if finish == "":
+			#can't find correspond multi block
+			#this is a single block
+			new_block_list.append(block)
+			block_list_index += 1
+		else :
+			#this is a multi block
+			find_finish_block = 0
+			search_round = 0
+			first_finish_index = 0
+			for tmp_i in range (block_list_index, len(block_list)):
+				#multi block is {0, 8}
+				#0 2 3 8 8 9
+				#we can tolerate 2 and 3 between 0 to 8
+				#if can't find 8 in five rounds, it will report to error list
+				search_round += 1
+				next_block = block_list[tmp_i]
 				next_block_name = next_block[0]
-				if not next_block_name == finish:
-					#multi block is {0, 8}
-					#0 2 3 8 8 9
-					#this block is 8, next block is 9 
-					#so this block is the last one of multi block
-					tmp = []
-					tmp.append (global_multi_name)	
-					tmp.append (global_multi_start_line)	
-					tmp.append (block_finish_line)
-					new_block_list.append(tmp)
-					recording = 0
-					finish = ""
-					global_multi_name = ""
-					global_multi_start_line = ""
+				if next_block_name == finish:
+					first_finish_index = tmp_i
+					find_finish_block = 1
+					break	
+				if search_round == multi_block_max_search_round:
+					break
+			if find_finish_block == 0:
+				multi_block_error_list.append (global_multi_name)
+				new_block_list.append(block)
+				block_list_index += 1
 			else:
+				block_list_index =  first_finish_index + 1
+				block_finish_line = block_list[first_finish_index][2]
+				for tmp_i in range (first_finish_index + 1, len(block_list)):
+					block_list_index = tmp_i 
+					next_block_name = block_list[tmp_i][0]
+					if next_block_name == finish:
+						block_finish_line = block_list[tmp_i][2]
+						if block_list_index == len(block_list) - 1:
+							block_list_index = len(block_list)
+							#the last block is inside a multi block, this need a special treatment 
+					else:
+						#next block do not belong to multi block	
+						break
 				tmp = []
 				tmp.append (global_multi_name)	
 				tmp.append (global_multi_start_line)	
 				tmp.append (block_finish_line)
 				new_block_list.append(tmp)
-				recording = 0
-				finish = ""
-				global_multi_name = ""
-				global_multi_start_line = ""
 					
-	block = block_list[len(block_list) - 1]
-	block_name = block[0]
-	block_start_line = block[1]
-	block_finish_line = block[2]
-	if recording == 0:
-		new_block_list.append(block)
+	
+	if dump_error_file == 1:
+		error_fl = open ("error_report.txt", "a")
+		error_fl.write("multi_error:\n")	
+		for tmp in multi_block_error_list:
+			error_fl.write(tmp)
+			error_fl.write("\n")
 		
-	else:
-		tmp = []
-		tmp.append (global_multi_name)	
-		tmp.append (global_multi_start_line)	
-		tmp.append (block_finish_line)
-		new_block_list.append(tmp)
+		error_fl.close()
 
-		i = i + 1
 	return new_block_list
 
 def block_nest_eliminate (block_list):
@@ -310,33 +325,42 @@ def create_exist_block_tmp_file (input_file, block_list):
 	tmp_fl = open (tmp_file, "w")
 	line_counter = 0
 	block_list_count = 0
-	while True:
-		line = fl.readline()
-		line_counter = line_counter + 1
-		if not line:	
-			break
-		in_block = 0
-		correspond_block = ""
-		block = block_list[block_list_count]
-		start_line_num = block[1]
-		finish_line_num = block[2]
-		if line_counter >= int(start_line_num) and line_counter <= int(finish_line_num):
-			in_block = 1
-			correspond_block = block
-
-
-		if in_block == 0:
+	if len(block_list) == 0:
+		while True:
+			line = fl.readline()
+			line_counter = line_counter + 1
+			if not line:	
+				break
 			tmp_fl.write(line)
-		else:
-			finish_line_num = correspond_block[2]
-			while line_counter < int(finish_line_num):
-				line = fl.readline()
-				line_counter = line_counter + 1
-			tmp_fl.write(correspond_block[0])
-			tmp_fl.write("\n")
+			
+	else:
+		while True:
+			line = fl.readline()
+			line_counter = line_counter + 1
+			if not line:	
+				break
+			in_block = 0
+			correspond_block = ""
+			block = block_list[block_list_count]
+			start_line_num = block[1]
+			finish_line_num = block[2]
+			if line_counter >= int(start_line_num) and line_counter <= int(finish_line_num):
+				in_block = 1
+				correspond_block = block
 
-			if not block_list_count == len(block_list) - 1: 
-				block_list_count = block_list_count + 1
+
+			if in_block == 0:
+				tmp_fl.write(line)
+			else:
+				finish_line_num = correspond_block[2]
+				while line_counter < int(finish_line_num):
+					line = fl.readline()
+					line_counter = line_counter + 1
+				tmp_fl.write(correspond_block[0])
+				tmp_fl.write("\n")
+
+				if not block_list_count == len(block_list) - 1: 
+					block_list_count = block_list_count + 1
 	fl.close()
 	tmp_fl.close()
 	return tmp_file
