@@ -76,8 +76,12 @@ def database_analyze_block(input_file, block_database, dump_error_file):
 		line = fl.readline()
 		if not line:	
 			break
-		line_message = global_APIs.get_line_message(line)
-		pattern = global_APIs.gen_line_pattern(line_message)
+		pattern = ""
+		if not global_APIs.is_baler_mutrino_format(line):
+			line_message = global_APIs.get_line_message(line)
+			pattern = global_APIs.gen_line_pattern(line_message)
+		else:
+			pattern = global_APIs.gen_baler_line_pattern (line)
 		start_block_name_list = is_block_start (pattern,block_database)	
 		finish_block_name_list = is_block_finish (pattern,block_database)
 		
@@ -243,7 +247,8 @@ def remove_multi_block (block_list , global_multi_list , dump_error_file ):
 				if search_round == multi_block_max_search_round:
 					break
 			if find_finish_block == 0:
-				multi_block_error_list.append (global_multi_name)
+				if not global_multi_name in multi_block_error_list:
+					multi_block_error_list.append (global_multi_name)
 				new_block_list.append(block)
 				block_list_index += 1
 			else:

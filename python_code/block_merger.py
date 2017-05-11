@@ -3,6 +3,7 @@
 
 import os
 import sys
+import report_APIs as report_APIs
 
 global_search_deep_level = 7 
 global_forward_step_num = 4 
@@ -315,73 +316,18 @@ def try_find_merge_candidate (block_list):
 			if next_name == "last":
 				continue
 			next_pos = calculate_possibility (this_name, next_name, next_list, next_pos_matrix, 0, this_name, [])
-			
-			prior_pos = calculate_possibility (next_name, this_name, prior_list, prior_pos_matrix, 0, next_name, [])
+			if next_pos >= global_similar_threshold:
+				#this can save calculate resource
+				prior_pos = calculate_possibility (next_name, this_name, prior_list, prior_pos_matrix, 0, next_name, [])
+				if prior_pos >= global_similar_threshold :
+					tmp = []
+					tmp.append(this_name)
+					tmp.append(next_name)
+					merge_suggest_list.append(tmp)
+					merge_start_list.append(this_name)
+					break
+				
 
-			if next_pos > global_similar_threshold and prior_pos > global_similar_threshold :
-				tmp = []
-				tmp.append(this_name)
-				tmp.append(next_name)
-				merge_suggest_list.append(tmp)
-				merge_start_list.append(this_name)
-				break	
-
-	return merge_suggest_list
-
-
-def try_find_merge_candidate_1 (block_list, next_list, next_pos_matrix, prior_list, prior_pos_matrix):
-	length = len(block_list)
-	merge_start_list = []
-	merge_suggest_list = []
-	done_analyzed_list = {}
-	for i in range(0 , length-1):
-		this_block = block_list[i]
-		this_name = this_block[0]
-
-		if this_name in done_analyzed_list:
-			done_list = done_analyzed_list[this_name]
-		else:
-			done_list = []
-
-		if this_name in merge_start_list:
-			continue
-		forward_step = 1
-		total_step = 1
-		step_stock = []
-
-
-		while total_step + i < len (block_list) and forward_step < global_forward_step_num: 
-			next_block = block_list[i+ total_step]
-			next_name = next_block[0]
-			if next_name in done_list:
-				total_step = total_step + 1	
-				continue
-			else:
-				done_list.append(next_name)
-
-			if this_name == next_name:
-				total_step = total_step + 1
-				continue
-
-
-			# this next block is not the same one of start one and is not in the stock
-			forward_step = forward_step + 1
-	
-			next_pos = calculate_possibility (this_name, next_name, next_list, next_pos_matrix, 0, this_name, [])
-			
-			prior_pos = calculate_possibility (next_name, this_name, prior_list, prior_pos_matrix, 0, next_name, [])
-
-			if next_pos > global_similar_threshold and prior_pos > global_similar_threshold :
-				tmp = []
-				tmp.append(this_name)
-				tmp.append(next_name)
-				merge_suggest_list.append(tmp)
-				merge_start_list.append(this_name)
-				i = i + total_step
-				break	
-			total_step = total_step + 1
-
-		done_analyzed_list[this_name] = done_list
 	return merge_suggest_list
 
 def optimize_merge_suggest_list (merge_suggest_list):
@@ -423,34 +369,6 @@ def optimize_merge_suggest_list (merge_suggest_list):
 					j = j + 1
 			i = i + 1
 	return merge_suggest_list
-
-
-
-
-
-
-	#ARES TODO 10/6, if no bug, can delete this 
-	#while i in range (0, length):
-	#	j = i + 1
-	#	while j in range (i + 1, length):
-	#		previous_tmp = merge_suggest_list[i]
-	#		previous_start = previous_tmp[0]
-	#		previous_finish = previous_tmp[1]
-	#		next_tmp = merge_suggest_list[j]	
-	#		next_start = next_tmp[0]
-	#		next_finish = next_tmp[1]
-	#		if  previous_finish == next_start:
-	#			tmp = []
-	#			tmp.append(previous_start)
-	#			tmp.append(next_finish)	
-	#			merge_suggest_list[i] = tmp
-	#			del (merge_suggest_list[j])	
-	#			length = len (merge_suggest_list)
-	#		else:
-	#			j = j+ 1
-	#	i = i + 1
-	#return merge_suggest_list
-	#ARES TODO done
 
 def block_list_remove_merged_block (block_list, global_multi_list, merge_suggest_list, erase_list):
 	length = len (block_list)
@@ -580,11 +498,6 @@ def block_list_remove_merged_block (block_list, global_multi_list, merge_suggest
 #do not change anything inside 
 #{{{
 def get_block_list_merge_suggest_list (block_list):
-	#next_list = gen_next_list (block_list)
-	#prior_list = gen_prior_list (block_list)
-	#next_pos_matrix = gen_pos_matrix (next_list)
-	#prior_pos_matrix = gen_pos_matrix (prior_list)
-	#merge_suggest_list = try_find_merge_candidate_1 (block_list, next_list, next_pos_matrix, prior_list, prior_pos_matrix)
 	merge_suggest_list = try_find_merge_candidate (block_list)
 	print "init merge suggest"
 	print merge_suggest_list
@@ -659,9 +572,7 @@ def update_block_list_and_database (block_list, block_database, global_multi_lis
 #}}}
 
 
-def merge_debug (block_list):
-	start_block = "block_24"
-	finish_block = "block_34"
+def merge_debug (block_list, start_block, finish_block):
 	
 	#for block in block_list:
 	#	print block
@@ -707,8 +618,19 @@ def merge_debug (block_list):
 
 	print "next poss"
 	print calculate_possibility (start_block, finish_block, next_list, next_pos_matrix, 0, start_block, [], 0)
-	#print "prior poss"
-	#print calculate_possibility (finish_block, start_block, prior_list, prior_pos_matrix, 0, finish_block, [], 0)
+	print "prior poss"
+	print calculate_possibility (finish_block, start_block, prior_list, prior_pos_matrix, 0, finish_block, [], 0)
+
+
+def block_merge_debug (input_file):
+	block_list = report_APIs.block_list_file_read(input_file)
+	merge_suggest_list = get_block_list_merge_suggest_list(block_list)
+	forward_list = gen_forward_list (block_list)
+	print "forward_list"
+	print forward_list
+#	merge_debug(block_list, "block_35", "block_42")
+#	merge_debug(block_list, "block_39", "block_42")
+#	merge_debug(block_list, "block_35", "block_39")
 
 
 

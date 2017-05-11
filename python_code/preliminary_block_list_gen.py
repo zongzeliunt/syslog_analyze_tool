@@ -3,7 +3,7 @@ import global_APIs
 
 line_pattern_match_threshold = 0.60 
 line_pattern_dismatch_threshold = 0.32 
-ignore_single_line_single_word = 1
+ignore_single_line_single_word = 0 
 #this database learner is for the first 2 steps:
 #1) pattern dictionary generate
 #2) adjecent lines combination
@@ -15,7 +15,10 @@ ignore_single_line_single_word = 1
 
 def preliminary_block_list_learner (input_file, mode):
 	single_line_pattern_list = pattern_dict_creater (input_file)
-
+	file_mode = global_APIs.get_file_mode (input_file)
+	if file_mode == "baler_mutrino":
+		#baler pattern is always length == 1
+		ignore_single_line_single_word = 0
 	if mode == 0:
 		#learn all
 		pattern_gap_list = pattern_gap_calculate (single_line_pattern_list)
@@ -34,7 +37,6 @@ def preliminary_block_list_learner (input_file, mode):
 		
 		block_pattern_list = block_pattern_data_base_update (block_line_num_list, single_line_pattern_list, 0)
 	
-
 	return block_pattern_list
 
 #done APIs:
@@ -75,10 +77,16 @@ def pattern_dict_creater (input_file):
 		if not line:	
 			break
 		line_message = 	global_APIs.get_line_message(line)
-		line_pattern = global_APIs.gen_line_pattern(line_message)
+		line_pattern = ""
 		if line_message == "":
 			line_counter = line_counter + 1
 			continue
+		
+		if not global_APIs.is_baler_mutrino_format(line):
+			line_pattern = global_APIs.gen_line_pattern(line_message)
+		else:
+			line_pattern = global_APIs.gen_baler_line_pattern (line)
+		
 		correspond_pattern = search_correspond_pattern_from_single_line_pattern_list (line_pattern, single_line_pattern_list)
 		if not correspond_pattern == "":
 			correspond_pattern_index = gen_pattern_index(correspond_pattern)

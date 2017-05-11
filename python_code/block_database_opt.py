@@ -132,4 +132,32 @@ def multi_database_read (file_mode, nickname = "0"):
 
 
 	fl.close()
-	return multi_list	
+	return multi_list
+
+def repeat_db_test(SLEBD_DB):
+	share_DB = {}
+	count = 0
+	done_list = []
+	for this_DB in SLEBD_DB :
+		if this_DB in done_list:
+			continue
+		done_list.append(this_DB)
+		tmp = []
+		this_start_pattern = SLEBD_DB[this_DB]["start"]
+		this_finish_pattern = SLEBD_DB[this_DB]["finish"]
+		match = 0
+		for that_DB in SLEBD_DB:
+			if that_DB == this_DB:
+				continue
+			that_start_pattern = SLEBD_DB[that_DB]["start"]
+			that_finish_pattern = SLEBD_DB[that_DB]["finish"]
+			if this_start_pattern == that_start_pattern and this_finish_pattern == that_finish_pattern:
+				match = 1
+				tmp.append (that_DB)
+				done_list.append(that_DB)
+		if match == 1:
+			tmp.append (this_DB)
+			share_DB[str(count)] = tmp			
+			count += 1
+	return share_DB	
+	

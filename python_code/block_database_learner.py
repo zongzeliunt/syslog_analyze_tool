@@ -107,38 +107,6 @@ def block_list_add_barricade (tmp_file, block_list):
 		block_list_num = block_list_num + 1
 	return tmp_block_list
 
-
-
-
-def block_list_add_barricade_1 (block_list, new_block_list):
-	#add barricade to avoid merging exist block
-	
-	block_list_num = 0
-	new_block_list_num = 0
-	tmp_block_list = []
-	while block_list_num < len(block_list) and new_block_list_num < len (new_block_list):
-
-		block_ele = block_list[block_list_num]
-		new_block_ele = new_block_list[new_block_list_num]	
-		if block_ele == new_block_ele:
-			block_list_num = block_list_num + 1
-			new_block_list_num = new_block_list_num + 1
-			tmp = []
-			tmp.append("barricate")
-			tmp.append(block_ele[1])
-			tmp.append(block_ele[2])
-			tmp_block_list.append(tmp)
-		else:
-			tmp_block_list.append(new_block_ele)
-			new_block_list_num = new_block_list_num + 1
-	
-	while new_block_list_num < len (new_block_list):
-		new_block_ele = new_block_list[new_block_list_num]	
-		tmp_block_list.append(new_block_ele)	
-		new_block_list_num = new_block_list_num + 1
-	return tmp_block_list
-
-
 def block_database_learning (input_file):
 #{{{
 	file_mode = global_APIs.get_file_mode (input_file)

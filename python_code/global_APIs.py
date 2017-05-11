@@ -46,6 +46,28 @@ def get_folder_file_list (folder_name):
 		file_list.append(file_path_name)
 	return file_list
 
+def get_file_node_name (input_file):
+#right now it is for baler use
+	fl = open (input_file, "r")
+	find_suitable_pattern_line = 0
+	node_name = ""
+	while find_suitable_pattern_line == 0:
+		line = fl.readline()
+		if not line:
+			#here must have an error out
+			tmp = "Can't detect file mode from file "
+			tmp += input_file
+			print tmp
+			return ""
+
+		if not get_line_message (line) == "":
+			find_suitable_pattern_line = 1 
+			node_name = get_line_id (line) 
+			break
+	fl.close()
+	return node_name	
+
+
 def get_file_mode (input_file):
 	fl = open (input_file, "r")
 	find_suitable_pattern_line = 0
@@ -64,6 +86,8 @@ def get_file_mode (input_file):
 	fl.close()
 	if is_console_format (line):
 		return "console"
+	if is_baler_mutrino_format (line):
+		return "baler_mutrino"	
 	
 	if is_mutrino_format (line):
 		return "mutrino"	
@@ -203,6 +227,15 @@ def gen_line_pattern (line):
 			break
 	return pattern
 
+def gen_baler_line_pattern (line):
+	pattern = []
+	pattern_number = get_baler_mutrino_message_pattern_number(line)	
+	tmp = []
+	tmp.append ("0")
+	tmp.append (str(pattern_number))
+	pattern.append(tmp)
+	return pattern
+
 def calculate_match_ratio (pattern, key):
 	match_count = 0.0
 	dismatch_count = 0.0
@@ -269,6 +302,8 @@ def get_line_id (line):
 		line_id = get_console_message_line_node_id (line)
 	if is_mutrino_format (line):
 		line_id = get_mutrino_message_line_node_id (line)
+	if is_baler_mutrino_format (line):
+		line_id = get_baler_mutrino_message_line_node_id (line)
 	if is_message_format (line):
 		line_id = get_message_line_node_id (line)
 	if is_redhat_message_format (line):
@@ -281,6 +316,8 @@ def get_line_message (line):
 		line_mess = get_console_message_line_message (line)
 	if is_mutrino_format (line):
 		line_mess = get_mutrino_message_line_message (line)
+	if is_baler_mutrino_format (line):
+		line_mess = get_baler_mutrino_message_line_message (line)
 	if is_message_format (line):
 		line_mess = get_message_line_message (line)
 	if is_redhat_message_format (line):
@@ -293,6 +330,8 @@ def get_line_time (line):
 		line_time = get_console_message_line_time (line)
 	if is_mutrino_format (line):
 		line_time = get_mutrino_message_line_time (line)
+	if is_baler_mutrino_format (line):
+		line_time = get_baler_mutrino_message_line_time (line)
 	if is_message_format (line):
 		line_time = get_message_line_time (line)
 	if is_redhat_message_format (line):
@@ -326,6 +365,65 @@ def get_console_message_line_message (line):
 	extract_result = is_console_format (line)
 	return extract_result.group(3)
 #}}}
+
+#all about baler mutrino format file:
+#is_mutrino_format
+#get_mutrino_message_line_time
+#get_mutrino_message_line_node_id
+#get_mutrino_message_line_message
+#get_mutrino_line_time_index
+#{{{
+def is_baler_mutrino_format (line):
+#[131] 2015-02-11T17:25:57.385739-06:00 c0-0c2s1n1 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+	pattern = r'^\[([0-9]+)\] ([0-9T\-\:\.]+) ([a-z0-9\-]+)([ ]+)(.*)$'	
+	matchobj = re.match (pattern, line)
+	if matchobj:
+		return matchobj 
+	else:
+		return 0
+def get_baler_mutrino_message_pattern_number (line):
+	extract_result = is_baler_mutrino_format (line)
+	return extract_result.group(1)
+
+def get_baler_mutrino_message_line_time (line):
+	extract_result = is_baler_mutrino_format (line)
+	return extract_result.group(2)
+
+def get_baler_mutrino_message_line_node_id (line):
+	extract_result = is_baler_mutrino_format (line)
+	return extract_result.group(3)
+
+def get_baler_mutrino_message_line_message (line):
+	extract_result = is_baler_mutrino_format (line)
+	return extract_result.group(5)
+
+def get_baler_mutrino_line_time_index (line_time):
+	#2015-02-11T17:25:57.385723-06:00
+		
+	pattern = r'^([0-9]+)\-([0-9]+)\-([0-9]+)T([0-9]+)\:([0-9]+)\:([0-9]+)\.(.*)$'	
+	matchobj = re.match (pattern, line_time)
+	year = ""
+	month = "" 
+	date = ""
+	hour = ""
+	minute = ""	
+	second = ""
+	if matchobj:
+		year = matchobj.group(1)
+		month = matchobj.group(2)
+		date = matchobj.group(3)
+		hour = matchobj.group(4)
+		minute = matchobj.group(5)
+		second = matchobj.group(6)
+		time_index = calculate_time_index(month,date,hour,minute,second, year)
+	else:
+		time_index = ""
+
+	return time_index
+
+
+#}}}
+
 
 #all about mutrino format file:
 #is_mutrino_format
@@ -393,7 +491,9 @@ def get_mutrino_line_time_index (line_time):
 #{{{
 def is_message_format (line):
 #<6>1 2015-02-11T17:32:19.496117-06:00 c0-0c0s0n1 kernel - p0-20150211t172524 - Initializing cgroup subsys cpuset
-	pattern = r'^(\<[0-9]+\>[0-9]+) ([0-9T\-\:\.]+) ([a-z0-9\-]+) ([ ]*.*) - (p[0-9\-]+t[0-9]+) - (.*)$'	
+#<150>1 2015-02-14T00:01:21.596683-06:00 c0-0c1s2n1 apsys 28000 p0-20150213t131030 [alps_msgs@34] apid=23799, Finishing, user=12795, exit_code=0, exitcode_array=0, exitsignal_array=0
+	#pattern = r'^(\<[0-9]+\>[0-9]+)( )([0-9T\-\:\.]+)( )([a-z0-9\-]+)( )([a-z0-9 ]+)( )(.*)( )(p[0-9\-]+t[0-9]+)( )(.*)( )([ ]+.*)$'	
+	pattern = r'^(\<[0-9]+\>[0-9]+)( )([0-9T\-\:\.]+)( )([a-z0-9\-]+)( )([a-z0-9 ]+)( )([0-9\-]+)( )(p[0-9\-]+t[0-9]+)([ ])([a-z0-9\-\[\]\_\@]+)([ ])(.*)$'	
 	matchobj = re.match (pattern, line)
 	if matchobj:
 		return matchobj 
@@ -406,23 +506,23 @@ def get_message_unknown (line):
 
 def get_message_line_time (line):
 	extract_result = is_message_format (line)
-	return extract_result.group(2)
+	return extract_result.group(3)
 
 def get_message_line_node_id (line):
 	extract_result = is_message_format (line)
-	return extract_result.group(3)
+	return extract_result.group(5)
 
 def get_message_line_source (line):
 	extract_result = is_message_format (line)
-	return extract_result.group(4)
+	return extract_result.group(7)
 
 def get_message_line_index (line):
 	extract_result = is_message_format (line)
-	return extract_result.group(5)
+	return extract_result.group(11)
 
 def get_message_line_message (line):
 	extract_result = is_message_format (line)
-	return extract_result.group(6)
+	return extract_result.group(15)
 #}}}
 
 
@@ -634,9 +734,11 @@ def analyze_error_list_file (error_file):
 			continue
 		else:
 			if single_multi_switch == 0:
-				single_error_list.append(name)
+				if not name in single_error_list:
+					single_error_list.append(name)
 			if single_multi_switch == 1:
-				multi_error_list.append(name)
+				if not name in multi_error_list:
+					multi_error_list.append(name)
 	fl.close()
 	#os.remove(error_file)
 	tmp = []

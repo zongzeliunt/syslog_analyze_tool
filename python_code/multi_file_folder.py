@@ -99,13 +99,12 @@ def folder_single_line_pattern_learning (folder_name):
 
 	error_list = {}
 	block_pattern_list = {}
-	block_num = 0
 	pattern_index_list = {}
+	single_line_pattern_list = {}
 
 
 	for input_file in file_list:
 		fl = open (input_file, "r")
-		single_line_pattern_list = {}
 		while True:
 			line = fl.readline()
 			if not line:	
@@ -113,23 +112,196 @@ def folder_single_line_pattern_learning (folder_name):
 			line_message = 	global_APIs.get_line_message(line)
 			if line_message == "":
 				continue
-			line_pattern = global_APIs.gen_line_pattern(line_message)
-			correspond_pattern_index = preliminary_block_list_gen.gen_pattern_index(line_pattern)
-			if not correspond_pattern_index in pattern_index_list:
-				pattern_index_list[correspond_pattern_index] = ""
-				
+			line_pattern = "" 
+			if not global_APIs.is_baler_mutrino_format(line):
+				line_pattern = global_APIs.gen_line_pattern(line_message)
+			else:
+				line_pattern = global_APIs.gen_baler_line_pattern (line)
+			correspond_pattern = preliminary_block_list_gen.search_correspond_pattern_from_single_line_pattern_list (line_pattern, single_line_pattern_list)
+			if correspond_pattern == "":
+				line_pattern_index = preliminary_block_list_gen.gen_pattern_index(line_pattern)
 				tmp = {}
-				tmp["start"] = line_pattern	
-				tmp["finish"] =	line_pattern	
-				block_name = "block_"
-				block_name += str(block_num)
-				block_pattern_list[block_name] = tmp
-				block_num = block_num + 1
+				tmp["pattern"] = line_pattern
+				single_line_pattern_list[line_pattern_index] = tmp
+					
 		fl.close()	
+	
+	block_num = 0
+	for line_pattern in single_line_pattern_list:
+		single_line_pattern = single_line_pattern_list[line_pattern]
+		pattern = single_line_pattern["pattern"]	
+		tmp = {}
+		tmp["start"] = pattern	
+		tmp["finish"] =	pattern	
+		block_name = "block_"
+		block_name += str(block_num)
+		block_pattern_list[block_name] = tmp
+		block_num = block_num + 1
 
 	block_database_opt.block_database_store(block_pattern_list, file_mode)
 	block_database_opt.block_multi_store({}, file_mode)
 
+def folder_database_self_growing(folder_name):
+	folder_name = global_APIs.get_real_folder_name (folder_name)
+	file_list = global_APIs.get_folder_file_list(folder_name)
+	done_file_list = []
+
+	done_learning_file_folder = "done_learning_file_folder"
+	if not os.path.isdir(done_learning_file_folder):
+		os.mkdir(done_learning_file_folder)
+	done_file_folder_list = global_APIs.get_folder_file_list(done_learning_file_folder)
+	for file_name in done_file_folder_list:
+		file_name = global_APIs.get_real_file_name(file_name)
+		done_file_list.append(file_name)
+
+	total_line_count = 0
+	total_covered_count = 0
+	average_cover_precent = 0.90
+	total_file = "total_tmp_learning_file"
+
+	total_progress_fl = open("total_progress_report.txt", "w")
+	total_progress_fl.write("test begin")
+	total_progress_fl.close()
+	
+	
+	for input_file in file_list:
+		if global_APIs.get_real_file_name(input_file) in done_file_list:
+			continue
+		else:
+			done_file_list.append(global_APIs.get_real_file_name(input_file))
+		total_progress_fl = open("total_progress_report.txt", "a")
+		print "learning " + input_file
+		total_progress_fl.write("Analyzing " + input_file + "\n")	
+		total_progress_fl.write("================================\n")	
+		
+		file_mode = global_APIs.get_file_mode (input_file)
+		have_database = global_APIs.test_have_database(file_mode)
+		input_file_covered_line_count = 0
+		input_file_line_count = 0
+		input_file_cover_precent = 0.0
+
+		need_relearn = 0
+		have_conflict = 0
+		if have_database == -1:
+			shutil.copy(input_file, done_learning_file_folder)
+			total_progress_fl.write("	No database, initial learn.\n")	
+			block_database_learner.block_database_learning (input_file)
+			input_file_block_result = report_APIs.general_run_process (input_file, 1 )
+			input_file_covered_line_count = input_file_block_result[1]
+			input_file_line_count = input_file_block_result[2]
+			input_file_cover_precent = float(input_file_covered_line_count)/float(input_file_line_count)
+			input_file_cover_precent = round(input_file_cover_precent , 3)
+		else: 
+			input_file_block_result = report_APIs.general_run_process (input_file, 1 )
+			input_file_covered_line_count = input_file_block_result[1]
+			input_file_line_count = input_file_block_result[2]
+			input_file_cover_precent = float(input_file_covered_line_count)/float(input_file_line_count)
+			input_file_cover_precent = round(input_file_cover_precent , 3)
+			have_conflict = erase_conflict_block_based_on_error_report(input_file, total_progress_fl)
+
+		if have_conflict == 1:	
+			total_progress_fl.write("	Have conflict.\n")	
+			need_relearn = 1
+		total_progress_fl.write("	Coverage = " + str(input_file_cover_precent) + ".\n")	
+		total_progress_fl.write("	Total Coverage = " + str(average_cover_precent) + ".\n")	
+		
+		if input_file_cover_precent < average_cover_precent:
+			total_progress_fl.write("	Coverage " + str(input_file_cover_precent) + " lower than average " + str(average_cover_precent) + ".\n")	
+			need_relearn = 1	
+		
+		if need_relearn == 1:
+			total_progress_fl.write("	Re-learn\n")	
+			shutil.copy(input_file, done_learning_file_folder)
+			
+			#new learn total_file done			
+			total_tmp_learning_file_gen (total_file, done_learning_file_folder)
+			
+			#ARES 4/12/2017
+			total_progress_fl.write("		Total file conflict erase\n")	
+			input_file_block_result = report_APIs.general_run_process (total_file, 1 )
+			have_conflict = erase_conflict_block_based_on_error_report(total_file, total_progress_fl)
+
+
+			block_database_learner.block_database_learning (total_file)
+			os.remove(total_file)	
+		have_conflict = 0
+		
+		total_progress_fl.close()
+		
+		have_database = global_APIs.test_have_database(file_mode)
+		SLEBD_DB = block_database_opt.block_database_read(file_mode, str(have_database))
+		repeat_list = block_database_opt.repeat_db_test(SLEBD_DB)	
+		 
+
+
+	print "Test done learning file conflict"
+	result = folder_analyzing(done_learning_file_folder)
+	have_conflict = result["have_conflict"]
+	if have_conflict == 1:
+		total_progress_fl = open("total_progress_report.txt", "a")
+		total_progress_fl.write("merge done but have conflict\n" )	
+		#here the final round merge still have conflict, we still need one round merge
+		#database learning is on all the learning files, but still have chance to have conflict blocks
+		#after erase conflict blocks, coverage will be lower than it should be
+		#so I need to relearn one more time
+		total_progress_fl.write("final verify")	
+		total_progress_fl.write("================================\n")	
+		total_tmp_learning_file_gen (total_file, done_learning_file_folder)
+		block_database_learner.block_database_learning (total_file)
+		os.remove(total_file)	
+
+		total_progress_fl.close()
+
+def erase_conflict_block_based_on_error_report (input_file, total_progress_fl = ""):
+	file_mode = global_APIs.get_file_mode (input_file)
+	have_database = global_APIs.test_have_database(file_mode)
+	error_report = global_APIs.analyze_error_list_file("error_report.txt")
+	os.remove("error_report.txt")	
+	single_error_report = error_report[0]
+	multi_error_report = error_report[1]
+	block_database = block_database_opt.block_database_read(file_mode, str(have_database))
+	global_multi_list = block_database_opt.multi_database_read(file_mode, str(have_database))
+	for error in single_error_report:
+		if not total_progress_fl == "":
+			total_progress_fl.write ("	delete single block " + error + "\n")
+		if error in block_database:
+			del (block_database[error])
+		if error in global_multi_list:
+			del (global_multi_list[error])
+	for error in multi_error_report:
+		if not total_progress_fl == "":
+			total_progress_fl.write ("	delete multi block " + error + "\n")
+		if error in global_multi_list:
+			del (global_multi_list[error])
+	block_database_opt.block_database_store(block_database, file_mode)
+	block_database_opt.block_multi_store(global_multi_list, file_mode)
+	have_conflict = 0 
+	if not single_error_report == [] or not multi_error_report == []:
+		have_conflict = 1
+	
+	return have_conflict	
+
+
+	
+def total_tmp_learning_file_gen(total_file_name, folder_name ):
+	#{{{
+	total_fl = open(total_file_name, "w")
+	done_learning_list = global_APIs.get_folder_file_list(folder_name)
+	
+	for done_file in done_learning_list:
+		tmp_fl = open (done_file, "r")
+		while True:
+			line = tmp_fl.readline()
+			if not line:
+				break
+			total_fl.write(line)
+		tmp_fl.close()
+	total_fl.close()
+	#}}}
+
+				
+
+	
 
 def folder_learning (folder_name):
 #this must be in multi file folder
@@ -158,6 +330,7 @@ def folder_learning (folder_name):
 
 
 		file_mode = global_APIs.get_file_mode (input_file)
+			
 		have_database = global_APIs.test_have_database(file_mode)
 		if have_database == -1:
 			block_database_learner.block_database_learning (input_file)
@@ -205,7 +378,7 @@ def folder_learning (folder_name):
 			
 
 
-def folder_analyzing (folder_name):
+def folder_analyzing (folder_name, erase_conflict = 0):
 	folder_name = global_APIs.get_real_folder_name (folder_name)
 	
 	file_list = global_APIs.get_folder_file_list(folder_name)
@@ -216,11 +389,21 @@ def folder_analyzing (folder_name):
 	
 	total_block_length_summary_list = {}
 	total_block_length_result_list = []
+	have_conflict = 0
+	
+	total_report_file_name = "folder_analyzing_total_report.txt"
+	
+	total_fl = open(total_report_file_name, "w")
+	total_fl.write("test begin \n")
+	total_fl.close()
+	
 
 	for input_file in file_list:
 		file_mode = global_APIs.get_file_mode (input_file)
-		print "analyze"
-		print input_file
+		if file_mode == "":
+			continue
+		#print "analyze"
+		#print input_file
 		result = report_APIs.general_run_process (input_file, 1 )
 		
 		total_block_length = total_block_length + result[0] 
@@ -230,6 +413,30 @@ def folder_analyzing (folder_name):
 		block_list = result[4]
 	
 		summary_block_length (block_list, total_block_length_summary_list)
+		if erase_conflict == 1:
+			conflict = erase_conflict_block_based_on_error_report (input_file)	
+			if conflict == 1:
+				have_conflict = 1
+
+		total_fl = open (total_report_file_name, "a")
+		total_fl.write ("analyzing " + input_file + "\n")
+		total_fl.write ("===========================\n")
+		total_fl.write ("	coverage: " + str(float(result[1]) / float(result[2])) + "\n")
+		
+		error_report = global_APIs.analyze_error_list_file("error_report.txt")
+		single_error_report = error_report[0]
+		multi_error_report = error_report[1]
+				
+		for error in single_error_report:
+			total_fl.write ("	single error " + error + "\n")
+		for error in multi_error_report:
+			total_fl.write ("	multi error " + error + "\n")
+		
+		total_fl.write ("\n")
+		total_fl.close()
+
+
+		
 
 	for block in total_block_length_summary_list:
 		tmp = total_block_length_summary_list[block]
@@ -239,7 +446,8 @@ def folder_analyzing (folder_name):
 		result_tmp.append(tmp[0])
 		total_block_length_result_list.append(result_tmp)
 		
-
+	if file_mode == "":
+		file_mode = "mutrino"
 
 
 	report_tmp = []
@@ -257,11 +465,16 @@ def folder_analyzing (folder_name):
 	report_tmp.append(len(block_database))
 	report_APIs.output_block_list_report(report_tmp, "total_result", 1)
 	
-	
-	
 	report_APIs.output_block_list_report(total_block_length_result_list, "block_length", 2)
 
 
+	output_report = {}
+	output_report["total_block_number"] = total_block_length
+	output_report["total_covered_lines"] = total_covered_line 
+	output_report["total_lines"] = total_line_num 
+	output_report["total_valid_lines"] = total_valid_num
+	output_report["have_conflict"] = have_conflict
+	return output_report 
 
 
 
@@ -292,32 +505,98 @@ def summary_block_length (block_list, total_block_length_summary_list ):
 #sub_path_list_detector
 #find_sub_path_console_log
 #{{{
-def generate_single_node_log_file(folder_name):
+def whole_dataset_folder_gen_daily_log_file(folder_name):
+#{{{
 	sub_path_list = sub_path_list_detector(folder_name)
-	log_list = find_sub_path_console_log (sub_path_list)
+	wanted_file_num = 600 
+	log_list = find_sub_path_console_log (sub_path_list, wanted_file_num)
 
-	node_id = "c0-0c0s2n2"
-	single_node_log_file = node_id
-	single_node_log_file += "_single_file.txt"
-	node_file_fl = open(single_node_log_file, "w")	
+	path = "console_log_daily_file/"
+	if os.path.isdir(path):
+		shutil.rmtree (path)
+	os.mkdir(path)
+	file_count = 1 	
+	folder_count = 0
+	for file_name in log_list:
+		tmp_path = path
+		tmp_path += str(folder_count)
+		tmp_path += "/"
+		if not os.path.isdir(tmp_path):
+			os.mkdir(tmp_path)
+			
+		result = log_file_split(file_name)
+		mixed_file_name = tmp_path
+		mixed_file_name += "/"
+		mixed_file_name += str(file_count)
+		mixed_file_name += ".txt"
+		splited_folder_merge(result, mixed_file_name)
+		file_count += 1
+		shutil.rmtree (result)
+		if (file_count - 1 ) % 50 == 0 and not file_count == 1:
+			folder_count += 1
+#}}}	
+	
+def whole_dataset_folder_gen_daily_node_log_file(folder_name):
+	sub_path_list = sub_path_list_detector(folder_name)
+	total_wanted_file_num = 600 
+	file_step = 20
+	folder_count = 0
+	path = "console_log_single_node_file"
+	if os.path.isdir(path):
+		shutil.rmtree (path)
+	os.mkdir(path)	
+	while folder_count < total_wanted_file_num/file_step :
+		ignore_file_num = file_step * folder_count
+		wanted_file_num = file_step * (folder_count + 1) 
+		log_list = find_sub_path_console_log (sub_path_list, wanted_file_num, ignore_file_num)
+		if log_list == []:
+			break
+		tmp_path = path
+		tmp_path += "/"
+		tmp_path += str(folder_count)
+		if os.path.isdir(tmp_path):
+			shutil.rmtree (tmp_path)
+		os.mkdir(tmp_path)	
+		whole_dataset_folder_gen_single_node_log_file(folder_name, wanted_file_num, ignore_file_num, tmp_path, str(folder_count))
+		folder_count += 1
+	
+
+def whole_dataset_folder_gen_single_node_log_file(folder_name, wanted_file_num = 600, ignore_file_num = 0, path = "console_log_single_node_file", file_prefix = ""):
+	sub_path_list = sub_path_list_detector(folder_name)
+	log_list = find_sub_path_console_log (sub_path_list, wanted_file_num, ignore_file_num)
+
+	if os.path.isdir(path):
+		shutil.rmtree (path)
+	os.mkdir(path)	
+	
+	node_list = {} 
 
 	for file_name in log_list:
-		result = log_file_split(file_name)
-		tmp_file_name = result
-		tmp_file_name += "/"
-		tmp_file_name += global_APIs.get_real_file_name(file_name) 
-		tmp_file_name += "_"
-		tmp_file_name += node_id
-		tmp_file_name += ".txt" 
-		if os.path.isfile (tmp_file_name):
-			print tmp_file_name
-			tmp_file_fl = open(tmp_file_name, "r")
-			node_file_fl.write(tmp_file_fl.read())
-			tmp_file_fl.close()
-		shutil.rmtree (result)
-	node_file_fl.close()
-
-
+		fl = open (file_name, "r")
+		while True:
+			line = fl.readline()
+			if not line:	
+				break
+			node_id = global_APIs.get_line_id (line)
+			node_output_name = path 
+			node_output_name += "/"
+			if not file_prefix == "":
+				node_output_name += file_prefix
+				node_output_name += "_"
+			
+			node_output_name += node_id
+			node_output_name += ".txt" 
+			if not node_id in node_list:
+				node_fl = open(node_output_name, "w")
+				node_list[node_id] = node_fl	
+			node_fl = node_list[node_id]
+			node_fl.write(line)
+		fl.close
+	
+	for node_id in node_list:
+		node_fl = node_list[node_id]
+		node_fl.close()
+		
 
 def sub_path_list_detector (folder_name):
 	folder_list = [] 
@@ -358,9 +637,8 @@ def sub_path_list_detector (folder_name):
 
 	return folder_list_1
 
-def find_sub_path_console_log (sub_folder_list):
+def find_sub_path_console_log (sub_folder_list, max_file_count = 10, ignore_file_count = 0):
 	pattern = r'console-([0-9]+).cleansed$'
-	max_file_count = 10
 	file_count = 0
 	total_needed_file_list = []	
 	for sub_folder_name in sub_folder_list:
@@ -385,7 +663,8 @@ def find_sub_path_console_log (sub_folder_list):
 			tmp = sub_folder_name
 			tmp += "/"
 			tmp += min_console_name
-			total_needed_file_list.append (tmp)
+			if file_count >= ignore_file_count:
+				total_needed_file_list.append (tmp)
 			del(console_file_list[min_pos])
 			file_count += 1 
 			if file_count >= max_file_count:
@@ -395,11 +674,14 @@ def find_sub_path_console_log (sub_folder_list):
 			break	
 	return total_needed_file_list
 
-def splited_folder_merge (folder_name):
+def splited_folder_merge (folder_name, file_name = ""):
 	folder_name = global_APIs.get_real_folder_name (folder_name)
 	file_list = global_APIs.get_folder_file_list(folder_name)
-	total_file_name = folder_name
-	total_file_name += "_mixed.txt"
+	if file_name == "":
+		total_file_name = folder_name
+		total_file_name += "_mixed.txt"
+	else:
+		total_file_name = file_name
 	total_fl = open(total_file_name, "w")
 
 	for file_name in file_list:

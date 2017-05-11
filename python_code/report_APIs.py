@@ -3,9 +3,10 @@ import global_APIs
 import block_database_opt
 import input_file_block_analyzer as input_file_block_analyzer
 import block_merger 
+import operator
+import re 
 
 def dump_block_example (block_database, input_file, block_list):
-	print "dump example"
 	report_file = "block_report/"
 	report_file += global_APIs.get_real_file_name(input_file)
 	report_file += "_block_examples.txt"
@@ -49,6 +50,7 @@ def general_run_process (input_file, dump_error_file = 0 ):
 	#detect block database
 	#learn block list
 	#output report
+	print "general run " + input_file
 	file_mode = global_APIs.get_file_mode (input_file)
 	block_list = input_file_block_analyzer.input_file_block_analyze(input_file, dump_error_file)
 	block_happen_count_list = count_block_happen_time (block_list)
@@ -133,7 +135,11 @@ def dump_uncovered_valid_line (block_list, input_file):
 		if in_block == 0:
 			#uncovered
 			line_message = global_APIs.get_line_message (line)
-			pattern = global_APIs.gen_line_pattern (line_message)
+			pattern = "" 
+			if not global_APIs.is_baler_mutrino_format(line):
+				pattern = global_APIs.gen_line_pattern(line_message)
+			else:
+				pattern = global_APIs.gen_baler_line_pattern (line)
 			if not len(pattern) == 0:
 			#valid line
 				report_fl.write(line)
@@ -151,6 +157,14 @@ def dump_uncovered_valid_line (block_list, input_file):
 	fl.close()
 	report_fl.close()
 
+def block_list_file_read (input_file):
+	fl = open(input_file, "r")
+	block_list = []
+	for line in fl.readlines():
+		line = line.split(" ")
+		line [2] = line[2].replace("\n", "")	
+		block_list.append(line)
+	return block_list	
 
 def output_block_list_report (block_list, input_file, mode = 0):
 	file_name = global_APIs.get_real_file_name (input_file)
@@ -190,9 +204,7 @@ def output_block_list_report (block_list, input_file, mode = 0):
 		fl.close() 
 		
 
-def block_database_summary (file_name):
-	#file_name is only a trigger
-	file_mode = global_APIs.get_file_mode (file_name)
+def block_database_summary (file_mode):
 	have_database = global_APIs.test_have_database(file_mode)
 	block_database = block_database_opt.block_database_read(file_mode, str(have_database))
 	single_block = 0
@@ -215,7 +227,7 @@ def block_database_summary (file_name):
 #calculate_coverage
 #calculate_valid_line
 #{{{
-def count_block_happen_time (block_list):
+def block_list_happen_count(block_list):
 	block_happen_count_list = {}
 	for block in block_list:
 		block_name = block[0]
@@ -223,6 +235,10 @@ def count_block_happen_time (block_list):
 			block_happen_count_list[block_name] += 1
 		else:
 			block_happen_count_list[block_name] = 1
+	return 	block_happen_count_list
+
+def count_block_happen_time (block_list):
+	block_happen_count_list = block_list_happen_count(block_list)
 	count_list = {}
 	for block in block_happen_count_list:
 		if block_happen_count_list[block] in count_list:
@@ -251,7 +267,12 @@ def calculate_valid_line(input_file):
 			break
 		line_message = global_APIs.get_line_message (line)
 		total_line_num += 1
-		pattern = global_APIs.gen_line_pattern (line_message)
+		pattern = "" 
+		if not global_APIs.is_baler_mutrino_format(line):
+			pattern = global_APIs.gen_line_pattern(line_message)
+		else:
+			pattern = global_APIs.gen_baler_line_pattern (line)
+		
 		if not len(pattern) == 0:
 			total_valid_num += 1
 		#else:
@@ -265,4 +286,163 @@ def calculate_valid_line(input_file):
 	return result	
 #}}}
 
+def block_rength_other_report_analyze (input_file):
+	fl = open(input_file, "r")
+	count_list = {}
+	for line in fl.readlines():
+		line = line.split(" ")
+		block_name = line[0]
+		block_count = line[1]
+		if block_count in count_list:
+			count_list[block_count] += 1
+		else:	
+			count_list[block_count] = 1
+	for count in count_list:
+		print str(count) + " " + str(count_list[count])
 
+	fl.close() 
+
+
+def folder_analyze_result_log_conflict_detect (input_file):
+	fl = open (input_file, "r")
+	conflict_list = []
+	for line in fl.readlines():
+		#single error block_378
+		pattern = r'(.*)single error block_([0-9]+)$'	
+		matchobj = re.match (pattern, line)
+		if matchobj:
+			conflict_name = matchobj.group(2)
+			if not conflict_name in conflict_list:
+				conflict_list.append(conflict_name)	
+	print conflict_list
+	print len(conflict_list) 
+	fl.close() 
+
+def multi_line_block_happen_count (folder_name):
+	file_list = global_APIs.get_folder_file_list(folder_name)
+	pattern = r'(.*)_block_report.txt$'
+	single_count = 0
+	multi_count = 0
+	total_block_count_1 = 0
+	total_block_count_2 = 0
+	for file_name in file_list:
+		matchobj = re.match (pattern, file_name)
+		if not matchobj:
+			continue
+		if global_APIs.get_real_file_name(file_name) == "total_tmp_learning_file_block_report.txt":
+			continue
+		block_list = block_list_file_read (file_name)
+		print file_name
+		print len(block_list)
+		total_block_count_2 += len(block_list)
+		for block in block_list:
+			total_block_count_1 += 1
+			start_line = block[1]	
+			finish_line = block[2]
+			if not finish_line == start_line:	
+				multi_count += 1
+			else:
+				single_count += 1
+	print total_block_count_1
+	print total_block_count_2
+	print single_count
+	print multi_count
+
+def block_report_folder_block_count_analyze (folder_name):
+	file_list = global_APIs.get_folder_file_list(folder_name)
+	pattern = r'(.*)_block_report.txt$'
+	total_count = 0
+	block_count_list = {}
+	for file_name in file_list:
+		matchobj = re.match (pattern, file_name)
+		if not matchobj:
+			continue
+		block_list = block_list_file_read (file_name)
+		total_count += len(block_list)
+		block_happen_count_list = block_list_happen_count (block_list)
+		for block in block_happen_count_list:
+			if not block in block_count_list:
+				block_count_list[block] = block_happen_count_list[block]
+			else:
+				block_count_list[block] += block_happen_count_list[block]
+	tmp = []
+	tmp.append(total_count)
+	tmp.append(block_count_list) 	
+	return tmp
+
+def block_distribute_ratio_count (folder_name):
+#{{{
+	SLEBD_DB = block_database_opt.block_database_read("mutrino", "0")
+#load SLEBD_DB here is for finding all block patterns
+#database sorting
+	block_pattern_list = []
+	pattern = r'block_([0-9]+)$'
+	sorted_block_name_list = []
+	for block_name in SLEBD_DB:	
+		matchobj = re.match (pattern, block_name)
+		block_name_num = matchobj.group(1)
+		sorted_block_name_list.append(int(block_name_num))
+	sorted_block_name_list = sorted(sorted_block_name_list, reverse=False)
+	
+#database range detect
+	range_control_num = 19
+	#this is split into 20 parts
+	#this control num is very important
+	range_count = 0
+	every_range_block_num = len(sorted_block_name_list)/range_control_num
+	#len(block_count_list) is total block number, 737
+	start_num = 0
+	finish_num = 0
+	range_list = []
+	for block_name_num in sorted_block_name_list:
+		if range_count == 0:
+			start_num = block_name_num			
+		range_count += 1
+		if range_count == every_range_block_num:
+			finish_num = block_name_num
+			tmp = [start_num, finish_num]
+			range_list.append(tmp)
+			range_count = 0
+	if not range_count == 0:
+		tmp = [start_num, block_name_num]
+		range_list.append(tmp)
+		
+#block_list folder analyze
+	analyze_result = block_report_folder_block_count_analyze(folder_name)
+	total_count = analyze_result[0]
+	block_count_list = analyze_result[1]
+	
+	
+	range_count = 0
+	tmp_range = range_list[range_count]
+	range_start = tmp_range[0]
+	range_finish = tmp_range[1]
+	
+	range_block_happen_count = 0
+	range_ratio_list = []
+	for block_name_num in sorted_block_name_list:
+		if block_name_num > range_finish:
+			range_count += 1
+			range_ratio_list.append(round(float(range_block_happen_count)/float(total_count), 4))
+			range_block_happen_count = 0
+
+		tmp_range = range_list[range_count]
+		range_start = tmp_range[0]
+		range_finish = tmp_range[1]
+
+		block_name = "block_" + str(block_name_num)
+		if block_name in block_count_list:
+			block_happen_count = block_count_list [block_name]
+			range_block_happen_count += block_happen_count
+		else :
+			continue
+	if not range_block_happen_count == 0:
+		range_ratio_list.append(round(float(range_block_happen_count)/float(total_count), 4))
+		
+
+	
+	total_ratio = 0
+	for i in range(0, len(range_ratio_list)):
+		print range_ratio_list[i]
+		total_ratio += range_ratio_list[i]
+#}}}
