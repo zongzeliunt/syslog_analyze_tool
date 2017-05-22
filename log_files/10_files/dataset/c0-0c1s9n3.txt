@@ -1,0 +1,153 @@
+2015-02-11T17:26:04.032609-06:00 c0-0c1s9n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-11T17:36:34.304221-06:00 c0-0c1s9n3 Wait4Boot: WRITE: 523 bytes to memory @ 0x90CD0 ... complete
+2015-02-11T17:36:34.304229-06:00 c0-0c1s9n3 Wait4Boot: Blade Controller Boot Protocol version - 1
+2015-02-11T17:36:34.330086-06:00 c0-0c1s9n3 Wait4Boot: JUMP: KernelStart 0x100000, boot_params 0x90000, CmdLineAddr 0x90CD0
+2015-02-11T17:36:34.353418-06:00 c0-0c1s9n3 OnExitBootServices..
+2015-02-11T17:36:34.406341-06:00 c0-0c1s9n3 ConfigureXhciAtBoot() Start
+2015-02-11T17:36:34.429412-06:00 c0-0c1s9n3 ConfigureXhciAtBoot() End
+2015-02-11T17:36:34.430022-06:00 c0-0c1s9n3 (Wdt) RunWdtBeforeOsBoot
+2015-02-11T17:36:34.430029-06:00 c0-0c1s9n3 (Wdt) DisableTimer
+2015-02-11T17:36:37.473740-06:00 c0-0c1s9n3 Crypto Lib Callback.
+2015-02-11T17:36:37.498083-06:00 c0-0c1s9n3 Heap addr before Virtual MemFixup = 7bacb018, After = 7bacb018
+2015-02-11T17:36:37.498275-06:00 c0-0c1s9n3 NvramSmi Go Virtual
+2015-02-11T17:36:37.649625-06:00 c0-0c1s9n3 Stopping all external HCs
+2015-02-11T17:36:37.649720-06:00 c0-0c1s9n3 stopping all HC type 40:
+2015-02-11T17:36:47.144058-06:00 c0-0c1s9n3 i8042: No controller found
+2015-02-11T17:36:51.116723-06:00 c0-0c1s9n3 Sending ec_node_info with boot code 0 (NODE_INFO_OS_BOOT) for nid 103
+2015-02-11T17:36:51.116732-06:00 c0-0c1s9n3 net.core.rmem_max = 16777216
+2015-02-11T17:36:51.116765-06:00 c0-0c1s9n3 net.core.wmem_max = 16777216
+2015-02-11T17:36:51.116776-06:00 c0-0c1s9n3 net.core.rmem_default = 16777216
+2015-02-11T17:36:51.116783-06:00 c0-0c1s9n3 net.core.wmem_default = 16777216
+2015-02-11T17:36:51.116793-06:00 c0-0c1s9n3 net.core.optmem_max = 16777216
+2015-02-11T17:36:51.116811-06:00 c0-0c1s9n3 net.ipv4.tcp_mem = 16777216 16777216 16777216
+2015-02-11T17:36:51.116823-06:00 c0-0c1s9n3 net.ipv4.tcp_rmem = 4096 87380 16777216
+2015-02-11T17:36:51.116837-06:00 c0-0c1s9n3 net.ipv4.tcp_wmem = 4096 65536 16777216
+2015-02-11T17:36:51.335318-06:00 c0-0c1s9n3 nid 103: Linux version 3.0.101-0.31.1_1.0502.8394-cray_ari_c (abuild@cfosbld02) (gcc version 4.3.4 [gcc-4_3-branch revision 152973] (SUSE Linux) ) #1 SMP Wed Sep 10 04:09:26 UTC 2014
+2015-02-11T17:36:51.373376-06:00 c0-0c1s9n3 starting pid 6943, tty '': '/etc/init.d/rc'
+2015-02-11T17:36:51.471854-06:00 c0-0c1s9n3 bpmcd_init: Power statistics available in /sys/cray
+2015-02-11T17:36:51.472098-06:00 c0-0c1s9n3 DVS: Revision 1873 - Built: Sep 17 2014 @ 06:40:25 for lnet version 2.5
+2015-02-11T17:36:51.472112-06:00 c0-0c1s9n3 LNet: HW CPU cores: 64, npartitions: 8
+2015-02-11T17:36:56.504072-06:00 c0-0c1s9n3 Lustre: kgnilnd build version: 2.5-trunk-1.0502.17198.8.57-abuild-RB-5.2UP02_2.5.1-2014-09-17-06:43
+2015-02-11T17:36:56.633124-06:00 c0-0c1s9n3 LNet: Added LNI 103@gni [16/1024/0/0]
+2015-02-11T17:37:12.632354-06:00 c0-0c1s9n3 mcelog: Family 6 Model 3f CPU: only decoding architectural errors
+2015-02-11T17:37:12.677540-06:00 c0-0c1s9n3 SGI XPMEM kernel module v2.2 loaded
+2015-02-11T17:37:12.677567-06:00 c0-0c1s9n3 <node_health> (xtnhd) xtnhd has started
+2015-02-11T17:37:12.887517-06:00 c0-0c1s9n3 boot_freemem data calculated:  130105564
+2015-02-12T05:33:05.164255-06:00 c0-0c1s9n3 hpcc[13860] general protection ip:b6c9fa sp:7fffffffbcb0 error:0 in hpcc[400000+904000]
+2015-02-12T14:33:46.637274-06:00 c0-0c1s9n3 <node_health> Boot_Check: Nothing to stop.
+2015-02-12T14:33:46.637281-06:00 c0-0c1s9n3 Unloading nic compatibility device..done
+2015-02-12T14:33:46.637287-06:00 c0-0c1s9n3 bpmcd_exit: No local access to power statistics
+2015-02-12T14:33:46.637295-06:00 c0-0c1s9n3 This is not a native WLM environment; WLM is ALPSGI XPMEM kernel module v2.2 unloaded
+2015-02-12T14:33:46.637303-06:00 c0-0c1s9n3 S; exiting
+2015-02-12T14:33:46.637314-06:00 c0-0c1s9n3 Unloading XPMEM driver
+2015-02-12T14:33:46.637323-06:00 c0-0c1s9n3 Unmounting alps spool directory..done
+2015-02-12T14:33:46.637328-06:00 c0-0c1s9n3 Initializing Compute node runtime environment
+2015-02-12T14:33:46.637332-06:00 c0-0c1s9n3 (stop BIND mounts)
+2015-02-12T14:33:47.648623-06:00 c0-0c1s9n3 Stopping DVS service: 
+2015-02-12T14:33:47.648630-06:00 c0-0c1s9n3 ..done
+2015-02-12T14:33:50.727665-06:00 c0-0c1s9n3 System halted.
+2015-02-12T14:33:58.410862-06:00 c0-0c1s9n3 RCADSVCS : shutdown.
+2015-02-12T15:28:43.375588-06:00 c0-0c1s9n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-12T15:39:08.937739-06:00 c0-0c1s9n3 Wait4Boot: WRITE: 523 bytes to memory @ 0x90CD0 ... complete
+2015-02-12T15:39:08.937748-06:00 c0-0c1s9n3 Wait4Boot: Blade Controller Boot Protocol version - 1
+2015-02-12T15:39:08.977969-06:00 c0-0c1s9n3 Wait4Boot: JUMP: KernelStart 0x100000, boot_params 0x90000, CmdLineAddr 0x90CD0
+2015-02-12T15:39:08.978284-06:00 c0-0c1s9n3 OnExitBootServices..
+2015-02-12T15:39:09.040485-06:00 c0-0c1s9n3 ConfigureXhciAtBoot() Start
+2015-02-12T15:39:09.040530-06:00 c0-0c1s9n3 ConfigureXhciAtBoot() End
+2015-02-12T15:39:09.040633-06:00 c0-0c1s9n3 (Wdt) RunWdtBeforeOsBoot
+2015-02-12T15:39:09.063837-06:00 c0-0c1s9n3 (Wdt) DisableTimer
+2015-02-12T15:39:12.108590-06:00 c0-0c1s9n3 Crypto Lib Callback.
+2015-02-12T15:39:12.133446-06:00 c0-0c1s9n3 Heap addr before Virtual MemFixup = 7bacb018, After = 7bacb018
+2015-02-12T15:39:12.133769-06:00 c0-0c1s9n3 NvramSmi Go Virtual
+2015-02-12T15:39:12.285001-06:00 c0-0c1s9n3 Stopping all external HCs
+2015-02-12T15:39:12.285455-06:00 c0-0c1s9n3 stopping all HC type 40:
+2015-02-12T15:39:21.813358-06:00 c0-0c1s9n3 i8042: No controller found
+2015-02-12T15:39:25.912221-06:00 c0-0c1s9n3 Sending ec_node_info with boot code 0 (NODE_INFO_OS_BOOT) for nid 103
+2015-02-12T15:39:25.912232-06:00 c0-0c1s9n3 net.core.rmem_max = 16777216
+2015-02-12T15:39:25.912243-06:00 c0-0c1s9n3 net.core.wmem_max = 16777216
+2015-02-12T15:39:25.912257-06:00 c0-0c1s9n3 net.core.rmem_default = 16777216
+2015-02-12T15:39:25.912274-06:00 c0-0c1s9n3 net.core.wmem_default = 16777216
+2015-02-12T15:39:25.912302-06:00 c0-0c1s9n3 net.core.optmem_max = 16777216
+2015-02-12T15:39:25.912314-06:00 c0-0c1s9n3 net.ipv4.tcp_mem = 16777216 16777216 16777216
+2015-02-12T15:39:25.912325-06:00 c0-0c1s9n3 net.ipv4.tcp_rmem = 4096 87380 16777216
+2015-02-12T15:39:25.912336-06:00 c0-0c1s9n3 net.ipv4.tcp_wmem = 4096 65536 16777216
+2015-02-12T15:39:26.236239-06:00 c0-0c1s9n3 nid 103: Linux version 3.0.101-0.31.1_1.0502.8394-cray_ari_c (abuild@cfosbld02) (gcc version 4.3.4 [gcc-4_3-branch revision 152973] (SUSE Linux) ) #1 SMP Wed Sep 10 04:09:26 UTC 2014
+2015-02-12T15:39:26.286542-06:00 c0-0c1s9n3 starting pid 6940, tty '': '/etc/init.d/rc'
+2015-02-12T15:39:26.387378-06:00 c0-0c1s9n3 bpmcd_init: Power statistics available in /sys/cray
+2015-02-12T15:39:26.387578-06:00 c0-0c1s9n3 DVS: Revision 1873 - Built: Sep 17 2014 @ 06:40:25 for lnet version 2.5
+2015-02-12T15:39:26.412606-06:00 c0-0c1s9n3 LNet: HW CPU cores: 64, npartitions: 8
+2015-02-12T15:39:31.439544-06:00 c0-0c1s9n3 Lustre: kgnilnd build version: 2.5-trunk-1.0502.17198.8.57-abuild-RB-5.2UP02_2.5.1-2014-09-17-06:43
+2015-02-12T15:39:31.566766-06:00 c0-0c1s9n3 LNet: Added LNI 103@gni [16/1024/0/0]
+2015-02-12T15:39:47.603983-06:00 c0-0c1s9n3 mcelog: Family 6 Model 3f CPU: only decoding architectural errors
+2015-02-12T15:39:47.630445-06:00 c0-0c1s9n3 SGI XPMEM kernel module v2.2 loaded
+2015-02-12T15:39:47.630509-06:00 c0-0c1s9n3 <node_health> (xtnhd) xtnhd has started
+2015-02-12T15:39:47.929570-06:00 c0-0c1s9n3 boot_freemem data calculated:  130102308
+2015-02-13T12:47:59.722891-06:00 c0-0c1s9n3 <node_health> Boot_Check: Nothing to stop.
+2015-02-13T12:47:59.722901-06:00 c0-0c1s9n3 Unloading nic compatibility device..done
+2015-02-13T12:47:59.722907-06:00 c0-0c1s9n3 bpmcd_exit: No local access to power statistics
+2015-02-13T12:47:59.722912-06:00 c0-0c1s9n3 This is not a native WLM environment; WLM is ALPSGI XPMEM kernel module v2.2 unloaded
+2015-02-13T12:47:59.722921-06:00 c0-0c1s9n3 S; exiting
+2015-02-13T12:47:59.722926-06:00 c0-0c1s9n3 Unloading XPMEM driver
+2015-02-13T12:47:59.722948-06:00 c0-0c1s9n3 Unmounting alps spool directory..done
+2015-02-13T12:47:59.722955-06:00 c0-0c1s9n3 Initializing Compute node runtime environment
+2015-02-13T12:47:59.722966-06:00 c0-0c1s9n3 (stop BIND mounts)
+2015-02-13T12:48:00.727982-06:00 c0-0c1s9n3 Stopping DVS service: 
+2015-02-13T12:48:00.727987-06:00 c0-0c1s9n3 ..done
+2015-02-13T12:48:03.804591-06:00 c0-0c1s9n3 System halted.
+2015-02-13T12:48:04.888204-06:00 c0-0c1s9n3 RCADSVCS : shutdown.
+2015-02-13T13:11:18.039731-06:00 c0-0c1s9n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-13T13:21:36.996726-06:00 c0-0c1s9n3 Wait4Boot: WRITE: 523 bytes to memory @ 0x90CD0 ... complete
+2015-02-13T13:21:36.996743-06:00 c0-0c1s9n3 Wait4Boot: Blade Controller Boot Protocol version - 1
+2015-02-13T13:21:36.997624-06:00 c0-0c1s9n3 Wait4Boot: JUMP: KernelStart 0x100000, boot_params 0x90000, CmdLineAddr 0x90CD0
+2015-02-13T13:21:36.997762-06:00 c0-0c1s9n3 OnExitBootServices..
+2015-02-13T13:21:37.097032-06:00 c0-0c1s9n3 ConfigureXhciAtBoot() Start
+2015-02-13T13:21:37.097127-06:00 c0-0c1s9n3 ConfigureXhciAtBoot() End
+2015-02-13T13:21:37.097184-06:00 c0-0c1s9n3 (Wdt) RunWdtBeforeOsBoot
+2015-02-13T13:21:37.122186-06:00 c0-0c1s9n3 (Wdt) DisableTimer
+2015-02-13T13:21:40.471369-06:00 c0-0c1s9n3 Crypto Lib Callback.
+2015-02-13T13:21:40.471378-06:00 c0-0c1s9n3 Heap addr before Virtual MemFixup = 7bacb018, After = 7bacb018
+2015-02-13T13:21:40.471383-06:00 c0-0c1s9n3 NvramSmi Go Virtual
+2015-02-13T13:21:40.471394-06:00 c0-0c1s9n3 Stopping all external HCs
+2015-02-13T13:21:40.471399-06:00 c0-0c1s9n3 stopping all HC type 40:
+2015-02-13T13:21:49.878614-06:00 c0-0c1s9n3 i8042: No controller found
+2015-02-13T13:21:53.798536-06:00 c0-0c1s9n3 Sending ec_node_info with boot code 0 (NODE_INFO_OS_BOOT) for nid 103
+2015-02-13T13:21:53.798544-06:00 c0-0c1s9n3 net.core.rmem_max = 16777216
+2015-02-13T13:21:53.798559-06:00 c0-0c1s9n3 net.core.wmem_max = 16777216
+2015-02-13T13:21:53.798567-06:00 c0-0c1s9n3 net.core.rmem_default = 16777216
+2015-02-13T13:21:53.798575-06:00 c0-0c1s9n3 net.core.wmem_default = 16777216
+2015-02-13T13:21:53.798588-06:00 c0-0c1s9n3 net.core.optmem_max = 16777216
+2015-02-13T13:21:53.798596-06:00 c0-0c1s9n3 net.ipv4.tcp_mem = 16777216 16777216 16777216
+2015-02-13T13:21:53.798605-06:00 c0-0c1s9n3 net.ipv4.tcp_rmem = 4096 87380 16777216
+2015-02-13T13:21:53.798613-06:00 c0-0c1s9n3 net.ipv4.tcp_wmem = 4096 65536 16777216
+2015-02-13T13:21:54.057538-06:00 c0-0c1s9n3 nid 103: Linux version 3.0.101-0.31.1_1.0502.8394-cray_ari_c (abuild@cfosbld02) (gcc version 4.3.4 [gcc-4_3-branch revision 152973] (SUSE Linux) ) #1 SMP Wed Sep 10 04:09:26 UTC 2014
+2015-02-13T13:21:54.057546-06:00 c0-0c1s9n3 starting pid 6922, tty '': '/etc/init.d/rc'
+2015-02-13T13:21:54.186488-06:00 c0-0c1s9n3 bpmcd_init: Power statistics available in /sys/cray
+2015-02-13T13:21:54.261901-06:00 c0-0c1s9n3 DVS: Revision 1873 - Built: Sep 17 2014 @ 06:40:25 for lnet version 2.5
+2015-02-13T13:21:54.261936-06:00 c0-0c1s9n3 LNet: HW CPU cores: 64, npartitions: 8
+2015-02-13T13:21:59.268607-06:00 c0-0c1s9n3 Lustre: kgnilnd build version: 2.5-trunk-1.0502.17198.8.57-abuild-RB-5.2UP02_2.5.1-2014-09-17-06:43
+2015-02-13T13:21:59.787588-06:00 c0-0c1s9n3 LNet: Added LNI 103@gni [16/1024/0/0]
+2015-02-13T13:22:15.401022-06:00 c0-0c1s9n3 mcelog: Family 6 Model 3f CPU: only decoding architectural errors
+2015-02-13T13:22:15.451732-06:00 c0-0c1s9n3 SGI XPMEM kernel module v2.2 loaded
+2015-02-13T13:22:15.451759-06:00 c0-0c1s9n3 <node_health> (xtnhd) xtnhd has started
+2015-02-13T13:22:15.680138-06:00 c0-0c1s9n3 boot_freemem data calculated:  130107104
+2015-02-13T22:40:56.033983-06:00 c0-0c1s9n3 hpcc[31027] general protection ip:b6c9fa sp:7fffffffbd20 error:0 in hpcc[400000+904000]
+2015-02-14T13:24:32.965347-06:00 c0-0c1s9n3 hpcc[30404] general protection ip:b6c9fa sp:7fffffffbd20 error:0 in hpcc[400000+904000]
+2015-02-14T19:38:05.738834-06:00 c0-0c1s9n3 hpcc[6137] general protection ip:b6c9fa sp:7fffffffbc80 error:0 in hpcc[400000+904000]
+2015-02-15T04:10:56.991767-06:00 c0-0c1s9n3 hpcc[29732] general protection ip:b6c9fa sp:7fffffffbc80 error:0 in hpcc[400000+904000]
+2015-02-15T10:23:51.486355-06:00 c0-0c1s9n3 hpcc[5545] general protection ip:b6c9fa sp:7fffffffbc80 error:0 in hpcc[400000+904000]
+2015-02-16T05:49:15.569509-06:00 c0-0c1s9n3 hpcc[35569] general protection ip:b6c9fa sp:7fffffffbc80 error:0 in hpcc[400000+904000]
+2015-02-16T11:06:06.234128-06:00 c0-0c1s9n3 <node_health> Boot_Check: Nothing to stop.
+2015-02-16T11:06:06.234136-06:00 c0-0c1s9n3 Unloading nic compatibility device..done
+2015-02-16T11:06:06.234143-06:00 c0-0c1s9n3 bpmcd_exit: No local access to power statistics
+2015-02-16T11:06:06.234148-06:00 c0-0c1s9n3 This is not a native WLM environment; WLM is ALPSGI XPMEM kernel module v2.2 unloaded
+2015-02-16T11:06:06.234160-06:00 c0-0c1s9n3 S; exiting
+2015-02-16T11:06:06.234174-06:00 c0-0c1s9n3 Unloading XPMEM driver
+2015-02-16T11:06:06.234180-06:00 c0-0c1s9n3 Unmounting alps spool directory..done
+2015-02-16T11:06:06.234192-06:00 c0-0c1s9n3 Initializing Compute node runtime environment
+2015-02-16T11:06:06.234199-06:00 c0-0c1s9n3 (stop BIND mounts)
+2015-02-16T11:06:07.288130-06:00 c0-0c1s9n3 Stopping DVS service: 
+2015-02-16T11:06:07.779749-06:00 c0-0c1s9n3 ..done
+2015-02-16T11:06:10.839318-06:00 c0-0c1s9n3 System halted.
+2015-02-16T11:06:10.879346-06:00 c0-0c1s9n3 RCADSVCS : shutdown.
+2015-02-16T14:51:01.166212-06:00 c0-0c1s9n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:08:04.797098-07:00 c0-0c1s9n3 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2

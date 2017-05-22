@@ -1,0 +1,372 @@
+2015-02-11T17:26:01.991108-06:00 c0-0c2s12n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-11T17:36:34.329980-06:00 c0-0c2s12n2 Wait4Boot: WRITE: 523 bytes to memory @ 0x90CD0 ... complete
+2015-02-11T17:36:34.329988-06:00 c0-0c2s12n2 Wait4Boot: Blade Controller Boot Protocol version - 1
+2015-02-11T17:36:34.329997-06:00 c0-0c2s12n2 Wait4Boot: JUMP: KernelStart 0x100000, boot_params 0x90000, CmdLineAddr 0x90CD0
+2015-02-11T17:36:34.330006-06:00 c0-0c2s12n2 OnExitBootServices..
+2015-02-11T17:36:34.404948-06:00 c0-0c2s12n2 ConfigureXhciAtBoot() Start
+2015-02-11T17:36:34.405241-06:00 c0-0c2s12n2 ConfigureXhciAtBoot() End
+2015-02-11T17:36:34.405794-06:00 c0-0c2s12n2 (Wdt) RunWdtBeforeOsBoot
+2015-02-11T17:36:34.406330-06:00 c0-0c2s12n2 (Wdt) DisableTimer
+2015-02-11T17:36:38.002786-06:00 c0-0c2s12n2 Crypto Lib Callback.
+2015-02-11T17:36:38.002794-06:00 c0-0c2s12n2 Heap addr before Virtual MemFixup = 7bacb018, After = 7bacb018
+2015-02-11T17:36:38.002801-06:00 c0-0c2s12n2 NvramSmi Go Virtual
+2015-02-11T17:36:38.002807-06:00 c0-0c2s12n2 Stopping all external HCs
+2015-02-11T17:36:38.002824-06:00 c0-0c2s12n2 stopping all HC type 40:
+2015-02-11T17:36:47.093845-06:00 c0-0c2s12n2 i8042: No controller found
+2015-02-11T17:36:51.259214-06:00 c0-0c2s12n2 Sending ec_node_info with boot code 0 (NODE_INFO_OS_BOOT) for nid 178
+2015-02-11T17:36:51.259224-06:00 c0-0c2s12n2 net.core.rmem_max = 16777216
+2015-02-11T17:36:51.259250-06:00 c0-0c2s12n2 net.core.wmem_max = 16777216
+2015-02-11T17:36:51.259262-06:00 c0-0c2s12n2 net.core.rmem_default = 16777216
+2015-02-11T17:36:51.259269-06:00 c0-0c2s12n2 net.core.wmem_default = 16777216
+2015-02-11T17:36:51.259282-06:00 c0-0c2s12n2 net.core.optmem_max = 16777216
+2015-02-11T17:36:51.259296-06:00 c0-0c2s12n2 net.ipv4.tcp_mem = 16777216 16777216 16777216
+2015-02-11T17:36:51.259305-06:00 c0-0c2s12n2 net.ipv4.tcp_rmem = 4096 87380 16777216
+2015-02-11T17:36:51.259317-06:00 c0-0c2s12n2 net.ipv4.tcp_wmem = 4096 65536 16777216
+2015-02-11T17:36:51.522363-06:00 c0-0c2s12n2 nid 178: Linux version 3.0.101-0.31.1_1.0502.8394-cray_ari_c (abuild@cfosbld02) (gcc version 4.3.4 [gcc-4_3-branch revision 152973] (SUSE Linux) ) #1 SMP Wed Sep 10 04:09:26 UTC 2014
+2015-02-11T17:36:51.572779-06:00 c0-0c2s12n2 starting pid 6921, tty '': '/etc/init.d/rc'
+2015-02-11T17:36:51.648573-06:00 c0-0c2s12n2 bpmcd_init: Power statistics available in /sys/cray
+2015-02-11T17:36:51.698928-06:00 c0-0c2s12n2 DVS: Revision 1873 - Built: Sep 17 2014 @ 06:40:25 for lnet version 2.5
+2015-02-11T17:36:51.699018-06:00 c0-0c2s12n2 LNet: HW CPU cores: 64, npartitions: 8
+2015-02-11T17:36:56.737409-06:00 c0-0c2s12n2 Lustre: kgnilnd build version: 2.5-trunk-1.0502.17198.8.57-abuild-RB-5.2UP02_2.5.1-2014-09-17-06:43
+2015-02-11T17:36:57.214664-06:00 c0-0c2s12n2 LNet: Added LNI 178@gni [16/1024/0/0]
+2015-02-11T17:37:12.860798-06:00 c0-0c2s12n2 mcelog: Family 6 Model 3f CPU: only decoding architectural errors
+2015-02-11T17:37:12.887289-06:00 c0-0c2s12n2 SGI XPMEM kernel module v2.2 loaded
+2015-02-11T17:37:12.912567-06:00 c0-0c2s12n2 <node_health> (xtnhd) xtnhd has started
+2015-02-11T17:37:13.134225-06:00 c0-0c2s12n2 boot_freemem data calculated:  130106552
+2015-02-11T18:31:22.519137-06:00 c0-0c2s12n2 net_ratelimit: 6 callbacks suppressed
+2015-02-11T19:20:26.915247-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-11T19:20:56.968961-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-11T20:10:02.142078-06:00 c0-0c2s12n2 net_ratelimit: 35 callbacks suppressed
+2015-02-11T20:10:32.202308-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-11T20:59:22.146012-06:00 c0-0c2s12n2 net_ratelimit: 3 callbacks suppressed
+2015-02-11T20:59:52.140928-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-11T21:48:31.955493-06:00 c0-0c2s12n2 net_ratelimit: 9 callbacks suppressed
+2015-02-11T21:49:01.914504-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-11T22:37:52.160571-06:00 c0-0c2s12n2 net_ratelimit: 24 callbacks suppressed
+2015-02-11T22:38:22.255142-06:00 c0-0c2s12n2 net_ratelimit: 33 callbacks suppressed
+2015-02-11T23:26:52.489524-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-11T23:27:22.391525-06:00 c0-0c2s12n2 net_ratelimit: 7 callbacks suppressed
+2015-02-12T00:16:12.528141-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-12T00:16:42.500526-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-12T01:05:29.095292-06:00 c0-0c2s12n2 net_ratelimit: 6 callbacks suppressed
+2015-02-12T01:05:58.923344-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-12T01:54:45.103855-06:00 c0-0c2s12n2 net_ratelimit: 41 callbacks suppressed
+2015-02-12T01:55:15.452769-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-12T02:44:06.089716-06:00 c0-0c2s12n2 net_ratelimit: 8 callbacks suppressed
+2015-02-12T02:44:36.243558-06:00 c0-0c2s12n2 net_ratelimit: 32 callbacks suppressed
+2015-02-12T03:33:26.548921-06:00 c0-0c2s12n2 net_ratelimit: 36 callbacks suppressed
+2015-02-12T03:33:56.451085-06:00 c0-0c2s12n2 net_ratelimit: 39 callbacks suppressed
+2015-02-12T04:23:12.367655-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-12T04:23:42.405151-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-12T05:12:48.415168-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-12T05:13:18.369350-06:00 c0-0c2s12n2 net_ratelimit: 38 callbacks suppressed
+2015-02-12T06:02:04.483868-06:00 c0-0c2s12n2 net_ratelimit: 33 callbacks suppressed
+2015-02-12T06:02:34.468442-06:00 c0-0c2s12n2 net_ratelimit: 21 callbacks suppressed
+2015-02-12T06:51:20.895904-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-12T06:51:51.145504-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-12T07:40:57.633168-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-12T07:41:27.885113-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-12T08:29:39.796921-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-12T08:30:09.841869-06:00 c0-0c2s12n2 net_ratelimit: 26 callbacks suppressed
+2015-02-12T09:18:56.067540-06:00 c0-0c2s12n2 net_ratelimit: 21 callbacks suppressed
+2015-02-12T09:19:26.037143-06:00 c0-0c2s12n2 net_ratelimit: 8 callbacks suppressed
+2015-02-12T10:06:57.043724-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-12T10:07:27.198757-06:00 c0-0c2s12n2 net_ratelimit: 24 callbacks suppressed
+2015-02-12T10:55:33.575053-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-12T10:56:03.593953-06:00 c0-0c2s12n2 net_ratelimit: 26 callbacks suppressed
+2015-02-12T11:44:50.215521-06:00 c0-0c2s12n2 net_ratelimit: 24 callbacks suppressed
+2015-02-12T11:45:20.211016-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-12T12:34:07.050493-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-12T12:34:37.037848-06:00 c0-0c2s12n2 net_ratelimit: 20 callbacks suppressed
+2015-02-12T13:22:49.009477-06:00 c0-0c2s12n2 net_ratelimit: 39 callbacks suppressed
+2015-02-12T13:23:19.056120-06:00 c0-0c2s12n2 net_ratelimit: 23 callbacks suppressed
+2015-02-12T14:11:46.251513-06:00 c0-0c2s12n2 net_ratelimit: 33 callbacks suppressed
+2015-02-12T14:12:16.409481-06:00 c0-0c2s12n2 net_ratelimit: 33 callbacks suppressed
+2015-02-12T14:33:47.155040-06:00 c0-0c2s12n2 <node_health> Boot_Check: Nothing to stop.
+2015-02-12T14:33:47.155049-06:00 c0-0c2s12n2 Unloading nic compatibility device..done
+2015-02-12T14:33:47.155054-06:00 c0-0c2s12n2 bpmcd_exit: No local access to power statistics
+2015-02-12T14:33:47.155060-06:00 c0-0c2s12n2 This is not a native WLM environment; WLM is ALPSGI XPMEM kernel module v2.2 unloaded
+2015-02-12T14:33:47.155067-06:00 c0-0c2s12n2 S; exiting
+2015-02-12T14:33:47.155075-06:00 c0-0c2s12n2 Unloading XPMEM driver
+2015-02-12T14:33:47.155086-06:00 c0-0c2s12n2 Unmounting alps spool directory..done
+2015-02-12T14:33:47.155093-06:00 c0-0c2s12n2 Initializing Compute node runtime environment
+2015-02-12T14:33:47.155101-06:00 c0-0c2s12n2 (stop BIND mounts)
+2015-02-12T14:33:48.175749-06:00 c0-0c2s12n2 Stopping DVS service: 
+2015-02-12T14:33:48.175754-06:00 c0-0c2s12n2 ..done
+2015-02-12T14:33:51.239644-06:00 c0-0c2s12n2 System halted.
+2015-02-12T14:33:54.839727-06:00 c0-0c2s12n2 RCADSVCS : shutdown.
+2015-02-12T15:28:41.348799-06:00 c0-0c2s12n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-12T15:39:09.039742-06:00 c0-0c2s12n2 Wait4Boot: WRITE: 523 bytes to memory @ 0x90CD0 ... complete
+2015-02-12T15:39:09.039750-06:00 c0-0c2s12n2 Wait4Boot: Blade Controller Boot Protocol version - 1
+2015-02-12T15:39:09.039756-06:00 c0-0c2s12n2 Wait4Boot: JUMP: KernelStart 0x100000, boot_params 0x90000, CmdLineAddr 0x90CD0
+2015-02-12T15:39:09.039760-06:00 c0-0c2s12n2 OnExitBootServices..
+2015-02-12T15:39:09.039769-06:00 c0-0c2s12n2 ConfigureXhciAtBoot() Start
+2015-02-12T15:39:09.039776-06:00 c0-0c2s12n2 ConfigureXhciAtBoot() End
+2015-02-12T15:39:09.039789-06:00 c0-0c2s12n2 (Wdt) RunWdtBeforeOsBoot
+2015-02-12T15:39:09.039795-06:00 c0-0c2s12n2 (Wdt) DisableTimer
+2015-02-12T15:39:12.083066-06:00 c0-0c2s12n2 Crypto Lib Callback.
+2015-02-12T15:39:12.083356-06:00 c0-0c2s12n2 Heap addr before Virtual MemFixup = 7bacb018, After = 7bacb018
+2015-02-12T15:39:12.107995-06:00 c0-0c2s12n2 NvramSmi Go Virtual
+2015-02-12T15:39:12.234801-06:00 c0-0c2s12n2 Stopping all external HCs
+2015-02-12T15:39:12.259689-06:00 c0-0c2s12n2 stopping all HC type 40:
+2015-02-12T15:39:21.662306-06:00 c0-0c2s12n2 i8042: No controller found
+2015-02-12T15:39:25.800546-06:00 c0-0c2s12n2 Sending ec_node_info with boot code 0 (NODE_INFO_OS_BOOT) for nid 178
+2015-02-12T15:39:25.800555-06:00 c0-0c2s12n2 net.core.rmem_max = 16777216
+2015-02-12T15:39:25.800561-06:00 c0-0c2s12n2 net.core.wmem_max = 16777216
+2015-02-12T15:39:25.800571-06:00 c0-0c2s12n2 net.core.rmem_default = 16777216
+2015-02-12T15:39:25.800578-06:00 c0-0c2s12n2 net.core.wmem_default = 16777216
+2015-02-12T15:39:25.800585-06:00 c0-0c2s12n2 net.core.optmem_max = 16777216
+2015-02-12T15:39:25.800610-06:00 c0-0c2s12n2 net.ipv4.tcp_mem = 16777216 16777216 16777216
+2015-02-12T15:39:25.800615-06:00 c0-0c2s12n2 net.ipv4.tcp_rmem = 4096 87380 16777216
+2015-02-12T15:39:25.800620-06:00 c0-0c2s12n2 net.ipv4.tcp_wmem = 4096 65536 16777216
+2015-02-12T15:39:25.800632-06:00 c0-0c2s12n2 nid 178: Linux version 3.0.101-0.31.1_1.0502.8394-cray_ari_c (abuild@cfosbld02) (gcc version 4.3.4 [gcc-4_3-branch revision 152973] (SUSE Linux) ) #1 SMP Wed Sep 10 04:09:26 UTC 2014
+2015-02-12T15:39:25.800642-06:00 c0-0c2s12n2 starting pid 6924, tty '': '/etc/init.d/rc'
+2015-02-12T15:39:25.800648-06:00 c0-0c2s12n2 bpmcd_init: Power statistics available in /sys/cray
+2015-02-12T15:39:25.800654-06:00 c0-0c2s12n2 DVS: Revision 1873 - Built: Sep 17 2014 @ 06:40:25 for lnet version 2.5
+2015-02-12T15:39:25.800679-06:00 c0-0c2s12n2 LNet: HW CPU cores: 64, npartitions: 8
+2015-02-12T15:39:30.523191-06:00 c0-0c2s12n2 Lustre: kgnilnd build version: 2.5-trunk-1.0502.17198.8.57-abuild-RB-5.2UP02_2.5.1-2014-09-17-06:43
+2015-02-12T15:39:30.663841-06:00 c0-0c2s12n2 LNet: Added LNI 178@gni [16/1024/0/0]
+2015-02-12T15:39:46.688056-06:00 c0-0c2s12n2 mcelog: Family 6 Model 3f CPU: only decoding architectural errors
+2015-02-12T15:39:46.713596-06:00 c0-0c2s12n2 SGI XPMEM kernel module v2.2 loaded
+2015-02-12T15:39:46.713625-06:00 c0-0c2s12n2 <node_health> (xtnhd) xtnhd has started
+2015-02-12T15:39:46.909893-06:00 c0-0c2s12n2 boot_freemem data calculated:  130105648
+2015-02-13T12:47:58.699915-06:00 c0-0c2s12n2 <node_health> Boot_Check: Nothing to stop.
+2015-02-13T12:47:58.699923-06:00 c0-0c2s12n2 Unloading nic compatibility device..done
+2015-02-13T12:47:58.699929-06:00 c0-0c2s12n2 bpmcd_exit: No local access to power statistics
+2015-02-13T12:47:58.699933-06:00 c0-0c2s12n2 This is not a native WLM environment; WLM is ALPSGI XPMEM kernel module v2.2 unloaded
+2015-02-13T12:47:58.699955-06:00 c0-0c2s12n2 S; exiting
+2015-02-13T12:47:58.699965-06:00 c0-0c2s12n2 Unloading XPMEM driver
+2015-02-13T12:47:58.699970-06:00 c0-0c2s12n2 Unmounting alps spool directory..done
+2015-02-13T12:47:58.699978-06:00 c0-0c2s12n2 Initializing Compute node runtime environment
+2015-02-13T12:47:58.699983-06:00 c0-0c2s12n2 (stop BIND mounts)
+2015-02-13T12:47:59.723765-06:00 c0-0c2s12n2 Stopping DVS service: 
+2015-02-13T12:47:59.723773-06:00 c0-0c2s12n2 ..done
+2015-02-13T12:48:02.793855-06:00 c0-0c2s12n2 System halted.
+2015-02-13T12:48:04.888417-06:00 c0-0c2s12n2 RCADSVCS : shutdown.
+2015-02-13T13:11:16.015074-06:00 c0-0c2s12n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-13T13:21:36.894880-06:00 c0-0c2s12n2 Wait4Boot: WRITE: 523 bytes to memory @ 0x90CD0 ... complete
+2015-02-13T13:21:36.894888-06:00 c0-0c2s12n2 Wait4Boot: Blade Controller Boot Protocol version - 1
+2015-02-13T13:21:36.894894-06:00 c0-0c2s12n2 Wait4Boot: JUMP: KernelStart 0x100000, boot_params 0x90000, CmdLineAddr 0x90CD0
+2015-02-13T13:21:36.894899-06:00 c0-0c2s12n2 OnExitBootServices..
+2015-02-13T13:21:36.971447-06:00 c0-0c2s12n2 ConfigureXhciAtBoot() Start
+2015-02-13T13:21:36.972012-06:00 c0-0c2s12n2 ConfigureXhciAtBoot() End
+2015-02-13T13:21:36.972269-06:00 c0-0c2s12n2 (Wdt) RunWdtBeforeOsBoot
+2015-02-13T13:21:36.997228-06:00 c0-0c2s12n2 (Wdt) DisableTimer
+2015-02-13T13:21:40.379783-06:00 c0-0c2s12n2 Crypto Lib Callback.
+2015-02-13T13:21:40.379795-06:00 c0-0c2s12n2 Heap addr before Virtual MemFixup = 7bacb018, After = 7bacb018
+2015-02-13T13:21:40.379804-06:00 c0-0c2s12n2 NvramSmi Go Virtual
+2015-02-13T13:21:40.379823-06:00 c0-0c2s12n2 Stopping all external HCs
+2015-02-13T13:21:40.379832-06:00 c0-0c2s12n2 stopping all HC type 40:
+2015-02-13T13:21:49.600998-06:00 c0-0c2s12n2 i8042: No controller found
+2015-02-13T13:21:53.747222-06:00 c0-0c2s12n2 Sending ec_node_info with boot code 0 (NODE_INFO_OS_BOOT) for nid 178
+2015-02-13T13:21:53.747230-06:00 c0-0c2s12n2 net.core.rmem_max = 16777216
+2015-02-13T13:21:53.747237-06:00 c0-0c2s12n2 net.core.wmem_max = 16777216
+2015-02-13T13:21:53.747243-06:00 c0-0c2s12n2 net.core.rmem_default = 16777216
+2015-02-13T13:21:53.747254-06:00 c0-0c2s12n2 net.core.wmem_default = 16777216
+2015-02-13T13:21:53.747265-06:00 c0-0c2s12n2 net.core.optmem_max = 16777216
+2015-02-13T13:21:53.747284-06:00 c0-0c2s12n2 net.ipv4.tcp_mem = 16777216 16777216 16777216
+2015-02-13T13:21:53.747292-06:00 c0-0c2s12n2 net.ipv4.tcp_rmem = 4096 87380 16777216
+2015-02-13T13:21:53.747297-06:00 c0-0c2s12n2 net.ipv4.tcp_wmem = 4096 65536 16777216
+2015-02-13T13:21:53.747328-06:00 c0-0c2s12n2 nid 178: Linux version 3.0.101-0.31.1_1.0502.8394-cray_ari_c (abuild@cfosbld02) (gcc version 4.3.4 [gcc-4_3-branch revision 152973] (SUSE Linux) ) #1 SMP Wed Sep 10 04:09:26 UTC 2014
+2015-02-13T13:21:53.747337-06:00 c0-0c2s12n2 starting pid 6922, tty '': '/etc/init.d/rc'
+2015-02-13T13:21:53.747345-06:00 c0-0c2s12n2 bpmcd_init: Power statistics available in /sys/cray
+2015-02-13T13:21:53.747364-06:00 c0-0c2s12n2 DVS: Revision 1873 - Built: Sep 17 2014 @ 06:40:25 for lnet version 2.5
+2015-02-13T13:21:53.747371-06:00 c0-0c2s12n2 LNet: HW CPU cores: 64, npartitions: 8
+2015-02-13T13:21:58.429982-06:00 c0-0c2s12n2 Lustre: kgnilnd build version: 2.5-trunk-1.0502.17198.8.57-abuild-RB-5.2UP02_2.5.1-2014-09-17-06:43
+2015-02-13T13:21:58.556085-06:00 c0-0c2s12n2 LNet: Added LNI 178@gni [16/1024/0/0]
+2015-02-13T13:22:14.883827-06:00 c0-0c2s12n2 mcelog: Family 6 Model 3f CPU: only decoding architectural errors
+2015-02-13T13:22:14.883836-06:00 c0-0c2s12n2 SGI XPMEM kernel module v2.2 loaded
+2015-02-13T13:22:14.883849-06:00 c0-0c2s12n2 <node_health> (xtnhd) xtnhd has started
+2015-02-13T13:22:14.883863-06:00 c0-0c2s12n2 boot_freemem data calculated:  130108532
+2015-02-13T14:30:22.104629-06:00 c0-0c2s12n2 net_ratelimit: 6 callbacks suppressed
+2015-02-13T15:17:27.478064-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-13T15:17:57.488252-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-13T16:04:48.847099-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-13T16:05:18.751422-06:00 c0-0c2s12n2 net_ratelimit: 20 callbacks suppressed
+2015-02-13T16:52:24.338348-06:00 c0-0c2s12n2 net_ratelimit: 20 callbacks suppressed
+2015-02-13T16:52:54.229703-06:00 c0-0c2s12n2 net_ratelimit: 18 callbacks suppressed
+2015-02-13T17:40:10.548424-06:00 c0-0c2s12n2 net_ratelimit: 21 callbacks suppressed
+2015-02-13T17:40:40.513443-06:00 c0-0c2s12n2 net_ratelimit: 41 callbacks suppressed
+2015-02-13T18:27:05.768165-06:00 c0-0c2s12n2 net_ratelimit: 33 callbacks suppressed
+2015-02-13T18:27:35.868578-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-13T19:13:57.762906-06:00 c0-0c2s12n2 net_ratelimit: 34 callbacks suppressed
+2015-02-13T19:14:27.393164-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-13T20:00:32.456783-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-13T20:01:02.376889-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-13T20:47:13.568964-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-13T20:47:43.553011-06:00 c0-0c2s12n2 net_ratelimit: 26 callbacks suppressed
+2015-02-13T21:34:10.679718-06:00 c0-0c2s12n2 net_ratelimit: 32 callbacks suppressed
+2015-02-13T21:34:40.961721-06:00 c0-0c2s12n2 net_ratelimit: 26 callbacks suppressed
+2015-02-13T22:20:47.649753-06:00 c0-0c2s12n2 net_ratelimit: 34 callbacks suppressed
+2015-02-13T22:21:17.585613-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-13T23:07:09.003653-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-13T23:07:38.920506-06:00 c0-0c2s12n2 net_ratelimit: 22 callbacks suppressed
+2015-02-13T23:53:29.980109-06:00 c0-0c2s12n2 net_ratelimit: 32 callbacks suppressed
+2015-02-13T23:54:00.154804-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-14T00:39:51.523537-06:00 c0-0c2s12n2 net_ratelimit: 22 callbacks suppressed
+2015-02-14T00:40:21.480897-06:00 c0-0c2s12n2 net_ratelimit: 26 callbacks suppressed
+2015-02-14T01:26:12.366890-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-14T01:26:42.383378-06:00 c0-0c2s12n2 net_ratelimit: 23 callbacks suppressed
+2015-02-14T02:12:48.439471-06:00 c0-0c2s12n2 net_ratelimit: 14 callbacks suppressed
+2015-02-14T02:13:18.366133-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-14T02:59:10.029812-06:00 c0-0c2s12n2 net_ratelimit: 22 callbacks suppressed
+2015-02-14T02:59:40.078042-06:00 c0-0c2s12n2 net_ratelimit: 33 callbacks suppressed
+2015-02-14T03:46:17.477218-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-14T03:46:47.287767-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-14T04:33:24.587757-06:00 c0-0c2s12n2 net_ratelimit: 13 callbacks suppressed
+2015-02-14T04:33:54.628410-06:00 c0-0c2s12n2 net_ratelimit: 35 callbacks suppressed
+2015-02-14T05:19:45.974077-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-14T05:20:15.993008-06:00 c0-0c2s12n2 net_ratelimit: 26 callbacks suppressed
+2015-02-14T06:06:22.477957-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-14T06:06:52.521345-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-14T06:52:44.239678-06:00 c0-0c2s12n2 net_ratelimit: 20 callbacks suppressed
+2015-02-14T06:53:14.197143-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-14T07:39:20.913690-06:00 c0-0c2s12n2 net_ratelimit: 32 callbacks suppressed
+2015-02-14T07:39:51.009716-06:00 c0-0c2s12n2 net_ratelimit: 20 callbacks suppressed
+2015-02-14T08:25:42.754780-06:00 c0-0c2s12n2 net_ratelimit: 32 callbacks suppressed
+2015-02-14T08:26:12.855105-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-14T09:12:19.677291-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-14T09:12:49.874648-06:00 c0-0c2s12n2 net_ratelimit: 33 callbacks suppressed
+2015-02-14T09:58:41.001343-06:00 c0-0c2s12n2 net_ratelimit: 7 callbacks suppressed
+2015-02-14T09:59:11.083606-06:00 c0-0c2s12n2 net_ratelimit: 35 callbacks suppressed
+2015-02-14T10:45:03.299189-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-14T10:45:33.418325-06:00 c0-0c2s12n2 net_ratelimit: 7 callbacks suppressed
+2015-02-14T11:31:25.473373-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-14T11:31:55.221224-06:00 c0-0c2s12n2 net_ratelimit: 34 callbacks suppressed
+2015-02-14T12:17:47.313604-06:00 c0-0c2s12n2 net_ratelimit: 23 callbacks suppressed
+2015-02-14T12:18:17.160556-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-14T13:04:09.805627-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-14T13:04:39.694387-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-14T13:50:46.972864-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-14T13:51:16.883949-06:00 c0-0c2s12n2 net_ratelimit: 32 callbacks suppressed
+2015-02-14T14:37:39.490835-06:00 c0-0c2s12n2 net_ratelimit: 23 callbacks suppressed
+2015-02-14T14:38:09.540223-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-14T15:24:17.281606-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-14T15:24:47.307289-06:00 c0-0c2s12n2 net_ratelimit: 19 callbacks suppressed
+2015-02-14T16:11:24.636675-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-14T16:11:54.554664-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-14T16:58:31.859761-06:00 c0-0c2s12n2 net_ratelimit: 12 callbacks suppressed
+2015-02-14T16:59:01.845743-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-14T17:45:09.205696-06:00 c0-0c2s12n2 net_ratelimit: 39 callbacks suppressed
+2015-02-14T17:45:39.144213-06:00 c0-0c2s12n2 net_ratelimit: 5 callbacks suppressed
+2015-02-14T18:31:31.506096-06:00 c0-0c2s12n2 net_ratelimit: 23 callbacks suppressed
+2015-02-14T18:32:01.535381-06:00 c0-0c2s12n2 net_ratelimit: 17 callbacks suppressed
+2015-02-14T19:17:54.308052-06:00 c0-0c2s12n2 net_ratelimit: 36 callbacks suppressed
+2015-02-14T19:18:24.164827-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-14T20:04:16.778194-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-14T20:04:46.820639-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-14T20:50:39.923622-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-14T20:51:09.850720-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-14T21:37:02.360430-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-14T21:37:32.420074-06:00 c0-0c2s12n2 net_ratelimit: 23 callbacks suppressed
+2015-02-14T22:23:40.017580-06:00 c0-0c2s12n2 net_ratelimit: 22 callbacks suppressed
+2015-02-14T22:24:10.120302-06:00 c0-0c2s12n2 net_ratelimit: 19 callbacks suppressed
+2015-02-14T23:10:18.359886-06:00 c0-0c2s12n2 net_ratelimit: 26 callbacks suppressed
+2015-02-14T23:10:48.392892-06:00 c0-0c2s12n2 net_ratelimit: 32 callbacks suppressed
+2015-02-14T23:57:01.150371-06:00 c0-0c2s12n2 net_ratelimit: 32 callbacks suppressed
+2015-02-14T23:57:30.938630-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-15T00:43:43.947055-06:00 c0-0c2s12n2 net_ratelimit: 23 callbacks suppressed
+2015-02-15T00:44:14.262764-06:00 c0-0c2s12n2 net_ratelimit: 6 callbacks suppressed
+2015-02-15T01:30:37.713556-06:00 c0-0c2s12n2 net_ratelimit: 33 callbacks suppressed
+2015-02-15T01:31:07.704688-06:00 c0-0c2s12n2 net_ratelimit: 35 callbacks suppressed
+2015-02-15T02:17:37.194639-06:00 c0-0c2s12n2 net_ratelimit: 21 callbacks suppressed
+2015-02-15T02:18:07.034608-06:00 c0-0c2s12n2 net_ratelimit: 33 callbacks suppressed
+2015-02-15T03:04:14.779782-06:00 c0-0c2s12n2 net_ratelimit: 37 callbacks suppressed
+2015-02-15T03:04:44.854280-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-15T03:50:37.860436-06:00 c0-0c2s12n2 net_ratelimit: 6 callbacks suppressed
+2015-02-15T03:51:07.746514-06:00 c0-0c2s12n2 net_ratelimit: 6 callbacks suppressed
+2015-02-15T04:37:46.805527-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-15T04:38:16.694715-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-15T05:24:25.531490-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-15T05:24:55.579971-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-15T06:11:03.814420-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-15T06:11:33.804271-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-15T06:57:42.901241-06:00 c0-0c2s12n2 net_ratelimit: 22 callbacks suppressed
+2015-02-15T06:58:13.010313-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-15T07:44:21.410340-06:00 c0-0c2s12n2 net_ratelimit: 23 callbacks suppressed
+2015-02-15T07:44:51.469615-06:00 c0-0c2s12n2 net_ratelimit: 34 callbacks suppressed
+2015-02-15T08:30:45.110038-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-15T08:31:15.102524-06:00 c0-0c2s12n2 net_ratelimit: 22 callbacks suppressed
+2015-02-15T09:17:08.336660-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-15T09:17:38.192458-06:00 c0-0c2s12n2 net_ratelimit: 26 callbacks suppressed
+2015-02-15T10:03:32.266619-06:00 c0-0c2s12n2 net_ratelimit: 20 callbacks suppressed
+2015-02-15T10:04:02.038868-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-15T10:50:11.381748-06:00 c0-0c2s12n2 net_ratelimit: 34 callbacks suppressed
+2015-02-15T10:50:41.380214-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-15T11:36:51.136862-06:00 c0-0c2s12n2 net_ratelimit: 32 callbacks suppressed
+2015-02-15T11:37:20.959486-06:00 c0-0c2s12n2 net_ratelimit: 22 callbacks suppressed
+2015-02-15T12:23:45.015058-06:00 c0-0c2s12n2 net_ratelimit: 19 callbacks suppressed
+2015-02-15T12:24:15.012869-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-15T13:10:09.626158-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-15T13:10:39.559630-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-15T13:56:48.945687-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-15T13:57:19.173027-06:00 c0-0c2s12n2 net_ratelimit: 36 callbacks suppressed
+2015-02-15T14:43:28.880025-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-15T14:43:58.927799-06:00 c0-0c2s12n2 net_ratelimit: 26 callbacks suppressed
+2015-02-15T15:30:38.302943-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-15T15:31:08.467023-06:00 c0-0c2s12n2 net_ratelimit: 26 callbacks suppressed
+2015-02-15T16:17:17.633678-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-15T16:17:47.708844-06:00 c0-0c2s12n2 net_ratelimit: 20 callbacks suppressed
+2015-02-15T17:03:56.431564-06:00 c0-0c2s12n2 net_ratelimit: 33 callbacks suppressed
+2015-02-15T17:04:26.513631-06:00 c0-0c2s12n2 net_ratelimit: 18 callbacks suppressed
+2015-02-15T17:50:35.629667-06:00 c0-0c2s12n2 net_ratelimit: 26 callbacks suppressed
+2015-02-15T17:51:05.609245-06:00 c0-0c2s12n2 net_ratelimit: 34 callbacks suppressed
+2015-02-15T18:37:00.539242-06:00 c0-0c2s12n2 net_ratelimit: 19 callbacks suppressed
+2015-02-15T18:37:30.704518-06:00 c0-0c2s12n2 net_ratelimit: 24 callbacks suppressed
+2015-02-15T19:23:40.726310-06:00 c0-0c2s12n2 net_ratelimit: 20 callbacks suppressed
+2015-02-15T19:24:10.877448-06:00 c0-0c2s12n2 net_ratelimit: 24 callbacks suppressed
+2015-02-15T20:10:20.541631-06:00 c0-0c2s12n2 net_ratelimit: 32 callbacks suppressed
+2015-02-15T20:10:50.531327-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-15T20:56:45.454117-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-15T20:57:15.542174-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-15T21:43:26.164052-06:00 c0-0c2s12n2 net_ratelimit: 22 callbacks suppressed
+2015-02-15T21:43:56.236482-06:00 c0-0c2s12n2 net_ratelimit: 35 callbacks suppressed
+2015-02-15T22:30:05.729485-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-15T22:30:35.814771-06:00 c0-0c2s12n2 net_ratelimit: 19 callbacks suppressed
+2015-02-15T23:16:30.606717-06:00 c0-0c2s12n2 net_ratelimit: 20 callbacks suppressed
+2015-02-15T23:17:00.503668-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-16T00:03:10.705667-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-16T00:03:40.575569-06:00 c0-0c2s12n2 net_ratelimit: 34 callbacks suppressed
+2015-02-16T00:49:36.045583-06:00 c0-0c2s12n2 net_ratelimit: 33 callbacks suppressed
+2015-02-16T00:50:06.256523-06:00 c0-0c2s12n2 net_ratelimit: 21 callbacks suppressed
+2015-02-16T01:36:16.052945-06:00 c0-0c2s12n2 net_ratelimit: 26 callbacks suppressed
+2015-02-16T01:36:46.020241-06:00 c0-0c2s12n2 net_ratelimit: 21 callbacks suppressed
+2015-02-16T02:22:40.912518-06:00 c0-0c2s12n2 net_ratelimit: 33 callbacks suppressed
+2015-02-16T02:23:11.216497-06:00 c0-0c2s12n2 net_ratelimit: 24 callbacks suppressed
+2015-02-16T03:09:06.264714-06:00 c0-0c2s12n2 net_ratelimit: 42 callbacks suppressed
+2015-02-16T03:09:36.209737-06:00 c0-0c2s12n2 net_ratelimit: 36 callbacks suppressed
+2015-02-16T03:55:46.787442-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-16T03:56:16.525796-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-16T04:42:12.433297-06:00 c0-0c2s12n2 net_ratelimit: 24 callbacks suppressed
+2015-02-16T04:42:42.445814-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-16T05:28:53.175196-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-16T05:29:23.147113-06:00 c0-0c2s12n2 net_ratelimit: 30 callbacks suppressed
+2015-02-16T06:15:33.703540-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-16T06:16:03.752735-06:00 c0-0c2s12n2 net_ratelimit: 28 callbacks suppressed
+2015-02-16T07:02:15.032462-06:00 c0-0c2s12n2 net_ratelimit: 27 callbacks suppressed
+2015-02-16T07:02:44.904420-06:00 c0-0c2s12n2 net_ratelimit: 26 callbacks suppressed
+2015-02-16T07:48:40.312693-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-16T07:49:10.279658-06:00 c0-0c2s12n2 net_ratelimit: 34 callbacks suppressed
+2015-02-16T08:35:35.565821-06:00 c0-0c2s12n2 net_ratelimit: 31 callbacks suppressed
+2015-02-16T08:36:05.728091-06:00 c0-0c2s12n2 net_ratelimit: 37 callbacks suppressed
+2015-02-16T09:22:46.540302-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-16T09:23:16.594651-06:00 c0-0c2s12n2 net_ratelimit: 29 callbacks suppressed
+2015-02-16T10:09:27.263916-06:00 c0-0c2s12n2 net_ratelimit: 40 callbacks suppressed
+2015-02-16T10:09:57.435687-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-16T10:56:07.748267-06:00 c0-0c2s12n2 net_ratelimit: 22 callbacks suppressed
+2015-02-16T10:56:37.853673-06:00 c0-0c2s12n2 net_ratelimit: 25 callbacks suppressed
+2015-02-16T11:06:06.234344-06:00 c0-0c2s12n2 <node_health> Boot_Check: Nothing to stop.
+2015-02-16T11:06:06.234353-06:00 c0-0c2s12n2 Unloading nic compatibility device..done
+2015-02-16T11:06:06.234359-06:00 c0-0c2s12n2 bpmcd_exit: No local access to power statistics
+2015-02-16T11:06:06.234368-06:00 c0-0c2s12n2 This is not a native WLM environment; WLM is ALPSGI XPMEM kernel module v2.2 unloaded
+2015-02-16T11:06:06.234373-06:00 c0-0c2s12n2 S; exiting
+2015-02-16T11:06:06.234378-06:00 c0-0c2s12n2 Unloading XPMEM driver
+2015-02-16T11:06:06.234384-06:00 c0-0c2s12n2 Unmounting alps spool directory..done
+2015-02-16T11:06:06.234393-06:00 c0-0c2s12n2 Initializing Compute node runtime environment
+2015-02-16T11:06:06.234412-06:00 c0-0c2s12n2 (stop BIND mounts)
+2015-02-16T11:06:07.287980-06:00 c0-0c2s12n2 Stopping DVS service: 
+2015-02-16T11:06:07.287999-06:00 c0-0c2s12n2 ..done
+2015-02-16T11:06:10.320855-06:00 c0-0c2s12n2 System halted.
+2015-02-16T11:06:11.362863-06:00 c0-0c2s12n2 RCADSVCS : shutdown.
+2015-02-16T14:50:59.124409-06:00 c0-0c2s12n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
+2015-02-17T08:08:02.751670-07:00 c0-0c2s12n2 ERROR: Type:2; Severity:80; Class:3; Subclass:D; Operation: 2
