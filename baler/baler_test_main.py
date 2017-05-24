@@ -1,8 +1,8 @@
 #!/usr/bin/python
 #coding:utf-8
 import sys
-sys.path.append("/home/ares/syslog_tool_work_folder/")
 import os
+sys.path.append("..")
 import re 
 import time 
 import python_code.global_APIs as global_APIs
@@ -387,14 +387,14 @@ def main(cmd_1, cmd_2 = ""):
 ###################################
 #baler learning
 	# this one is very necessary !!!!!
-	#baler_single_line_SLEBD_type_pattern_gen(cmd_1)
+	baler_single_line_SLEBD_type_pattern_gen(cmd_1)
 
 	#multi_file_folder.folder_database_self_growing(cmd_1)
 	#multi_file_folder.folder_analyzing (cmd_1)	
 
 #SLEBD and baler compare
-	result = two_db_compare (cmd_1, cmd_2)
-	two_db_compare_result_analyze (result)
+	#result = two_db_compare (cmd_1, cmd_2)
+	#two_db_compare_result_analyze (result)
 	#share_block_multi_analyze (result)
 
 

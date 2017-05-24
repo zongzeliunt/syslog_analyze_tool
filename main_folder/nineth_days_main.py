@@ -1,8 +1,8 @@
 #!/usr/bin/python
 #coding:utf-8
 import sys
-sys.path.append("/home/ares/syslog_tool_work_folder/")
 import os
+sys.path.append("..")
 import re 
 import time 
 import python_code.global_APIs as global_APIs
@@ -44,7 +44,7 @@ def main (input_file):
 #feature 2 
 	#block_database_learner.block_database_learning (input_file)
 	#multi_file_folder.folder_learning (input_file)	
-	#multi_file_folder.folder_single_line_pattern_learning (input_file)	
+	multi_file_folder.folder_single_line_pattern_learning (input_file)	
 
 	
 ###########################################################
@@ -64,18 +64,18 @@ def main (input_file):
 	#multi_file_folder.whole_dataset_folder_gen_daily_log_file(input_file)
 	
 	#time_1 = time.time()
-	##block_database_learner.block_database_learning (input_file)
-	##multi_file_folder.folder_database_self_growing(input_file)
-	#print "coverage test"
-	time_2 = time.time()
+	#block_database_learner.block_database_learning (input_file)
+	###multi_file_folder.folder_database_self_growing(input_file)
+	##print "coverage test"
+	#time_2 = time.time()
 	#report_APIs.general_run_process (input_file, 1 )
-	multi_file_folder.folder_analyzing (input_file)	
-	time_3 = time.time()
+	##multi_file_folder.folder_analyzing (input_file)	
+	#time_3 = time.time()
+	##
+	##
+	#print time_2 - time_1
+	#print time_3 - time_2
 	#
-	#
-	print time_2 - time_1
-	print time_3 - time_2
-	
 
 	print "finish"
 	
