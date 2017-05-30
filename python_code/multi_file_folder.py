@@ -149,7 +149,15 @@ def folder_database_self_growing(folder_name):
 	done_learning_file_folder = "done_learning_file_folder"
 	if not os.path.isdir(done_learning_file_folder):
 		os.mkdir(done_learning_file_folder)
-	done_file_folder_list = global_APIs.get_folder_file_list(done_learning_file_folder)
+	done_learning_file_dataset_folder = done_learning_file_folder + "/dataset/"
+	if not os.path.isdir(done_learning_file_dataset_folder):
+		os.mkdir(done_learning_file_dataset_folder)
+	done_learning_file_EB_folder = done_learning_file_folder + "/EB_list/"
+	if not os.path.isdir(done_learning_file_EB_folder):
+		os.mkdir(done_learning_file_EB_folder)
+	
+	done_file_folder_list = global_APIs.get_folder_file_list(done_learning_file_dataset_folder)
+	
 	for file_name in done_file_folder_list:
 		file_name = global_APIs.get_real_file_name(file_name)
 		done_file_list.append(file_name)
@@ -160,11 +168,12 @@ def folder_database_self_growing(folder_name):
 	total_file = "total_tmp_learning_file"
 
 	total_progress_fl = open("total_progress_report.txt", "w")
-	total_progress_fl.write("test begin")
+	total_progress_fl.write("test begin\n")
 	total_progress_fl.close()
 	
-	
+	total_num = 0	
 	for input_file in file_list:
+		total_num += 1
 		if global_APIs.get_real_file_name(input_file) in done_file_list:
 			continue
 		else:
@@ -172,7 +181,9 @@ def folder_database_self_growing(folder_name):
 		total_progress_fl = open("total_progress_report.txt", "a")
 		print "learning " + input_file
 		total_progress_fl.write("Analyzing " + input_file + "\n")	
-		total_progress_fl.write("================================\n")	
+		total_progress_fl.write("================================\n")
+		total_progress_fl.write("total_num = " + str(total_num) + "\n")
+			
 		
 		file_mode = global_APIs.get_file_mode (input_file)
 		have_database = global_APIs.test_have_database(file_mode)
@@ -183,24 +194,29 @@ def folder_database_self_growing(folder_name):
 		need_relearn = 0
 		have_conflict = 0
 		if have_database == -1:
-			shutil.copy(input_file, done_learning_file_folder)
 			total_progress_fl.write("	No database, initial learn.\n")	
+
 			block_database_learner.block_database_learning (input_file)
 			input_file_block_result = report_APIs.general_run_process (input_file, 1 )
 			input_file_covered_line_count = input_file_block_result[1]
 			input_file_line_count = input_file_block_result[2]
 			input_file_cover_precent = float(input_file_covered_line_count)/float(input_file_line_count)
 			input_file_cover_precent = round(input_file_cover_precent , 3)
+
 		else: 
 			input_file_block_result = report_APIs.general_run_process (input_file, 1 )
 			input_file_covered_line_count = input_file_block_result[1]
 			input_file_line_count = input_file_block_result[2]
 			input_file_cover_precent = float(input_file_covered_line_count)/float(input_file_line_count)
 			input_file_cover_precent = round(input_file_cover_precent , 3)
-			have_conflict = erase_conflict_block_based_on_error_report(input_file, total_progress_fl)
+			have_conflict = global_APIs.detect_if_have_EB_extraction_conflict(total_progress_fl)
+			
+
 
 		if have_conflict == 1:	
 			total_progress_fl.write("	Have conflict.\n")	
+			#erase conflict block pattern
+			global_APIs.erase_conflict_block_based_on_error_report(input_file)
 			need_relearn = 1
 		total_progress_fl.write("	Coverage = " + str(input_file_cover_precent) + ".\n")	
 		total_progress_fl.write("	Total Coverage = " + str(average_cover_precent) + ".\n")	
@@ -211,31 +227,27 @@ def folder_database_self_growing(folder_name):
 		
 		if need_relearn == 1:
 			total_progress_fl.write("	Re-learn\n")	
-			shutil.copy(input_file, done_learning_file_folder)
-			
-			#new learn total_file done			
-			total_tmp_learning_file_gen (total_file, done_learning_file_folder)
-			
-			#ARES 4/12/2017
-			total_progress_fl.write("		Total file conflict erase\n")	
-			input_file_block_result = report_APIs.general_run_process (total_file, 1 )
-			have_conflict = erase_conflict_block_based_on_error_report(total_file, total_progress_fl)
-
-
-			block_database_learner.block_database_learning (total_file)
-			os.remove(total_file)	
-		have_conflict = 0
+			shutil.copy(input_file, done_learning_file_dataset_folder)
 		
+			#block list is already there	
+			block_list = input_file_block_result[4]
+			report_APIs.output_block_list_report(block_list, input_file, 0, done_learning_file_EB_folder)
+			block_database_learner.block_database_learning (input_file)
+		
+
+		have_conflict = 0
 		total_progress_fl.close()
 		
-		have_database = global_APIs.test_have_database(file_mode)
-		SLEBD_DB = block_database_opt.block_database_read(file_mode, str(have_database))
-		repeat_list = block_database_opt.repeat_db_test(SLEBD_DB)	
-		 
+		
+
+		#have_database = global_APIs.test_have_database(file_mode)
+		#SLEBD_DB = block_database_opt.block_database_read(file_mode, str(have_database))
+		#repeat_list = block_database_opt.repeat_db_test(SLEBD_DB)	
+		
 
 
 	print "Test done learning file conflict"
-	result = folder_analyzing(done_learning_file_folder)
+	result = folder_analyzing(done_learning_file_dataset_folder)
 	have_conflict = result["have_conflict"]
 	if have_conflict == 1:
 		total_progress_fl = open("total_progress_report.txt", "a")
@@ -246,44 +258,19 @@ def folder_database_self_growing(folder_name):
 		#so I need to relearn one more time
 		total_progress_fl.write("final verify")	
 		total_progress_fl.write("================================\n")	
-		total_tmp_learning_file_gen (total_file, done_learning_file_folder)
+		total_tmp_learning_file_gen (total_file, done_learning_file_dataset_folder)
 		block_database_learner.block_database_learning (total_file)
 		os.remove(total_file)	
 
 		total_progress_fl.close()
 
-def erase_conflict_block_based_on_error_report (input_file, total_progress_fl = ""):
-	file_mode = global_APIs.get_file_mode (input_file)
-	have_database = global_APIs.test_have_database(file_mode)
-	error_report = global_APIs.analyze_error_list_file("error_report.txt")
-	os.remove("error_report.txt")	
-	single_error_report = error_report[0]
-	multi_error_report = error_report[1]
-	block_database = block_database_opt.block_database_read(file_mode, str(have_database))
-	global_multi_list = block_database_opt.multi_database_read(file_mode, str(have_database))
-	for error in single_error_report:
-		if not total_progress_fl == "":
-			total_progress_fl.write ("	delete single block " + error + "\n")
-		if error in block_database:
-			del (block_database[error])
-		if error in global_multi_list:
-			del (global_multi_list[error])
-	for error in multi_error_report:
-		if not total_progress_fl == "":
-			total_progress_fl.write ("	delete multi block " + error + "\n")
-		if error in global_multi_list:
-			del (global_multi_list[error])
-	block_database_opt.block_database_store(block_database, file_mode)
-	block_database_opt.block_multi_store(global_multi_list, file_mode)
-	have_conflict = 0 
-	if not single_error_report == [] or not multi_error_report == []:
-		have_conflict = 1
-	
-	return have_conflict	
-
-
 	
 def total_tmp_learning_file_gen(total_file_name, folder_name ):
+
+	error_report = global_APIs.analyze_error_list_file("error_report.txt")
+	single_error_report = error_report[0]
+	multi_error_report = error_report[1]
+	
 	#{{{
 	total_fl = open(total_file_name, "w")
 	done_learning_list = global_APIs.get_folder_file_list(folder_name)
@@ -300,84 +287,6 @@ def total_tmp_learning_file_gen(total_file_name, folder_name ):
 	#}}}
 
 				
-
-	
-
-def folder_learning (folder_name):
-#this must be in multi file folder
-	folder_name = global_APIs.get_real_folder_name (folder_name)
-	
-	file_list = global_APIs.get_folder_file_list(folder_name)
-	
-	error_list = {}
-	done_learning_file_folder = "done_learning_file_folder"
-	if not os.path.isdir(done_learning_file_folder):
-		os.mkdir(done_learning_file_folder)
-
-	total_progress_fl = open("total_progress_report.txt", "w")
-
-	for input_file in file_list:
-		print "learn"
-		print input_file
-		
-
-		shutil.copy(input_file, done_learning_file_folder)
-		tmp = "Learning "
-		tmp += input_file
-		tmp += "\n" 
-		total_progress_fl.write(tmp)
-
-
-
-		file_mode = global_APIs.get_file_mode (input_file)
-			
-		have_database = global_APIs.test_have_database(file_mode)
-		if have_database == -1:
-			block_database_learner.block_database_learning (input_file)
-		else:
-			block_database = block_database_opt.block_database_read(file_mode, str(have_database))
-			global_multi_list = block_database_opt.multi_database_read(file_mode, str(have_database))
-			
-			total_file = "total_tmp_learning_file"
-			total_fl = open(total_file, "w")
-			done_learning_list = global_APIs.get_folder_file_list(done_learning_file_folder)
-			
-			for done_file in done_learning_list:
-				tmp_fl = open (done_file, "r")
-				while True:
-					line = tmp_fl.readline()
-					if not line:
-						break
-					total_fl.write(line)
-				tmp_fl.close()
-			total_fl.close()
-			
-			block_list = input_file_block_analyzer.block_analyze(total_file, block_database, global_multi_list, 1)
-			error_report = global_APIs.analyze_error_list_file("error_report.txt")
-			single_error_report = error_report[0]
-			multi_error_report = error_report[1]
-			#delete conflict DB
-			for error in single_error_report:
-				print "delete single block " + error
-				if error in block_database:
-					del (block_database[error])
-				if error in global_multi_list:
-					del (global_multi_list[error])
-			for error in multi_error_report:
-				print "delete multi block " + error
-				if error in global_multi_list:
-					del (global_multi_list[error])
-
-			block_database_opt.block_database_store(block_database, file_mode)
-			block_database_opt.block_multi_store(global_multi_list, file_mode)
-			
-			block_database_learner.block_database_learning (total_file)
-			os.remove(total_file)	
-	
-	total_progress_fl.close()
-			
-
-
 def folder_analyzing (folder_name, erase_conflict = 0):
 	folder_name = global_APIs.get_real_folder_name (folder_name)
 	
@@ -389,14 +298,13 @@ def folder_analyzing (folder_name, erase_conflict = 0):
 	
 	total_block_length_summary_list = {}
 	total_block_length_result_list = []
-	have_conflict = 0
 	
 	total_report_file_name = "folder_analyzing_total_report.txt"
 	
 	total_fl = open(total_report_file_name, "w")
 	total_fl.write("test begin \n")
 	total_fl.close()
-	
+        have_conflict = 0
 
 	for input_file in file_list:
 		file_mode = global_APIs.get_file_mode (input_file)
@@ -413,11 +321,10 @@ def folder_analyzing (folder_name, erase_conflict = 0):
 		block_list = result[4]
 	
 		summary_block_length (block_list, total_block_length_summary_list)
-		if erase_conflict == 1:
-			conflict = erase_conflict_block_based_on_error_report (input_file)	
-			if conflict == 1:
-				have_conflict = 1
+		have_conflict = global_APIs.detect_if_have_EB_extraction_conflict ()          
 
+		if erase_conflict == 1 and have_conflict == 1:
+                        global_APIs.erase_conflict_block_based_on_error_report (input_file)   
 		total_fl = open (total_report_file_name, "a")
 		total_fl.write ("analyzing " + input_file + "\n")
 		total_fl.write ("===========================\n")
@@ -473,7 +380,7 @@ def folder_analyzing (folder_name, erase_conflict = 0):
 	output_report["total_covered_lines"] = total_covered_line 
 	output_report["total_lines"] = total_line_num 
 	output_report["total_valid_lines"] = total_valid_num
-	output_report["have_conflict"] = have_conflict
+	output_report["have_conflict"] = total_valid_num
 	return output_report 
 
 

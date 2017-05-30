@@ -166,9 +166,9 @@ def block_list_file_read (input_file):
 		block_list.append(line)
 	return block_list	
 
-def output_block_list_report (block_list, input_file, mode = 0):
+def output_block_list_report (block_list, input_file, mode = 0, report_file_path = "block_report/"):
 	file_name = global_APIs.get_real_file_name (input_file)
-	report_file = "block_report/"
+	report_file = report_file_path
 	report_file += file_name
 
 

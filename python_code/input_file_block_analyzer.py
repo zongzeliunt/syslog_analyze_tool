@@ -323,7 +323,7 @@ def input_file_block_analyze (input_file, dump_error_file = 0):
 	block_list = block_analyze(input_file, block_database, global_multi_list, dump_error_file)
 	return block_list
 
-def create_exist_block_tmp_file (input_file, block_list):
+def create_exist_block_tmp_file (input_file, block_list, error_report = []):
 	tmp_file = global_APIs.get_real_file_name(input_file)
 	tmp_file += "_database_analyze_tmp_file.txt"
 	fl = open (input_file, "r")
@@ -347,11 +347,18 @@ def create_exist_block_tmp_file (input_file, block_list):
 			in_block = 0
 			correspond_block = ""
 			block = block_list[block_list_count]
+			block_name = block[0]
 			start_line_num = block[1]
 			finish_line_num = block[2]
 			if line_counter >= int(start_line_num) and line_counter <= int(finish_line_num):
 				in_block = 1
 				correspond_block = block
+			if not error_report == []:
+				if block_name in error_report[0] or block_name in error_report[1]:
+					#this block need to be ignored
+					in_block = 0	
+					if not block_list_count == len(block_list) - 1: 
+						block_list_count = block_list_count + 1
 
 
 			if in_block == 0:

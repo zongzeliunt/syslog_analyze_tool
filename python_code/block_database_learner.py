@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import global_APIs
+import report_APIs
 import preliminary_block_list_gen
 import block_merger
 import block_database_opt
@@ -8,32 +9,36 @@ import input_file_block_analyzer as input_file_block_analyzer
 import sys
 import os
 import re 
+import shutil
 #this is block database learner
 
-def new_block_learn_based_on_exist_database (input_file, block_database, global_multi_list):
-	block_list = input_file_block_analyzer.block_analyze(input_file, block_database, global_multi_list)
-#tmp file creating
-	tmp_file = input_file_block_analyzer.create_exist_block_tmp_file(input_file, block_list)
-	return new_pattern_learning_on_tmp_learning_file (tmp_file, block_database, global_multi_list)
 
 
-def new_pattern_learning_on_tmp_learning_file(tmp_file, block_database, global_multi_list):
+def new_pattern_learning_on_tmp_learning_file(tmp_file):
+	file_mode = global_APIs.get_file_mode (tmp_file)
+	have_database = global_APIs.test_have_database(file_mode)
+	block_database = block_database_opt.block_database_read(file_mode, str(have_database))
+	global_multi_list = block_database_opt.multi_database_read(file_mode, str(have_database))
+
 #learn unseen block patterns from tmp file
 	mode = 0 
 	pattern_list = preliminary_block_list_gen.preliminary_block_list_learner(tmp_file, mode)
+	print "new pattern learning new pattern found done"
+	print len(pattern_list)
 	if pattern_list == {}:
 #find no new pattern
 		os.remove(tmp_file)
 		tmp = []
 		tmp.append(block_database)
 		tmp.append(global_multi_list)
+		tmp.append(0)
 		return tmp 
 
 	new_block_list = input_file_block_analyzer.block_analyze(tmp_file, pattern_list, global_multi_list)
-
+	print "new pattern learning new block_list done"
 #replace exist blocks as barricade 
 	new_block_list = block_list_add_barricade(tmp_file, new_block_list)
-
+	print "new pattern learning add barricade done"
 #do merge on these blocks
 	#{{{
 	result = block_merger.update_block_list_and_database (new_block_list, pattern_list, global_multi_list )
@@ -54,6 +59,7 @@ def new_pattern_learning_on_tmp_learning_file(tmp_file, block_database, global_m
 	tmp = []
 	tmp.append(block_database)
 	tmp.append(global_multi_list)
+	tmp.append(1)
 	
 	return tmp 
 
@@ -109,10 +115,22 @@ def block_list_add_barricade (tmp_file, block_list):
 
 def block_database_learning (input_file):
 #{{{
+	
+	done_learning_file_folder = "done_learning_file_folder"
+	if not os.path.isdir(done_learning_file_folder):
+		os.mkdir(done_learning_file_folder)
+	done_learning_file_dataset_folder = done_learning_file_folder + "/dataset/"
+	if not os.path.isdir(done_learning_file_dataset_folder):
+		os.mkdir(done_learning_file_dataset_folder)
+	done_learning_file_EB_folder = done_learning_file_folder + "/EB_list/"
+	if not os.path.isdir(done_learning_file_EB_folder):
+		os.mkdir(done_learning_file_EB_folder)
+
 	file_mode = global_APIs.get_file_mode (input_file)
 	have_database = global_APIs.test_have_database(file_mode)
 	block_database = []
 	block_list = []
+	add_new_pattern = 0
 	if have_database == -1:
 		mode = 0 
 		block_database = preliminary_block_list_gen.preliminary_block_list_learner (input_file, mode)
@@ -123,20 +141,106 @@ def block_database_learning (input_file):
 		block_list = result[0]
 		block_database = result[1]
 		global_multi_list = result[2]
-	
+
+		shutil.copy(input_file, done_learning_file_dataset_folder)
+		report_APIs.output_block_list_report(block_list, input_file, 0, done_learning_file_EB_folder)
+		add_new_pattern = 1	
 	else:
 		print "exist"
 		block_database = block_database_opt.block_database_read(file_mode, str(have_database))
 		global_multi_list = block_database_opt.multi_database_read(file_mode, str(have_database))
-		result = new_block_learn_based_on_exist_database(input_file, block_database, global_multi_list)
+		#this is just for add this file and done block list in done_folder 	
+		#test is this file is already in done_file_list
+		exist = 0
+		done_file_folder_list = global_APIs.get_folder_file_list(done_learning_file_dataset_folder)
+		file_name = global_APIs.get_real_file_name(input_file)
+		for done_file_name in done_file_folder_list:
+			done_file_name = global_APIs.get_real_file_name(done_file_name)
+			if file_name == done_file_name:
+				exist = 1
+				break
+		if exist == 1:	
+			file_EB_list_name = done_learning_file_EB_folder
+			file_EB_list_name += file_name
+			file_EB_list_name += "_block_report.txt" 
+			block_list = report_APIs.block_list_file_read(file_EB_list_name)
+		else :
+			#this input file is not analyzed, need to get a block list again
+			block_list = input_file_block_analyzer.block_analyze(input_file, block_database, global_multi_list, 1)
+			shutil.copy(input_file, done_learning_file_dataset_folder)
+			report_APIs.output_block_list_report(block_list, input_file, 0, done_learning_file_EB_folder)
+			global_APIs.erase_conflict_block_based_on_error_report(input_file)
+
+		total_learning_file_name = generate_total_learning_file_on_done_folder()
+		result = new_pattern_learning_on_tmp_learning_file (total_learning_file_name)
 		block_database = result[0]
 		global_multi_list = result[1]
+		add_new_pattern = result[2]
+
 
 	print "block database merge done"
-	block_database_opt.block_database_store(block_database, file_mode)
-	block_database_opt.block_multi_store(global_multi_list, file_mode)
-	
-	#global_APIs.output_block_list_report(block_list, input_file)
-	#report_APIs.dump_block_example (block_database, input_file)
+	if add_new_pattern == 1:
+		#there is new pattern detected, need to update database and update all done files' EB lists
+	    	block_database_opt.block_database_store(block_database, file_mode)
+	    	block_database_opt.block_multi_store(global_multi_list, file_mode)
+		update_existing_done_file_EB_list(input_file)
+			
 		
 #}}}
+
+
+
+def update_existing_done_file_EB_list (input_file):
+	print "update"
+	#input_file is just a file_mode tragger
+	file_mode = global_APIs.get_file_mode (input_file)
+	have_database = global_APIs.test_have_database(file_mode)
+	block_database = block_database_opt.block_database_read(file_mode, str(have_database))
+	global_multi_list = block_database_opt.multi_database_read(file_mode, str(have_database))
+
+	done_learning_file_folder = "done_learning_file_folder"
+	done_learning_file_dataset_folder = done_learning_file_folder + "/dataset/"
+	done_learning_file_EB_folder = done_learning_file_folder + "/EB_list/"
+	done_file_list = global_APIs.get_folder_file_list(done_learning_file_dataset_folder)
+	
+
+	for file_name in done_file_list:
+		real_file_name = global_APIs.get_real_file_name(file_name)
+		file_EB_list_name = done_learning_file_EB_folder
+		file_EB_list_name += real_file_name
+		file_EB_list_name += "_block_report.txt" 
+		
+		#block_list = report_APIs.block_list_file_read(file_EB_list_name)
+		#tmp_file = input_file_block_analyzer.create_exist_block_tmp_file (file_name, block_list, error_report )
+
+		#ARES this is just a temporary solution
+		block_list = input_file_block_analyzer.block_analyze(file_name, block_database, global_multi_list)
+		
+		report_APIs.output_block_list_report(block_list, file_name, 0, done_learning_file_EB_folder)
+
+
+def generate_total_learning_file_on_done_folder ():
+	done_learning_file_folder = "done_learning_file_folder"
+	done_learning_file_dataset_folder = done_learning_file_folder + "/dataset/"
+	done_learning_file_EB_folder = done_learning_file_folder + "/EB_list/"
+	done_file_list = global_APIs.get_folder_file_list(done_learning_file_dataset_folder)
+	total_learning_file_name = "total_tmp_learning_file.txt"
+	total_fl = open (total_learning_file_name, "w")
+	error_report = global_APIs.analyze_error_list_file("error_report.txt")
+	for file_name in done_file_list:
+		real_file_name = global_APIs.get_real_file_name(file_name)
+		file_EB_list_name = done_learning_file_EB_folder
+		file_EB_list_name += real_file_name
+		file_EB_list_name += "_block_report.txt" 
+		block_list = report_APIs.block_list_file_read(file_EB_list_name)
+		tmp_file = input_file_block_analyzer.create_exist_block_tmp_file (file_name, block_list, error_report )
+		tmp_file_fl = open (tmp_file, "r")
+		for line in tmp_file_fl.readlines():
+			total_fl.write(line)
+		tmp_file_fl.close()
+		os.remove(tmp_file)	
+	total_fl.close()
+	os.remove ("error_report.txt")	
+
+	return total_learning_file_name
+

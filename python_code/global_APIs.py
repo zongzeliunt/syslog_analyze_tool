@@ -5,6 +5,7 @@ import shutil
 import time 
 import report_APIs
 import input_file_block_analyzer
+import block_database_opt
 global_num_word_except_list = ["ipv4", "ipv6"]
 global_num_word_forbid_list = ["", ""]
 
@@ -706,14 +707,53 @@ def calculate_month_index (month):
 	#return total_day
 #}}}
 
+def detect_if_have_EB_extraction_conflict(total_progress_fl = ""): 
+	have_conflict = 0
+	if not os.path.isfile ("error_report.txt"):
+		return 0
+	error_report = analyze_error_list_file("error_report.txt")
+	single_error_report = error_report[0]
+	multi_error_report = error_report[1]
+	
+	for error in single_error_report:
+		if not total_progress_fl == "":
+			total_progress_fl.write ("	detect single block conflict" + error + "\n")
+	for error in multi_error_report:
+		if not total_progress_fl == "":
+			total_progress_fl.write ("	detect multi block conflict" + error + "\n")
+	
+	if not single_error_report == [] or not multi_error_report == []:
+		have_conflict = 1
+	
+	return have_conflict	
 
 
-
-
+def erase_conflict_block_based_on_error_report (input_file):
+	#here input_file is just a tragger for file mode
+	file_mode = get_file_mode (input_file)
+	have_database = test_have_database(file_mode)
+	error_report = analyze_error_list_file("error_report.txt")
+	single_error_report = error_report[0]
+	multi_error_report = error_report[1]
+	block_database = block_database_opt.block_database_read(file_mode, str(have_database))
+	global_multi_list = block_database_opt.multi_database_read(file_mode, str(have_database))
+	for error in single_error_report:
+		if error in block_database:
+			del (block_database[error])
+		if error in global_multi_list:
+			del (global_multi_list[error])
+	for error in multi_error_report:
+		if error in global_multi_list:
+			del (global_multi_list[error])
+	block_database_opt.block_database_store(block_database, file_mode)
+	block_database_opt.block_multi_store(global_multi_list, file_mode)
+	
 
 
 
 def analyze_error_list_file (error_file):
+	if not os.path.isfile ("error_report.txt"):
+		return [] 
 	fl = open (error_file, "r")
 	single_error_list = []
 	multi_error_list = []
